@@ -59,7 +59,6 @@ class Welcome extends MY_Controller {
         if (isset($raw_detail['_links']['wp:featuredmedia'][0]) &&
             isset($raw_detail['_links']['wp:featuredmedia'][0]['href'])){
             //there is one attached media
-            var_dump($raw_detail['_links']['wp:featuredmedia'][0]['href']);
             $media_info = $this->sendGet($raw_detail['_links']['wp:featuredmedia'][0]['href']);
             if (isset($media_info['media_details']['sizes']['medium_large']['source_url'])){
                 $raw_detail['thumb_url'] = $media_info['media_details']['sizes']['medium_large']['source_url'];
