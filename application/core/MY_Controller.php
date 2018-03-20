@@ -287,7 +287,7 @@ Class MY_Controller extends CI_Controller
     }
 
     /**
-     * send a post request
+     * send a POST request
      */
     protected function sendPost($fields, $url){
         $fields_string = $this->convertArray2QueryString($fields);
@@ -296,12 +296,13 @@ Class MY_Controller extends CI_Controller
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         //comment out belows options if request by GET method
-//        curl_setopt($ch, CURLOPT_POST, true);
-//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-//        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-//        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
-//        curl_setopt($ch, CURLOPT_HEADER, 1);	//to get 501 code
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_HEADER, 1);	//to get 501 code
+        //
         $result = curl_exec($ch);	//full result
         if ($result === FALSE) {
             die('Send Error: ' . curl_error($ch));
@@ -334,6 +335,27 @@ Class MY_Controller extends CI_Controller
                 'body'	=> json_decode($body)	//real json data, if any
             );
         }
+    }
+
+    /**
+     * send a GET request
+     */
+    protected function sendGet($url){
+        //  Initiate curl
+        $ch = curl_init();
+// Disable SSL verification
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+// Will return the response, if false it print the response
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// Set the url
+        curl_setopt($ch, CURLOPT_URL,$url);
+// Execute
+        $result=curl_exec($ch);
+// Closing
+        curl_close($ch);
+
+// Will dump a beauty json :3
+        return json_decode($result, true);
     }
 
     /**

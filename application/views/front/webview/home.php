@@ -1060,7 +1060,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 g-bg-cover g-bg-white-gradient-opacity-v1--after">
-                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/430x270/img1.jpg" alt="Image Description">
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $site1[0]['thumb_url']?>" alt="Image Description">
                         </figure>
 
                         <span class="g-hidden-xs-down u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white rounded-circle g-pos-abs g-top-30 g-right-30">
@@ -1073,11 +1073,11 @@
 
                         <div class="g-pos-abs g-bottom-30 g-left-30 g-right-30">
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 8, 2016
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo $site1[0]['date']; ?>
                             </small>
 
                             <h3 class="h4 g-my-10">
-                                <a class="g-color-white g-color-white--hover" href="#!">Our goal is to be the next billion company. In order to do that, we should work hard.</a>
+                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $site1[0]['title']['rendered']; ?></a>
                             </h3>
 
                             <ul class="g-hidden-xs-down u-list-inline g-font-size-12 g-color-white">
@@ -1102,7 +1102,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 g-bg-cover g-bg-white-gradient-opacity-v1--after">
-                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/430x270/img2.jpg" alt="Image Description">
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $site1[1]['thumb_url']?>" alt="Image Description">
                         </figure>
 
                         <span class="g-hidden-xs-down u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white rounded-circle g-pos-abs g-top-30 g-right-30">
@@ -1119,7 +1119,7 @@
                             </small>
 
                             <h3 class="h4 g-my-10">
-                                <a class="g-color-white g-color-white--hover" href="#!">Why your customer support is very important? Learn the next 10 best tips.</a>
+                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $site1[1]['title']['rendered']; ?></a>
                             </h3>
 
                             <ul class="g-hidden-xs-down u-list-inline g-font-size-12 g-color-white">
