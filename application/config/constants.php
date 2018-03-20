@@ -125,7 +125,7 @@ define('TRANSLATION_IS_EXISTED_MSG', 'TRANSLATION_IS_EXISTED');
 define('SERVER_KEY', 'e296b7ae-4209-4ec6-9c72-686f0617893e');
 define('STR_LOWERCASE', 'lowercase');
 define('STR_UPPERCASE', 'uppercase');
-define('CURRENT_MILLISECONDS', round(microtime(true) * 1000) + '');
+define('CURRENT_MILLISECONDS', round(microtime(true) * 1000).'');
 define('CURRENT_TIME', date('Y-m-d H:i:s'));
 define('JWT_EXPIRE_TIME', time() + 60*60*24*7); // 7 days
 define('ACTIVATED', 'activated');
