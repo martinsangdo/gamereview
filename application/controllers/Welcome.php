@@ -7,6 +7,8 @@ class Welcome extends MY_Controller {
     {
         parent::__construct();
         $this->load->helper('app');
+//        $this->output->enable_profiler(TRUE);
+
     }
 
 	/**
@@ -27,14 +29,14 @@ class Welcome extends MY_Controller {
 	public function index()
 	{
 	    $raw_data = $this->get_random_posts();
-	    if (count($raw_data) > 0){
-            $this->data['site1'] = $raw_data;
-	        $len = count($raw_data);
-	        for ($i=0; $i<$len; $i++){
-	            $post_detail = $this->parse_post_detail($raw_data[$i]);
-                $this->data['site1'][$i] = $post_detail;
-            }
-        }
+//	    if (count($raw_data) > 0){
+//            $this->data['site1'] = $raw_data;
+//	        $len = count($raw_data);
+//	        for ($i=0; $i<$len; $i++){
+//	            $post_detail = $this->parse_post_detail($raw_data[$i]);
+//                $this->data['site1'][$i] = $post_detail;
+//            }
+//        }
 //        var_dump($this->data['site1']);
         $this->load->view('front/webview/home', $this->data);
 	}

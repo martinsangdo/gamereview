@@ -10,33 +10,33 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php echo public_url();?>unity_favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C300%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/bootstrap/bootstrap.min.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/animate.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/animate.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/fancybox/jquery.fancybox.css">
 
     <!-- CSS Unify Theme -->
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/css/styles.bm-classic.css">
+    <link rel="stylesheet" href="/public/unity_assets/css/styles.bm-classic.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="<?php echo public_url();?>unity_assets/css/custom.css">
+    <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                     <!-- Logo -->
                     <div class="col-md-3 g-hidden-md-down">
                         <a href="bm-classic-home-page-1.html" class="navbar-brand">
-                            <img src="<?php echo public_url();?>unity_assets/img/logo.png" alt="Logo">
+                            <img src="/public/unity_assets/img/logo.png" alt="Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -174,7 +174,7 @@
                            data-dropdown-animation-in="fadeIn"
                            data-dropdown-animation-out="fadeOut">
                             <div class="d-flex g-width-30 g-height-30 mr-2">
-                                <img class="img-fluid rounded-circle" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img11.jpg" alt="Image Description">
+                                <img class="img-fluid rounded-circle" src="/public/unity_assets/img-temp/100x100/img11.jpg" alt="Image Description">
                             </div>
                             <div class="media-body">
                                 <span class="d-block g-hidden-sm-down g-color-main g-font-weight-600 g-font-size-13">Martin</span>
@@ -208,7 +208,7 @@
                 <div class="container g-px-15">
                     <!-- Logo -->
                     <a class="navbar-brand g-hidden-lg-up" href="bm-classic-home-page-1.html">
-                        <img src="<?php echo public_url();?>unity_assets/img/logo.png" alt="Logo">
+                        <img src="/public/unity_assets/img/logo.png" alt="Logo">
                     </a>
                     <!-- End Logo -->
 
@@ -319,7 +319,7 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">8 health benefits and drawbacks of coffee</a></h3>
@@ -336,7 +336,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">5 Best cofee places with free WiFi in Victoria, BC</a>
@@ -354,7 +354,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 7 Luxury places to visit around Victoria, BC</a>
@@ -373,7 +373,7 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -391,7 +391,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6"><a class="g-color-main" href="#!">10 Most beautiful beaches</a></h3>
                                                     <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
@@ -407,7 +407,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -500,7 +500,7 @@
                                         <div class="col-lg-4">
                                             <article>
                                                 <figure class="g-pos-rel">
-                                                    <img class="img-fluid w-100 g-mb-20" src="<?php echo public_url();?>unity_assets/img-temp/900x600/img7.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 g-mb-20" src="/public/unity_assets/img-temp/900x600/img7.jpg" alt="Image Description">
                                                 </figure>
                                                 <h3 class="h4 g-mb-10"><a class="g-color-gray-dark-v2" href="#!">Love the mother nature</a>
                                                 </h3>
@@ -521,7 +521,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -539,7 +539,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6"><a class="g-color-main" href="#!">10 Most beautiful beaches</a></h3>
                                                     <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
@@ -555,7 +555,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -573,7 +573,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">8 health benefits and drawbacks of coffee</a></h3>
@@ -590,7 +590,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -607,7 +607,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -644,7 +644,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Fashion</a>
@@ -665,7 +665,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Beaches</a>
@@ -686,7 +686,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Food</a>
@@ -809,7 +809,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -841,7 +841,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -873,7 +873,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo public_url();?>unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -1037,7 +1037,7 @@
 
                             <!-- Main -->
                             <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                                <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="<?php echo public_url();?>unity_index.html">
+                                <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/public/unity_index.html">
                                     Main
                                 </a>
                             </li>
@@ -1144,7 +1144,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
@@ -1164,7 +1164,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img1.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img1.jpg" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
@@ -1184,7 +1184,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img17.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img17.jpg" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
@@ -1223,7 +1223,7 @@
                             <div class="col-lg-7 g-mb-50 g-mb-0--lg">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
                                             <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Office</a>
@@ -1261,7 +1261,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img1.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img1.jpg" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
@@ -1289,7 +1289,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img2.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img2.jpg" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
@@ -1317,7 +1317,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img4.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img4.jpg" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
@@ -1345,7 +1345,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img3.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img3.jpg" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
@@ -1383,7 +1383,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img3.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img3.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-20 g-left-20">
                                         <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Internet</a>
@@ -1433,7 +1433,7 @@
                                 <!-- Article -->
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img3.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img3.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
                                             <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!">Drons</a>
@@ -1520,7 +1520,7 @@
                                 <!-- Article -->
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img4.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
                                             <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Office</a>
@@ -1616,7 +1616,7 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-blue text-uppercase rounded-0" href="#!">Spa</a>
@@ -1638,7 +1638,7 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img6.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Marketing</a>
@@ -1660,7 +1660,7 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img7.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Art</a>
@@ -1682,7 +1682,7 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img9.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img9.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!">Architecture</a>
@@ -1704,7 +1704,7 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img8.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-indigo text-uppercase rounded-0" href="#!">Coworking</a>
@@ -1726,7 +1726,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img10.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img10.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-brown text-uppercase rounded-0" href="#!">Apple</a>
@@ -1833,7 +1833,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img4.jpg" alt="Image Description">
                             </a>
 
                             <div class="media-body">
@@ -1859,7 +1859,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img5.jpg" alt="Image Description">
                             </a>
 
                             <div class="media-body">
@@ -1885,7 +1885,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img6.jpg" alt="Image Description">
                             </a>
 
                             <div class="media-body">
@@ -1911,7 +1911,7 @@
                         <!-- Article -->
                         <article class="media">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img7.jpg" alt="Image Description">
                             </a>
 
                             <div class="media-body">
@@ -2027,7 +2027,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img5.jpg" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-20">
@@ -2047,7 +2047,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img6.jpg" alt="Image Description">
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
                             <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Dji 4</a>
@@ -2066,7 +2066,7 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
                             <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!">Office</a>
@@ -2098,7 +2098,7 @@
                                 <!-- Article -->
                                 <article class="g-mb-40">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img11.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img11.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
                                             <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Holiday</a>
@@ -2133,7 +2133,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img1.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img1.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2167,7 +2167,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img3.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img3.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2201,7 +2201,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img4.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img4.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2235,7 +2235,7 @@
                                 <!-- Article -->
                                 <article class="g-mb-40">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img12.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img12.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
                                             <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!">School</a>
@@ -2270,7 +2270,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img5.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img5.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2304,7 +2304,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img2.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img2.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2338,7 +2338,7 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo public_url();?>unity_assets/img-temp/200x115/img6.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img6.jpg" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
                                             <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
@@ -2382,7 +2382,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img13.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img13.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-20 g-left-20">
                                         <a class="btn btn-xs u-btn-darkpurple text-uppercase rounded-0" href="#!">Web Design</a>
@@ -2425,7 +2425,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img14.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img14.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-20 g-left-20">
                                         <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Music</a>
@@ -2468,7 +2468,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img15.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img15.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-20 g-left-20">
                                         <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">Interior Design</a>
@@ -2511,7 +2511,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo public_url();?>unity_assets/img-temp/400x270/img16.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img16.jpg" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-20 g-left-20">
                                         <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Leisure</a>
@@ -2674,7 +2674,7 @@
                             </div>
 
                             <article class="media g-mb-35">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img1.jpg" alt="Image Description">
                                 <div class="media-body">
                                     <h4 class="g-font-size-16">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Htmlstream</a>
@@ -2686,7 +2686,7 @@
                             </article>
 
                             <article class="media g-mb-35">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img3.jpg" alt="Image Description">
                                 <div class="media-body">
                                     <h4 class="g-font-size-16 g-color-gray-dark-v1">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Pixeel</a>
@@ -2698,7 +2698,7 @@
                             </article>
 
                             <article class="media">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo public_url();?>unity_assets/img-temp/100x100/img2.jpg" alt="Image Description">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img2.jpg" alt="Image Description">
                                 <div class="media-body">
                                     <h4 class="g-font-size-16 g-color-gray-dark-v1">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">WrapBootstrap</a>
@@ -2760,7 +2760,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img10.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img10.jpg" alt="Image Description">
 
                                 <figcaption class="g-absolute-centered">
                                     <a class="js-fancybox d-block" href="javascript:;"
@@ -2786,7 +2786,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img5.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img5.jpg" alt="Image Description">
                             </figure>
 
                             <div class="media-body">
@@ -2801,7 +2801,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img6.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img6.jpg" alt="Image Description">
 
                                 <figcaption class="g-absolute-centered">
                                     <a class="js-fancybox d-block" href="javascript:;"
@@ -2827,7 +2827,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img7.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img7.jpg" alt="Image Description">
                             </figure>
 
                             <div class="media-body">
@@ -2842,7 +2842,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img8.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img8.jpg" alt="Image Description">
                             </figure>
 
                             <div class="media-body">
@@ -2857,7 +2857,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo public_url();?>unity_assets/img-temp/230x230/img9.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img9.jpg" alt="Image Description">
                             </figure>
 
                             <div class="media-body">
@@ -3012,7 +3012,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="<?php echo public_url();?>unity_assets/img-temp/350x400/img3.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img3.jpg" alt="Image Description">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Singer<br>of the Year</h2>
@@ -3032,7 +3032,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="<?php echo public_url();?>unity_assets/img-temp/350x400/img2.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img2.jpg" alt="Image Description">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Trip to<br>Wonderland</h2>
@@ -3052,7 +3052,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="<?php echo public_url();?>unity_assets/img-temp/350x400/img1.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img1.jpg" alt="Image Description">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Science<br>in Yellow</h2>
@@ -3072,7 +3072,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="<?php echo public_url();?>unity_assets/img-temp/350x400/img4.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img4.jpg" alt="Image Description">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Magnificent<br>Woman</h2>
@@ -3260,7 +3260,7 @@
                     <div class="col-md-4 g-hidden-sm-down g-mb-30">
                         <!-- Logo -->
                         <a href="bm-classic-home-2.html">
-                            <img class="g-width-150" src="<?php echo public_url();?>unity_assets/img/logo.png" alt="Logo">
+                            <img class="g-width-150" src="/public/unity_assets/img/logo.png" alt="Logo">
                         </a>
                         <!-- End Logo -->
                     </div>
@@ -3470,34 +3470,34 @@
 <div class="u-outer-spaces-helper"></div>
 
 <!-- JS Global Compulsory -->
-<script src="<?php echo public_url();?>unity_assets/vendor/jquery/jquery.min.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/popper.min.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
+<script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="/public/unity_assets/vendor/popper.min.js"></script>
+<script src="/public/unity_assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="<?php echo public_url();?>unity_assets/vendor/appear.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="<?php echo public_url();?>unity_assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="/public/unity_assets/vendor/appear.js"></script>
+<script src="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="/public/unity_assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="/public/unity_assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 
 <!-- JS Unify -->
-<script src="<?php echo public_url();?>unity_assets/js/hs.core.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.header.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/helpers/hs.hamburgers.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.dropdown.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.counter.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.onscroll-animation.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.sticky-block.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.carousel.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.popup.js"></script>
-<script src="<?php echo public_url();?>unity_assets/js/components/hs.go-to.js"></script>
+<script src="/public/unity_assets/js/hs.core.js"></script>
+<script src="/public/unity_assets/js/components/hs.header.js"></script>
+<script src="/public/unity_assets/js/helpers/hs.hamburgers.js"></script>
+<script src="/public/unity_assets/js/components/hs.dropdown.js"></script>
+<script src="/public/unity_assets/js/components/hs.counter.js"></script>
+<script src="/public/unity_assets/js/components/hs.onscroll-animation.js"></script>
+<script src="/public/unity_assets/js/components/hs.sticky-block.js"></script>
+<script src="/public/unity_assets/js/components/hs.carousel.js"></script>
+<script src="/public/unity_assets/js/components/hs.popup.js"></script>
+<script src="/public/unity_assets/js/components/hs.go-to.js"></script>
 
 <!-- JS Customization -->
-<script src="<?php echo public_url();?>unity_assets/js/custom.js"></script>
+<script src="/public/unity_assets/js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
