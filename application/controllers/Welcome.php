@@ -41,8 +41,19 @@ class Welcome extends MY_Controller {
         $this->data[BLOCK_KEY_11] = $this->block_content_model->get_pagination(array('site_id' => 14), 0, 0);
         $this->data[BLOCK_KEY_12] = $this->block_content_model->get_pagination(array('site_id' => 15), 0, 0);
         $this->data[BLOCK_KEY_13] = $this->block_content_model->get_pagination(array('site_id' => 16), 0, 0);
-
         //
+        $yt_videos = $this->sendGetWithoutHeader('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&maxResults=8&playlistId=UUXa_bzvv7Oo1glaW9FldDhQ&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE');
+        $vid_len = count($yt_videos['items']);
+        $vid_list = array();
+        for ($i=0; $i<$vid_len; $i++){
+            $vid_list[$i] = array(
+                'thumb' => $yt_videos['items'][$i]['snippet']['thumbnails']['medium']['url'],
+                'title' => $yt_videos['items'][$i]['snippet']['title'],
+                'embed' => '<iframe width="255" height="172" src="https://www.youtube.com/embed/dAULt5cQXKU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+            );
+        }
+        $this->data['video_list_1'] = $vid_list;
+        //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->load->view('front/webview/home', $this->data);
 	}
 

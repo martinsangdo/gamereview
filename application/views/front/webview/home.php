@@ -1588,19 +1588,16 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                                    <?php echo $video_list_1[0]['embed']; ?>
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-blue text-uppercase rounded-0" href="#!">Spa</a>
                                     </figcaption>
 
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Clark Valberg is a new CEO of InVision..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_list_1[0]['title']; ?></a>
                                 </h3>
                             </article>
                         </div>
