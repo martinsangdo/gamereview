@@ -1199,35 +1199,34 @@
                             <div class="col-lg-7 g-mb-50 g-mb-0--lg">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="<?php echo $block_key_2[0]->thumb_url;?>" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Office</a>
+                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!"><?php echo $block_key_2[0]->category_name;?></a>
                                         </figcaption>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Exclusive interview with InVision's CEO</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[0]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_2[0]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
-                                            July 20, 2017
+                                            <?php echo format_post_time($block_key_2[0]->time);?>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
                                             <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
+                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[0]->comment_num;?>
                                             </a>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten. If you are a designer, you have probably gotten.</p>
-                                    <a class="g-font-size-12" href="#!">Read More..</a>
+                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_2[0]->excerpt;?></p>
                                 </article>
                             </div>
                             <!-- End Article (Leftside) -->
@@ -1237,22 +1236,22 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img1.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[1]->thumb_url;?>" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
                                         <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Best dessert recipes for breakfast which will make your day</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[1]->title;?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 20, 2017
+                                                <?php echo format_post_time($block_key_2[1]->time);?>
                                             </li>
                                             <li class="list-inline-item">/</li>
                                             <li class="list-inline-item">
                                                 <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 18
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[1]->comment_num;?>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1265,22 +1264,22 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img2.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[2]->thumb_url;?>" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
                                         <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Stylish things to do, see and purchase only this week</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[2]->title;?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 16, 2017
+                                                <?php echo format_post_time($block_key_2[2]->time);?>
                                             </li>
                                             <li class="list-inline-item">/</li>
                                             <li class="list-inline-item">
                                                 <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 31
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[2]->comment_num;?>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1293,22 +1292,22 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img4.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[3]->thumb_url;?>" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
                                         <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Government plans to test new primary school pupils and teachers..</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[3]->title;?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 07, 2017
+                                                <?php echo format_post_time($block_key_2[3]->time);?>
                                             </li>
                                             <li class="list-inline-item">/</li>
                                             <li class="list-inline-item">
                                                 <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[3]->comment_num;?>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1321,22 +1320,22 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="/public/unity_assets/img-temp/230x230/img3.jpg" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[4]->thumb_url;?>" alt="Image Description">
                                     </a>
 
                                     <div class="media-body">
                                         <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Things to do - see and purchase only stylish stuff this week</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[4]->title;?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 16, 2017
+                                                <?php echo format_post_time($block_key_2[4]->time);?>
                                             </li>
                                             <li class="list-inline-item">/</li>
                                             <li class="list-inline-item">
                                                 <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 31
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[4]->comment_num;?>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1776,7 +1775,7 @@
                     <!-- End Useful Links -->
 
                     <!-- Subscribe -->
-                    <div class="u-shadow-v25 u-bg-overlay g-bg-img-hero g-bg-white-gradient-opacity-v2--after g-py-40 g-px-20 g-mb-50" style="background-image: url(assets/img-temp/500x600/img1.jpg);">
+                    <div class="u-shadow-v25 u-bg-overlay g-bg-img-hero g-bg-white-gradient-opacity-v2--after g-py-40 g-px-20 g-mb-50" style="background-image: url(/public/unity_assets/img-temp/500x600/img1.jpg);">
                         <div class="u-bg-overlay__inner text-center">
                             <div class="g-mb-40">
                                 <h2 class="g-color-white">Vancouver, BC</h2>
@@ -1916,7 +1915,7 @@
                         <!-- Popular Videos -->
                         <div class="g-mb-50">
                             <article class="g-pos-rel">
-                                <figure class="u-shadow-v25 g-bg-img-hero g-min-height-400" style="background-image: url(assets/img-temp/500x650/img2.jpg);"></figure>
+                                <figure class="u-shadow-v25 g-bg-img-hero g-min-height-400" style="background-image: url(/public/unity_assets/img-temp/500x650/img2.jpg);"></figure>
 
                                 <span class="text-center g-pos-abs g-top-20 g-left-0">
                       <a class="btn u-btn-red text-uppercase rounded-0" href="#!">Discover</a>
