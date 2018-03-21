@@ -1199,10 +1199,218 @@
                             <div class="col-lg-7 g-mb-50 g-mb-0--lg">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
+                                        <img class="img-fluid w-100" src="<?php echo $block_key_13[0]->thumb_url;?>" alt="Image Description">
+
+                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
+                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!"><?php echo $block_key_13[0]->category_name;?></a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <h3 class="h4 g-mb-10">
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_13[0]->title;?></a>
+                                    </h3>
+
+                                    <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
+                                        <li class="list-inline-item">
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_13[0]->author_name;?></a>
+                                        </li>
+                                        <li class="list-inline-item">/</li>
+                                        <li class="list-inline-item">
+                                            <?php echo format_post_time($block_key_13[0]->time);?>
+                                        </li>
+                                        <li class="list-inline-item">/</li>
+                                        <li class="list-inline-item">
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_13[0]->comment_num;?>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_13[0]->excerpt;?></p>
+                                </article>
+                            </div>
+                            <!-- End Article (Leftside) -->
+
+                            <!-- Article (Rightside) -->
+                            <div class="col-lg-5">
+                                <!-- Article -->
+                                <article class="media">
+                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[1]->thumb_url;?>" alt="Image Description">
+                                    </a>
+
+                                    <div class="media-body">
+                                        <h3 class="h6">
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_13[1]->title;?></a>
+                                        </h3>
+
+                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                            <li class="list-inline-item">
+                                                <?php echo format_post_time($block_key_13[1]->time);?>
+                                            </li>
+                                            <li class="list-inline-item">/</li>
+                                            <li class="list-inline-item">
+                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_13[1]->comment_num;?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- End Article -->
+
+                                <hr class="g-brd-gray-light-v4 g-my-25">
+
+                                <!-- Article -->
+                                <article class="media">
+                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[2]->thumb_url;?>" alt="Image Description">
+                                    </a>
+
+                                    <div class="media-body">
+                                        <h3 class="h6">
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_13[2]->title;?></a>
+                                        </h3>
+
+                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                            <li class="list-inline-item">
+                                                <?php echo format_post_time($block_key_13[2]->time);?>
+                                            </li>
+                                            <li class="list-inline-item">/</li>
+                                            <li class="list-inline-item">
+                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_13[2]->comment_num;?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- End Article -->
+
+                                <hr class="g-brd-gray-light-v4 g-my-25">
+
+                                <!-- Article -->
+                                <article class="media">
+                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[3]->thumb_url;?>" alt="Image Description">
+                                    </a>
+
+                                    <div class="media-body">
+                                        <h3 class="h6">
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_13[3]->title;?></a>
+                                        </h3>
+
+                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                            <li class="list-inline-item">
+                                                <?php echo format_post_time($block_key_13[3]->time);?>
+                                            </li>
+                                            <li class="list-inline-item">/</li>
+                                            <li class="list-inline-item">
+                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_13[3]->comment_num;?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- End Article -->
+
+                                <hr class="g-brd-gray-light-v4 g-my-25">
+
+                                <!-- Article -->
+                                <article class="media">
+                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[4]->thumb_url;?>" alt="Image Description">
+                                    </a>
+
+                                    <div class="media-body">
+                                        <h3 class="h6">
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_13[4]->title;?></a>
+                                        </h3>
+
+                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                            <li class="list-inline-item">
+                                                <?php echo format_post_time($block_key_13[4]->time);?>
+                                            </li>
+                                            <li class="list-inline-item">/</li>
+                                            <li class="list-inline-item">
+                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
+                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_13[4]->comment_num;?>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <!-- End Article -->
+                            </div>
+                            <!-- End Article (Rightside) -->
+                        </div>
+                    </div>
+                    <!-- End Latest News -->
+
+                    <!-- Breaking News -->
+                    <div class="g-mb-60">
+                        <div class="u-heading-v3-1 g-mb-30">
+                            <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Breaking News</h2>
+                        </div>
+
+                        <div class="row g-mb-30">
+                            <!-- Article Image -->
+                            <div class="col-md-5">
+                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_11[0]->thumb_url;?>" alt="Image Description">
+
+                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
+                                        <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!"><?php echo $block_key_11[0]->category_name;?></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <!-- End Article Image -->
+
+                            <!-- Article Content -->
+                            <div class="col-md-7 align-self-center">
+                                <h3 class="h4 g-mb-15">
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_11[0]->title;?></a>
+                                </h3>
+
+                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
+                                    <li class="list-inline-item">
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_11[0]->author_name;?></a>
+                                    </li>
+                                    <li class="list-inline-item">/</li>
+                                    <li class="list-inline-item">
+                                        <?php echo format_post_time($block_key_11[0]->time);?>
+                                    </li>
+                                    <li class="list-inline-item">/</li>
+                                    <li class="list-inline-item">
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_11[0]->comment_num;?>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <p class="g-color-gray-dark-v2"><?php echo $block_key_11[0]->excerpt;?></p>
+                            </div>
+                            <!-- End Article Content -->
+                        </div>
+                    </div>
+                    <!-- End Breaking News -->
+
+                    <!-- Featured Articles -->
+                    <div class="g-mb-60">
+                        <div class="u-heading-v3-1 g-mb-30">
+                            <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Featured Articles</h2>
+                        </div>
+
+                        <div class="row g-mb-60">
+                            <div class="col-lg-6 g-mb-30 g-mb-0--lg">
+                                <!-- Article -->
+                                <article class="g-mb-30">
+                                    <figure class="u-shadow-v25 g-pos-rel g-mb-20">
                                         <img class="img-fluid w-100" src="<?php echo $block_key_2[0]->thumb_url;?>" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!"><?php echo $block_key_2[0]->category_name;?></a>
+                                            <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!"><?php echo $block_key_2[0]->category_name;?></a>
                                         </figcaption>
                                     </figure>
 
@@ -1228,225 +1436,15 @@
 
                                     <p class="g-color-gray-dark-v2"><?php echo $block_key_2[0]->excerpt;?></p>
                                 </article>
-                            </div>
-                            <!-- End Article (Leftside) -->
-
-                            <!-- Article (Rightside) -->
-                            <div class="col-lg-5">
-                                <!-- Article -->
-                                <article class="media">
-                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[1]->thumb_url;?>" alt="Image Description">
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[1]->title;?></a>
-                                        </h3>
-
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($block_key_2[1]->time);?>
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[1]->comment_num;?>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-
-                                <hr class="g-brd-gray-light-v4 g-my-25">
-
-                                <!-- Article -->
-                                <article class="media">
-                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[2]->thumb_url;?>" alt="Image Description">
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[2]->title;?></a>
-                                        </h3>
-
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($block_key_2[2]->time);?>
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[2]->comment_num;?>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-
-                                <hr class="g-brd-gray-light-v4 g-my-25">
-
-                                <!-- Article -->
-                                <article class="media">
-                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[3]->thumb_url;?>" alt="Image Description">
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[3]->title;?></a>
-                                        </h3>
-
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($block_key_2[3]->time);?>
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[3]->comment_num;?>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-
-                                <hr class="g-brd-gray-light-v4 g-my-25">
-
-                                <!-- Article -->
-                                <article class="media">
-                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_2[4]->thumb_url;?>" alt="Image Description">
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h3 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[4]->title;?></a>
-                                        </h3>
-
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($block_key_2[4]->time);?>
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[4]->comment_num;?>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-                            </div>
-                            <!-- End Article (Rightside) -->
-                        </div>
-                    </div>
-                    <!-- End Latest News -->
-
-                    <!-- Breaking News -->
-                    <div class="g-mb-60">
-                        <div class="u-heading-v3-1 g-mb-30">
-                            <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Breaking News</h2>
-                        </div>
-
-                        <div class="row g-mb-30">
-                            <!-- Article Image -->
-                            <div class="col-md-5">
-                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img3.jpg" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Internet</a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <!-- End Article Image -->
-
-                            <!-- Article Content -->
-                            <div class="col-md-7 align-self-center">
-                                <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">10 Best Tips for UX/UI Designers in 2017</a>
-                                </h3>
-
-                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        July 19, 2017
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 38
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <p class="g-color-gray-dark-v2">Pellentesque turpis lacus, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh. Sed ultrices velit vitae tortor posuere ultrices.</p>
-                                <a class="g-font-size-12" href="#!">Read More..</a>
-                            </div>
-                            <!-- End Article Content -->
-                        </div>
-                    </div>
-                    <!-- End Breaking News -->
-
-                    <!-- Featured Articles -->
-                    <div class="g-mb-60">
-                        <div class="u-heading-v3-1 g-mb-30">
-                            <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Featured Articles</h2>
-                        </div>
-
-                        <div class="row g-mb-60">
-                            <div class="col-lg-6 g-mb-30 g-mb-0--lg">
-                                <!-- Article -->
-                                <article class="g-mb-30">
-                                    <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img3.jpg" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!">Drons</a>
-                                        </figcaption>
-                                    </figure>
-
-                                    <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">We Love Education</a>
-                                    </h3>
-
-                                    <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                        <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
-                                        </li>
-                                        <li class="list-inline-item">/</li>
-                                        <li class="list-inline-item">
-                                            July 20, 2017
-                                        </li>
-                                        <li class="list-inline-item">/</li>
-                                        <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                    <p class="g-color-gray-dark-v2">How to run a ticket: Best 10 point approaches for people who stands. Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten.</p>
-                                    <a class="g-font-size-12" href="#!">Read More..</a>
-                                </article>
                                 <!-- End Article -->
 
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Evan Bartlett</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[1]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Cameron's silence on defence is shameful</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[1]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1456,10 +1454,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Jonathan Owen</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[2]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Architects plan to stop skyscrapers from blocking out sunlight</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[2]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1469,10 +1467,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">James Doe</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[3]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Cooltex is one of the best technology company of our age and future</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[3]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1482,10 +1480,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Albert Coolmen</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[4]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Some text goes here with plain English and much more other texts go there..</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[4]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1495,45 +1493,44 @@
                                 <!-- Article -->
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/500x450/img4.jpg" alt="Image Description">
+                                        <img class="img-fluid w-100" src="<?php echo $block_key_2[5]->thumb_url;?>" alt="Image Description">
 
                                         <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Office</a>
+                                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_2[5]->category_name;?></a>
                                         </figcaption>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Awesome New Year Event</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[5]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Kathy Reyes</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_2[5]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
-                                            July 25, 2017
+                                            <?php echo format_post_time($block_key_2[5]->time);?>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
                                             <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 18
+                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_2[5]->comment_num;?>
                                             </a>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2">Architects plan to stop skyscrapers from blocking out sunlight. Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten.</p>
-                                    <a class="g-font-size-12" href="#!">Read More..</a>
+                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_2[5]->excerpt;?></p>
                                 </article>
                                 <!-- End Article -->
 
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Susie Lau</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[6]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Fashion's first selfies: It was a 16th century German..</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[6]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1543,10 +1540,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">John Rentoul</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[7]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">How to run a ticket: Best 10 point approaches for people who stands..</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[7]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1556,10 +1553,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Evan Bartlett</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[8]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Skyscrapers from blocking cameron's silence on defence shameful</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[8]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1569,10 +1566,10 @@
                                 <!-- Article -->
                                 <article>
                       <span class="g-font-size-12">
-                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Jonathan Owen</a>
+                        <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_2[9]->author_name;?></a>
                       </span>
                                     <h3 class="h6">
-                                        <a class="g-color-gray-dark-v1" href="#!">Architects plan to stop skyscrapers from blocking out sunlight</a>
+                                        <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_2[9]->title;?></a>
                                     </h3>
                                 </article>
                                 <!-- End Article -->
@@ -1737,37 +1734,31 @@
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-12">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Wrapbootstrap Marketplace</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_4[0]->title;?></a>
                                 </h4>
                             </li>
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-12">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Google Adwords &amp; Adsense</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_4[1]->title;?></a>
                                 </h4>
                             </li>
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-12">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Web Design with UX/UI</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_4[2]->title;?></a>
                                 </h4>
                             </li>
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-12">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Digital Marketing</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_4[3]->title;?></a>
                                 </h4>
                             </li>
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-12">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Support Forum &amp; Community</a>
-                                </h4>
-                            </li>
-                            <li class="mb-0">
-                                <h4 class="h6">
-                                    <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Unify Template Pages</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_4[4]->title;?></a>
                                 </h4>
                             </li>
                         </ul>
@@ -1808,22 +1799,22 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img4.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[0]->thumb_url;?>" alt="Image Description">
                             </a>
 
                             <div class="media-body">
                                 <h3 class="h6">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Best dessert recipes for breakfast which will..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_3[0]->title;?></a>
                                 </h3>
 
                                 <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                     <li class="list-inline-item">
-                                        July 20, 2017
+                                        <?php echo format_post_time($block_key_3[0]->time);?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 18
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_3[0]->comment_num;?>
                                         </a>
                                     </li>
                                 </ul>
@@ -1834,22 +1825,22 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img5.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[1]->thumb_url;?>" alt="Image Description">
                             </a>
 
                             <div class="media-body">
                                 <h3 class="h6">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Stylish things to do, see and purchase..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_3[1]->title;?></a>
                                 </h3>
 
                                 <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                     <li class="list-inline-item">
-                                        July 16, 2017
+                                        <?php echo format_post_time($block_key_3[1]->time);?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 31
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_3[1]->comment_num;?>
                                         </a>
                                     </li>
                                 </ul>
@@ -1860,22 +1851,22 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img6.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[2]->thumb_url;?>" alt="Image Description">
                             </a>
 
                             <div class="media-body">
                                 <h3 class="h6">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Government plans to test new primary school..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_3[2]->title;?></a>
                                 </h3>
 
                                 <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                     <li class="list-inline-item">
-                                        July 07, 2017
+                                        <?php echo format_post_time($block_key_3[2]->time);?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_3[2]->comment_num;?>
                                         </a>
                                     </li>
                                 </ul>
@@ -1886,22 +1877,22 @@
                         <!-- Article -->
                         <article class="media">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="/public/unity_assets/img-temp/100x100/img7.jpg" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[3]->thumb_url;?>" alt="Image Description">
                             </a>
 
                             <div class="media-body">
                                 <h3 class="h6">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_3[3]->title;?></a>
                                 </h3>
 
                                 <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                     <li class="list-inline-item">
-                                        July 11, 2017
+                                        <?php echo format_post_time($block_key_3[3]->time);?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 46
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_3[3]->comment_num;?>
                                         </a>
                                     </li>
                                 </ul>
@@ -2002,16 +1993,16 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img5.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[0]->thumb_url;?>" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-deeporange text-uppercase rounded-0" href="#!">Photography</a>
+                            <a class="btn btn-xs u-btn-deeporange text-uppercase rounded-0" href="#!"><?php echo $block_key_5[0]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Be ready, fashion of the year is coming this year</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_5[0]->title;?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 26, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_5[0]->time);?>
                             </small>
                         </div>
                     </article>
@@ -2022,15 +2013,15 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img6.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[1]->thumb_url;?>" alt="Image Description">
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Dji 4</a>
+                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_5[1]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_5[1]->title;?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 18, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_5[0]->time);?>
                             </small>
                         </div>
                     </article>
@@ -2041,15 +2032,15 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="/public/unity_assets/img-temp/500x450/img7.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[2]->thumb_url;?>" alt="Image Description">
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!">Office</a>
+                            <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!"><?php echo $block_key_5[2]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Why your next glass of juice will cost you more</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_5[2]->title;?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 5, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_5[2]->time);?>
                             </small>
                         </div>
                     </article>

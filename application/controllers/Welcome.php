@@ -30,6 +30,18 @@ class Welcome extends MY_Controller {
 	    //get data of block 1
         $this->data[BLOCK_KEY_1] = $this->block_content_model->get_pagination(array('site_id' => 4), 0, 0);
         $this->data[BLOCK_KEY_2] = $this->block_content_model->get_pagination(array('site_id' => 1), 0, 0);
+        $this->data[BLOCK_KEY_3] = $this->block_content_model->get_pagination(array('site_id' => 6), 0, 0);
+        $this->data[BLOCK_KEY_4] = $this->block_content_model->get_pagination(array('site_id' => 7), 0, 0);
+        $this->data[BLOCK_KEY_5] = $this->block_content_model->get_pagination(array('site_id' => 18), 0, 0);
+        $this->data[BLOCK_KEY_6] = $this->block_content_model->get_pagination(array('site_id' => 9), 0, 0);
+        $this->data[BLOCK_KEY_7] = $this->block_content_model->get_pagination(array('site_id' => 10), 0, 0);
+        $this->data[BLOCK_KEY_8] = $this->block_content_model->get_pagination(array('site_id' => 11), 0, 0);
+        $this->data[BLOCK_KEY_9] = $this->block_content_model->get_pagination(array('site_id' => 12), 0, 0);
+        $this->data[BLOCK_KEY_10] = $this->block_content_model->get_pagination(array('site_id' => 13), 0, 0);
+        $this->data[BLOCK_KEY_11] = $this->block_content_model->get_pagination(array('site_id' => 14), 0, 0);
+        $this->data[BLOCK_KEY_12] = $this->block_content_model->get_pagination(array('site_id' => 15), 0, 0);
+        $this->data[BLOCK_KEY_13] = $this->block_content_model->get_pagination(array('site_id' => 16), 0, 0);
+
         //
         $this->load->view('front/webview/home', $this->data);
 	}

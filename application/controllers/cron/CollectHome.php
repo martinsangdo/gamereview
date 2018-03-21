@@ -22,12 +22,14 @@ Class CollectHome extends REST_Controller
         if (!$site_info){
             return;
         }
-        $post_list = $this->sendGet($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
+        $post_list = $this->sendGetWithoutHeader($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
+//        var_dump($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
+//        var_dump($post_list);
         //collect info of each post & upsert into DB
-        $post_len = count($post_list['data']);
+        $post_len = count($post_list);
         $final_data = array();
         for ($j=0; $j<$post_len; $j++){
-            $final_data[$j] = $this->get_meaningful_detail($site_info[0], $post_list['data'][$j]);
+            $final_data[$j] = $this->get_meaningful_detail($site_info[0], $post_list[$j]);
         }
         $this->block_content_model->delete_by_condition(array('site_id'=>$site_id));     //clear all to update latest info
         for ($j=0; $j<$post_len; $j++){
