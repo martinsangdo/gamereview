@@ -347,6 +347,37 @@ Class MY_Controller extends CI_Controller
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 // Will return the response, if false it print the response
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HEADER, 1);        //able to get header
+// Set the url
+        curl_setopt($ch, CURLOPT_URL,$url);
+// Execute
+        $result=curl_exec($ch);
+        //
+        $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+        $header = substr($result, 0, $header_size);
+        $body = substr($result, $header_size);
+        //parse header
+        $header_arr = $this->get_headers_from_curl_response($header);
+// Closing
+        curl_close($ch);
+
+// Will dump a beauty json :3
+        return array(
+            'data'=> json_decode($body, true),
+            'header' => $header_arr
+        );
+    }
+
+    /**
+     * send a GET request without getting Header
+     */
+    protected function sendGetWithoutHeader($url){
+        //  Initiate curl
+        $ch = curl_init();
+// Disable SSL verification
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+// Will return the response, if false it print the response
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 // Set the url
         curl_setopt($ch, CURLOPT_URL,$url);
 // Execute

@@ -1060,37 +1060,25 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 g-bg-cover g-bg-white-gradient-opacity-v1--after">
-                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $site1[0]['thumb_url']?>" alt="Image Description">
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $block_key_1[0]->thumb_url;?>" alt="Image Description">
                         </figure>
 
-                        <span class="g-hidden-xs-down u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white rounded-circle g-pos-abs g-top-30 g-right-30">
-                  <i class="icon-camera"></i>
-                </span>
-
                         <span class="g-hidden-xs-down g-pos-abs g-top-30 g-left-30">
-                  <a class="btn btn-xs u-btn-darkpurple text-uppercase rounded-0" href="#!">Painting</a>
+                  <a class="btn btn-xs u-btn-darkpurple text-uppercase rounded-0" href="#!"><?php echo $block_key_1[0]->category_name;?></a>
                 </span>
 
                         <div class="g-pos-abs g-bottom-30 g-left-30 g-right-30">
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo $site1[0]['date']; ?>
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[0]->time); ?>
                             </small>
 
                             <h3 class="h4 g-my-10">
-                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $site1[0]['title']['rendered']; ?></a>
+                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $block_key_1[0]->title; ?></a>
                             </h3>
 
                             <ul class="g-hidden-xs-down u-list-inline g-font-size-12 g-color-white">
                                 <li class="list-inline-item">
-                                    <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i> 264
-                                </li>
-                                <li class="list-inline-item">/</li>
-                                <li class="list-inline-item">
-                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 g-mr-2"></i> 52
-                                </li>
-                                <li class="list-inline-item">/</li>
-                                <li class="list-inline-item">
-                                    <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i> 26
+                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 g-mr-2"></i> <?php echo $block_key_1[0]->comment_num; ?>
                                 </li>
                             </ul>
                         </div>
@@ -1102,37 +1090,25 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 g-bg-cover g-bg-white-gradient-opacity-v1--after">
-                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $site1[1]['thumb_url']?>" alt="Image Description">
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="<?php echo $block_key_1[1]->thumb_url;?>" alt="Image Description">
                         </figure>
 
-                        <span class="g-hidden-xs-down u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white rounded-circle g-pos-abs g-top-30 g-right-30">
-                  <i class="fa fa-play g-left-2"></i>
-                </span>
-
                         <span class="g-hidden-xs-down g-pos-abs g-top-30 g-left-30">
-                  <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!">Startup</a>
+                  <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!"><?php echo $block_key_1[1]->category_name;?></a>
                 </span>
 
                         <div class="g-pos-abs g-bottom-30 g-left-30 g-right-30">
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 22, 2016
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[1]->time); ?>
                             </small>
 
                             <h3 class="h4 g-my-10">
-                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $site1[1]['title']['rendered']; ?></a>
+                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $block_key_1[1]->title; ?></a>
                             </h3>
 
                             <ul class="g-hidden-xs-down u-list-inline g-font-size-12 g-color-white">
                                 <li class="list-inline-item">
-                                    <i class="icon-eye g-pos-rel g-top-1 g-mr-2"></i> 127
-                                </li>
-                                <li class="list-inline-item">/</li>
-                                <li class="list-inline-item">
-                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 g-mr-2"></i> 152
-                                </li>
-                                <li class="list-inline-item">/</li>
-                                <li class="list-inline-item">
-                                    <i class="icon-share g-pos-rel g-top-1 g-mr-2"></i> 32
+                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 g-mr-2"></i> <?php echo $block_key_1[1]->comment_num; ?>
                                 </li>
                             </ul>
                         </div>
@@ -1144,16 +1120,16 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo $block_key_1[2]->thumb_url;?>" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Spa</a>
+                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_1[2]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Be ready, fashion of the year is coming this year</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_1[2]->title; ?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 26, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[2]->time); ?>
                             </small>
                         </div>
                     </article>
@@ -1164,16 +1140,16 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img1.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo $block_key_1[3]->thumb_url;?>" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Fashion</a>
+                            <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!"><?php echo $block_key_1[3]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Must be visited places in the USA - Florida Beaches</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_1[3]->title;; ?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 18, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[3]->time); ?>
                             </small>
                         </div>
                     </article>
@@ -1184,16 +1160,16 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img17.jpg" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid w-100" src="<?php echo $block_key_1[4]->thumb_url;?>" alt="Image Description">
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-primary text-uppercase rounded-0" href="#!">Tech</a>
+                            <a class="btn btn-xs u-btn-primary text-uppercase rounded-0" href="#!"><?php echo $block_key_1[4]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
-                                <a class="g-color-white" href="#!">Why your next glass of juice will cost you more</a>
+                                <a class="g-color-white" href="#!"><?php echo $block_key_1[4]->title;; ?></a>
                             </h3>
                             <small class="g-color-white">
-                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> July 5, 2017
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[4]->time); ?>
                             </small>
                         </div>
                     </article>

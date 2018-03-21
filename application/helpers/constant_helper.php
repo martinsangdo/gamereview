@@ -17,3 +17,5 @@ define('CAPTCHA_EXP_DURATION', 300);    //5 minutes
 define('CAPTCHA_FONT_SIZE', 80);
 
 define('UNKNOWN_ERROR', 'unknown_error');
+//block key, display in Home
+define('BLOCK_KEY_1', 'block_key_1');
