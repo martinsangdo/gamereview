@@ -28,7 +28,7 @@ class Welcome extends MY_Controller {
 	 */
 	public function index(){
 	    //get data of block 1
-        $where = array('_key' => BLOCK_KEY_1);
+        $where = array('site_id' => 4);
         $this->data[BLOCK_KEY_1] = $this->block_content_model->get_pagination($where, 0, 0);
 //        var_dump(($this->data[BLOCK_KEY_1]));
         //
