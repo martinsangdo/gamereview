@@ -17,7 +17,7 @@ Class CollectHome extends REST_Controller
         }
         $site_id = $this->uri->segment(2);
         //get all sites info
-        $where = array('status'=> 1, '_id' => $site_id);
+        $where = array('status'=> 1, '_id' => $site_id, 'type'=> 'wp');
         $site_info = $this->site_model->get_pagination($where, 0, 1);
         if (!$site_info){
             return;
@@ -74,8 +74,6 @@ Class CollectHome extends REST_Controller
         if (isset($comment_list['header']['X-WP-Total'])){
             $data['comment_num'] = count($comment_list['header']['X-WP-Total']);
         }
-        //todo: get youtube_url
-
         return $data;
     }
 

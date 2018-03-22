@@ -58,6 +58,7 @@ class Welcome extends MY_Controller
         $this->data['video_list_1'] = $vid_list;
         //
         $this->data['rss_feed'] = $this->parse_rss();
+
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->load->view('front/webview/home', $this->data);
     }
@@ -78,9 +79,10 @@ class Welcome extends MY_Controller
         $rss->cache_time = 3600; // one hour
 
 // load some RSS file
-        if ($rs = $rss->get('http://n4g.com/rss/news?channel=mobile&sort=latest')) {
+        if ($rs = $rss->get('https://www.engadget.com/rss.xml')) {
 //        if ($rs = $rss->get('https://www.gamespot.com/feeds/news/')) {
 // here we can work with RSS fields
+            var_dump($rs['items']);
             return $rs['items'];
         } else {
             return null;
