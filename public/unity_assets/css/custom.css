@@ -1,1 +1,14 @@
 /* Add here all your css styles (customizations) */
+/* homepage */
+.home1-center-cropped {
+    width: 554px;
+    height: 290px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.home2-center-cropped {
+    width: 368px;
+    height: 184px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
