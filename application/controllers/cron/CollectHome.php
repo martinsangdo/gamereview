@@ -31,10 +31,20 @@ Class CollectHome extends REST_Controller
         for ($j=0; $j<$post_len; $j++){
             $final_data[$j] = $this->get_meaningful_detail($site_info[0], $post_list[$j]);
         }
-        $this->block_content_model->delete_by_condition(array('site_id'=>$site_id));     //clear all to update latest info
+//        $this->block_content_model->delete_by_condition(array('site_id'=>$site_id));     //clear all to update latest info
         for ($j=0; $j<$post_len; $j++){
-            //insert new data into database
-            $this->block_content_model->create($final_data[$j]);
+            //check if the post existed in db
+            $exist_cond = array(
+                'site_id'=>$site_info[0]->_id,
+                'original_post_id'=>$final_data[$j]['original_post_id']
+            );
+            if ($this->block_content_model->get_total($exist_cond) > 0){
+                //update its content
+                $this->block_content_model->update_by_condition($exist_cond, $final_data[$j]);
+            } else {
+                //insert new one
+                $this->block_content_model->create($final_data[$j]);
+            }
         }
         echo 'finished';
     }
