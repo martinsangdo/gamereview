@@ -43,3 +43,6 @@ define('BLOCK_KEY_22', 'block_key_22');
 define('BLOCK_KEY_23', 'block_key_23');
 define('BLOCK_KEY_24', 'block_key_24');
 define('BLOCK_KEY_SIDE_PREFIX', 'block_key_');
+//site type in DB
+define('WORDPRESS_TYPE', 'wp');
+define('RSS_TYPE', 'rss');

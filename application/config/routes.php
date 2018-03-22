@@ -53,5 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //
-$route['collect_home/(:any)'] = 'cron/collecthome/$1';
+$route['cron/(:any)'] = 'cron/collecthome/$1';
+$route['cron/(:any)/(:any)'] = 'cron/collecthome/$1/$2';
+
 $route['test/(:any)'] = 'cron/collecthome/$1';

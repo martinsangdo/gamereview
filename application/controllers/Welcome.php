@@ -57,7 +57,7 @@ class Welcome extends MY_Controller
         }
         $this->data['video_list_1'] = $vid_list;
         //
-        $this->data['rss_feed'] = $this->parse_rss();
+//        $this->data['rss_feed'] = $this->parse_rss();
 
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->load->view('front/webview/home', $this->data);
@@ -69,7 +69,6 @@ class Welcome extends MY_Controller
      * params:
      */
     //
-
 
     //test data to get from link
     public function test_link()

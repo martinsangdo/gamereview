@@ -10,14 +10,14 @@ Class CollectHome extends REST_Controller
         $this->load->model('site_model');
         $this->load->model('block_content_model');
     }
-    //collect all content from another site
+    //collect all content from another site, called from Crontab
     public function index_get(){
         if ($this->uri->segment(2)==null){
             return;
         }
         $site_id = $this->uri->segment(2);
         //get all sites info
-        $where = array('status'=> 1, '_id' => $site_id, 'type'=> 'wp');
+        $where = array('status'=> 1, '_id' => $site_id, 'type'=> 'wp');     //default is Wordpress site
         $site_info = $this->site_model->get_pagination($where, 0, 1);
         if (!$site_info){
             return;
@@ -87,7 +87,69 @@ Class CollectHome extends REST_Controller
         }
         return $data;
     }
-
+    //get data from RSS url
+    public function collect_data_from_site_id_get(){
+        if ($this->uri->segment(3)==null){
+            echo 'empty site id';
+            return;
+        }
+        $site_id = $this->uri->segment(3);
+        //get all sites info
+        $where = array('status'=> 1, '_id' => $site_id);
+        $site_info = $this->site_model->get_pagination($where, 0, 1);
+        if (!$site_info){
+            echo 'empty site info';
+            return;
+        }
+        $final_data = array();
+        $post_len = 0;
+        if ($site_info[0]->type == WORDPRESS_TYPE){
+            //this is using WP API
+            $post_list = $this->sendGetWithoutHeader($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
+            $post_len = count($post_list);
+            for ($j=0; $j<$post_len; $j++){
+                $final_data[$j] = $this->get_meaningful_detail($site_info[0], $post_list[$j]);
+            }
+        } else if ($site_info[0]->type == RSS_TYPE){
+            //this is RSS site
+            $rss_items = $this->parse_rss($site_info[0]->post_uri);
+            $this->load->library('OpenGraph.php');
+            $post_len = count($rss_items);
+            for ($j=0; $j<$post_len; $j++){
+                $graph = OpenGraph::fetch($rss_items[$j]['link']);
+                $final_data[$j] = array(
+                    'site_id'=>$site_info[0]->_id,
+                    'title'=>$rss_items[$j]['title'],
+                    'thumb_url'=>$graph->image,
+                    'slug'=>sanitize($rss_items[$j]['title']),
+                    'time'=>$rss_items[$j]['pubDate'],
+                    'author_name'=>'',
+                    'excerpt'=>$rss_items[$j]['description'],
+                    'category_name'=>'',      //should be first category
+                    'category_slug'=>'',
+                    'comment_num'=>0,
+                    'youtube_url'=>'',
+                    'original_post_id'=>$rss_items[$j]['guid'],
+                    'original_url'=>$rss_items[$j]['link']
+                );
+            }
+        }
+        for ($j=0; $j<$post_len; $j++){
+            //check if the post existed in db
+            $exist_cond = array(
+                'site_id'=>$site_info[0]->_id,
+                'original_post_id'=>$final_data[$j]['original_post_id']
+            );
+            if ($this->block_content_model->get_total($exist_cond) > 0){
+                //update its content
+                $this->block_content_model->update_by_condition($exist_cond, $final_data[$j]);
+            } else {
+                //insert new one
+                $this->block_content_model->create($final_data[$j]);
+            }
+        }
+        echo 'finished';
+    }
     //get thumbnail url of a blog from WP response
     private function get_thumbnail_url($site_info, $raw_detail){
         if (isset($raw_detail['_links']['wp:featuredmedia'][0]) &&
@@ -107,7 +169,7 @@ Class CollectHome extends REST_Controller
                 return $media_info['source_url'].$site_info->thumb_url_param;
             }
         } else {
-            //must use another way to get thumbnail image
+            //todo: must use another way to get thumbnail image
 
         }
         return '';
