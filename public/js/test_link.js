@@ -5,9 +5,9 @@
 var submitting = false;
 
 function begin_get_data(){
-    if (submitting){
-        return;
-    }
+    // if (submitting){
+    //     return;
+    // }
 
     var main_url = $.trim($('#txt_main_url').val());
     var secondary_url = $.trim($('#txt_secondary_url').val());

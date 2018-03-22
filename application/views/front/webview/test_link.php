@@ -11,7 +11,7 @@
     <table width="100%">
         <tr>
             <td>
-                <input type="text" id="txt_main_url" style="width:300px;background-color: #0ae4ff"/>
+                <input type="text" id="txt_main_url" value="https://www.gamespot.com/feeds/news/" style="width:300px;background-color: #0ae4ff"/>
             </td>
             <td>
                 <input type="text" id="txt_secondary_url" style="width:300px;background-color:#FFE495" value="/wp-json/wp/v2/posts?per_page=3"/>
@@ -19,7 +19,7 @@
             <td>
                 <select id="sel_type">
                     <option value="wp">Wordpress</option>
-                    <option value="rss">RSS</option>
+                    <option value="rss" selected>RSS</option>
                     <option value="atom">Atom</option>
                 </select>
             </td>

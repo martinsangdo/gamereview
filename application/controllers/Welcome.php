@@ -68,42 +68,8 @@ class Welcome extends MY_Controller
      * method:
      * params:
      */
-    public function parse_rss()
-    {
-        $this->load->library('lastRSS.php');
-
-// create lastRSS object
-        $rss = new lastRSS;
-
-// setup transparent cache
-        $rss->cache_dir = './cache';
-        $rss->cache_time = 3600; // one hour
-
-// load some RSS file
-        if ($rs = $rss->get('https://www.engadget.com/rss.xml')) {
-//        if ($rs = $rss->get('https://www.gamespot.com/feeds/news/')) {
-// here we can work with RSS fields
-//            var_dump($rs['items']);
-            return $rs['items'];
-        } else {
-            return null;
-        }
-    }
-
     //
-    public function get_open_graph()
-    {
-        $this->load->library('OpenGraph.php');
 
-        $graph = OpenGraph::fetch('n4g.com/news/2155297/tim-sweeney-wants-unreal-to-power-the-cross-platform-revolution');
-        var_dump($graph->keys());
-        var_dump($graph->image);
-
-//        foreach ($graph as $key => $value) {
-//            echo "$key => $value";
-//        }
-
-    }
 
     //test data to get from link
     public function test_link()

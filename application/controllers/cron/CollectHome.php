@@ -49,7 +49,7 @@ Class CollectHome extends REST_Controller
         echo 'finished';
     }
     //convert from post info of site into our own format
-    function get_meaningful_detail($site_info, $raw_detail){
+    private function get_meaningful_detail($site_info, $raw_detail){
         $data = array(
           'site_id' => $site_info->_id,
           'title'=>$raw_detail['title']['rendered'],
@@ -89,7 +89,7 @@ Class CollectHome extends REST_Controller
     }
 
     //get thumbnail url of a blog from WP response
-    function get_thumbnail_url($site_info, $raw_detail){
+    private function get_thumbnail_url($site_info, $raw_detail){
         if (isset($raw_detail['_links']['wp:featuredmedia'][0]) &&
             isset($raw_detail['_links']['wp:featuredmedia'][0]['href'])){
             //there is one attached media
@@ -118,12 +118,14 @@ Class CollectHome extends REST_Controller
         $domain = $this->input->post('domain');
         $url = $this->input->post('url');
         $type = $this->input->post('type');
+        $final_data = array();
+
         if ($type == 'wp'){
             //Wordpress
             $start=time();
             $post_list = $this->sendGetWithoutHeader($url);
             $post_len = count($post_list);
-            $final_data = array();
+
             $site_info =  (object) array(
                 '_id'=> 1,
                 'api_uri'=> $domain.'/wp-json/wp/v2/'
@@ -134,7 +136,55 @@ Class CollectHome extends REST_Controller
             echo $this->responseJsonData(array(
                 'data' => $final_data
             ));
+        } if ($type == 'rss') {
+            //RSS feed
+            $rss_items = $this->parse_rss($url);
+//            var_dump($rss_items)
+            $this->load->library('OpenGraph.php');
+            $post_len = count($rss_items);
+            for ($j=0; $j<$post_len; $j++){
+                $graph = OpenGraph::fetch($rss_items[$j]['link']);
+                $final_data[$j] = array(
+                    'title'=>$rss_items[$j]['title'],
+                    'thumb_url'=>$graph->image,
+                    'slug'=>'',
+                    'time'=>$rss_items[$j]['pubDate'],
+                    'author_name'=>'',
+                    'excerpt'=>$rss_items[$j]['description'],
+                    'category_name'=>'',      //should be first category
+                    'category_slug'=>'',
+                    'comment_num'=>0,
+                    'youtube_url'=>'',
+                    'original_post_id'=>$rss_items[$j]['guid'],
+                    'original_url'=>$rss_items[$j]['link']
+                );
+            }
+            echo $this->responseJsonData(array(
+                'data' => $final_data
+            ));
         }
-
+    }
+    //
+    private function parse_rss($link_rss){
+        $this->load->library('lastRSS.php');
+// create lastRSS object
+        $rss = new lastRSS;
+// setup transparent cache
+        $rss->cache_dir = './cache';
+        $rss->cache_time = 3600; // one hour
+// load some RSS file
+        if ($rs = $rss->get($link_rss)) {
+// here we can work with RSS fields
+//            var_dump($rs);
+            return $rs['items'];
+        } else {
+            echo 'error parse rss';
+            return null;
+        }
+    }
+    //get meta data og:image
+    private function get_open_graph($link){
+        $graph = OpenGraph::fetch($link);
+        return $graph->image;
     }
 }
