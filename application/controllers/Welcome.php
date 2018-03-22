@@ -82,7 +82,7 @@ class Welcome extends MY_Controller
         if ($rs = $rss->get('https://www.engadget.com/rss.xml')) {
 //        if ($rs = $rss->get('https://www.gamespot.com/feeds/news/')) {
 // here we can work with RSS fields
-            var_dump($rs['items']);
+//            var_dump($rs['items']);
             return $rs['items'];
         } else {
             return null;

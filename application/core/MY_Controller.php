@@ -54,13 +54,6 @@ Class MY_Controller extends CI_Controller
         }
 
         //models
-        $this->load->model('user_model');
-        $this->load->model('account_model');
-        $this->load->model('account_info_model');
-        $this->load->model('account_jwt_model');
-        $this->load->model('push_token_model');
-        $this->load->model('account_language_setting_model');
-
         $this->load->helper('url');
         $this->load->helper('file');
     }
