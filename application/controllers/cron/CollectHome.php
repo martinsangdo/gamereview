@@ -122,7 +122,7 @@ Class CollectHome extends REST_Controller
                     'title'=>$rss_items[$j]['title'],
                     'thumb_url'=>$graph->image,
                     'slug'=>sanitize($rss_items[$j]['title']),
-                    'time'=>$rss_items[$j]['pubDate'],
+                    'time'=>date('Y-m-d h:m:s', strtotime($rss_items[$j]['pubDate'])),
                     'author_name'=>'',
                     'excerpt'=>$rss_items[$j]['description'],
                     'category_name'=>'',      //should be first category
