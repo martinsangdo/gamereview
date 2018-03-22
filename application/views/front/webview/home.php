@@ -2597,7 +2597,7 @@
                       <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Jonathan Owen</a>
                     </span>
                                 <h3 class="h6">
-                                    <a class="g-color-gray-dark-v1" href="#!">Architects plan to stop skyscrapers from blocking out sunlight</a>
+                                    <a class="g-color-gray-dark-v1" href="#!"><?php echo $rss_feed[0]['title']; ?></a>
                                 </h3>
                             </article>
                             <!-- End Article -->

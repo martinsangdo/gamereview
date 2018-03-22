@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends MY_Controller {
+
+class Welcome extends MY_Controller
+{
 
     function __construct()
     {
@@ -11,23 +13,24 @@ class Welcome extends MY_Controller {
         $this->load->model('block_content_model');
     }
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index(){
-	    //get data of block 1
+    /**
+     * Index Page for this controller.
+     *
+     * Maps to the following URL
+     *        http://example.com/index.php/welcome
+     *    - or -
+     *        http://example.com/index.php/welcome/index
+     *    - or -
+     * Since this controller is set as the default controller in
+     * config/routes.php, it's displayed at http://example.com/
+     *
+     * So any other public methods not prefixed with an underscore will
+     * map to /index.php/welcome/<method_name>
+     * @see https://codeigniter.com/user_guide/general/urls.html
+     */
+    public function index()
+    {
+        //get data of block 1
         $this->data[BLOCK_KEY_1] = $this->block_content_model->get_pagination(array('site_id' => 4), 0, 0);
         $this->data[BLOCK_KEY_2] = $this->block_content_model->get_pagination(array('site_id' => 1), 0, 0);
         $this->data[BLOCK_KEY_3] = $this->block_content_model->get_pagination(array('site_id' => 6), 0, 0);
@@ -45,7 +48,7 @@ class Welcome extends MY_Controller {
         $yt_videos = $this->sendGetWithoutHeader('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&maxResults=8&playlistId=UUXa_bzvv7Oo1glaW9FldDhQ&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE');
         $vid_len = count($yt_videos['items']);
         $vid_list = array();
-        for ($i=0; $i<$vid_len; $i++){
+        for ($i = 0; $i < $vid_len; $i++) {
             $vid_list[$i] = array(
                 'thumb' => $yt_videos['items'][$i]['snippet']['thumbnails']['medium']['url'],
                 'title' => $yt_videos['items'][$i]['snippet']['title'],
@@ -53,19 +56,48 @@ class Welcome extends MY_Controller {
             );
         }
         $this->data['video_list_1'] = $vid_list;
+        //
+        $this->data['rss_feed'] = $this->parse_rss();
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->load->view('front/webview/home', $this->data);
-	}
+    }
 
     /*
      * function test
      * method:
      * params:
      */
-    public function test()
-    {
-        pre(123);
-        $this->response([], SUCCESS_CODE);
+    public function parse_rss(){
+        $this->load->library('lastRSS.php');
+
+// create lastRSS object
+        $rss = new lastRSS;
+
+// setup transparent cache
+        $rss->cache_dir = './cache';
+        $rss->cache_time = 3600; // one hour
+
+// load some RSS file
+        if ($rs = $rss->get('http://n4g.com/rss/news?channel=mobile&sort=latest')) {
+//        if ($rs = $rss->get('https://www.gamespot.com/feeds/news/')) {
+// here we can work with RSS fields
+            return $rs['items'];
+        } else {
+            return null;
+        }
     }
 
+    //
+    public function get_open_graph(){
+        $this->load->library('OpenGraph.php');
+
+        $graph = OpenGraph::fetch('n4g.com/news/2155297/tim-sweeney-wants-unreal-to-power-the-cross-platform-revolution');
+        var_dump($graph->keys());
+        var_dump($graph->image);
+
+//        foreach ($graph as $key => $value) {
+//            echo "$key => $value";
+//        }
+
+    }
 }
