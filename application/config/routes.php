@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //
 $route['collect_home/(:any)'] = 'cron/collecthome/$1';
-$route['test/(:any)'] = 'welcome/$1';
+$route['test/(:any)'] = 'cron/collecthome/$1';

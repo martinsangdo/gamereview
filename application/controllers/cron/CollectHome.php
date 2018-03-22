@@ -52,7 +52,8 @@ Class CollectHome extends REST_Controller
           'category_slug'=>'',
           'comment_num'=>0,
           'youtube_url'=>'',
-          'original_post_id'=>$raw_detail['id']
+          'original_post_id'=>$raw_detail['id'],
+          'original_url'=>$raw_detail['link']
         );
         //get thumbnail url
         $data['thumb_url'] = $this->get_thumbnail_url($site_info, $raw_detail);
@@ -100,5 +101,30 @@ Class CollectHome extends REST_Controller
 
         }
         return '';
+    }
+    //
+    public function test_link_post()
+    {
+        $domain = $this->input->post('domain');
+        $url = $this->input->post('url');
+        $type = $this->input->post('type');
+        if ($type == 'wp'){
+            //Wordpress
+            $start=time();
+            $post_list = $this->sendGetWithoutHeader($url);
+            $post_len = count($post_list);
+            $final_data = array();
+            $site_info =  (object) array(
+                '_id'=> 1,
+                'api_uri'=> $domain.'/wp-json/wp/v2/'
+            );
+            for ($j=0; $j<$post_len; $j++){
+                $final_data[$j] = $this->get_meaningful_detail($site_info, $post_list[$j]);
+            }
+            echo $this->responseJsonData(array(
+                'data' => $final_data
+            ));
+        }
+
     }
 }

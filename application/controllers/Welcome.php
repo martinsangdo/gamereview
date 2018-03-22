@@ -68,7 +68,8 @@ class Welcome extends MY_Controller
      * method:
      * params:
      */
-    public function parse_rss(){
+    public function parse_rss()
+    {
         $this->load->library('lastRSS.php');
 
 // create lastRSS object
@@ -90,7 +91,8 @@ class Welcome extends MY_Controller
     }
 
     //
-    public function get_open_graph(){
+    public function get_open_graph()
+    {
         $this->load->library('OpenGraph.php');
 
         $graph = OpenGraph::fetch('n4g.com/news/2155297/tim-sweeney-wants-unreal-to-power-the-cross-platform-revolution');
@@ -102,11 +104,15 @@ class Welcome extends MY_Controller
 //        }
 
     }
+
     //test data to get from link
-    public function test_link(){
+    public function test_link()
+    {
 
         $this->load->view('front/block/header_webview', $this->data);
         $this->load->view('front/webview/test_link', $this->data);
         $this->load->view('front/block/footer_webview', $this->data);
     }
+
+
 }
