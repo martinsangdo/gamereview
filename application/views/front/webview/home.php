@@ -2413,7 +2413,7 @@
                                     <h4 class="g-font-size-16 g-color-gray-dark-v1">
                                         <small class="g-color-gray-dark-v4"><?php echo $block_key_7[2]->author_name; ?></small>
                                     </h4>
-                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[2]->title ?></a>
+                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[2]->title; ?></a>
                                 </div>
                             </article>
                         </div>
@@ -2468,23 +2468,12 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img10.jpg">
-
-                                <figcaption class="g-absolute-centered">
-                                    <a class="js-fancybox d-block" href="javascript:;"
-                                       data-src="//vimeo.com/167434033"
-                                       data-speed="350"
-                                       data-caption="Single Image">
-                        <span class="u-icon-v2 u-icon-size--xs g-brd-white g-color-white g-color-primary--hover g-bg-white--hover rounded-circle g-cursor-pointer">
-                          <i class="g-pos-rel g-left-2 fa fa-play"></i>
-                        </span>
-                                    </a>
-                                </figcaption>
+                                <img class="img-fluid" src="<?php echo $block_key_10[0]->thumb_url; ?>"/>
                             </figure>
 
                             <div class="media-body">
-                                <a class="d-block g-color-bluegray g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Architecture</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Office III builds simple open-air center on Island</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[0]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[0]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -2494,12 +2483,11 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img5.jpg">
+                                <img class="img-fluid" src="<?php echo $block_key_10[1]->thumb_url; ?>"/>
                             </figure>
-
                             <div class="media-body">
-                                <a class="d-block g-color-lightred g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Travel</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Revealed: World's 10 most beautiful cities</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[1]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[1]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -2509,23 +2497,11 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img6.jpg">
-
-                                <figcaption class="g-absolute-centered">
-                                    <a class="js-fancybox d-block" href="javascript:;"
-                                       data-src="//vimeo.com/167434033"
-                                       data-speed="350"
-                                       data-caption="Single Image">
-                        <span class="u-icon-v2 u-icon-size--xs g-brd-white g-color-white g-color-primary--hover g-bg-white--hover rounded-circle g-cursor-pointer">
-                          <i class="g-pos-rel g-left-2 fa fa-play"></i>
-                        </span>
-                                    </a>
-                                </figcaption>
+                                <img class="img-fluid" src="<?php echo $block_key_10[2]->thumb_url; ?>"/>
                             </figure>
-
                             <div class="media-body">
-                                <a class="d-block g-color-teal g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Hi-Tech</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Borrowing goes hi-tech at library</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[2]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[2]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -2535,12 +2511,11 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img7.jpg">
+                                <img class="img-fluid" src="<?php echo $block_key_10[3]->thumb_url; ?>"/>
                             </figure>
-
                             <div class="media-body">
-                                <a class="d-block g-color-cyan g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Sport</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Adidas originals unveils the new tubular dawn</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[3]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[3]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -2550,12 +2525,11 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img8.jpg">
+                                <img class="img-fluid" src="<?php echo $block_key_10[4]->thumb_url; ?>"/>
                             </figure>
-
                             <div class="media-body">
-                                <a class="d-block g-color-purple g-color-purple--hover g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Start-Up</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Apple video explain how iOS work on MacBook</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[4]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[4]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -2565,12 +2539,11 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img9.jpg">
+                                <img class="img-fluid" src="<?php echo $block_key_10[5]->thumb_url; ?>"/>
                             </figure>
-
                             <div class="media-body">
-                                <a class="d-block g-color-brown g-font-weight-700 g-font-size-12 text-uppercase mb-1" href="#!">Fashion</a>
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Olivia Palermo reveals zara strategy</a></h4>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[5]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[5]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
