@@ -50,6 +50,7 @@ class Welcome extends MY_Controller
         $vid_list = array();
         for ($i = 0; $i < $vid_len; $i++) {
             $vid_list[$i] = array(
+                'original_id'=>'dAULt5cQXKU',
                 'thumb' => $yt_videos['items'][$i]['snippet']['thumbnails']['medium']['url'],
                 'title' => $yt_videos['items'][$i]['snippet']['title'],
                 'embed' => '<iframe width="255" height="172" src="https://www.youtube.com/embed/dAULt5cQXKU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',

@@ -5,38 +5,41 @@
     <title>Game review collections</title>
 
     <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico"/>
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C300%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C300%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik"/>
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="/public/unity_assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/bootstrap/bootstrap.min.css"/>
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/animate.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line/css/simple-line-icons.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line-pro/style.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-hs/style.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/animate.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/custombox/custombox.min.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/hamburgers/hamburgers.min.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="/public/unity_assets/vendor/fancybox/jquery.fancybox.css"/>
 
     <!-- CSS Unify Theme -->
-    <link rel="stylesheet" href="/public/unity_assets/css/styles.bm-classic.css">
+    <link rel="stylesheet" href="/public/unity_assets/css/styles.bm-classic.css"/>
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
+    <link rel="stylesheet" href="/public/unity_assets/css/custom.css"/>
+    <script src="/public/js/home.js"></script>
+
 </head>
 
 <body>
@@ -1468,11 +1471,16 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <?php echo $video_list_1[0]['embed']; ?>
+                                    <img class="img-fluid w-100" src="<?php echo $video_list_1[0]['thumb']; ?>" alt="Image Description">
 
                                     <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <a class="btn btn-xs u-btn-blue text-uppercase rounded-0" href="#!">Spa</a>
                                     </figcaption>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_list_1[0]['original_id']; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
 
                                 </figure>
 
@@ -3311,7 +3319,14 @@
 </main>
 
 <div class="u-outer-spaces-helper"></div>
-
+<!-- Youtube video modal window -->
+<div id="yt_modal" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+    <button type="button" class="close" onclick="Custombox.modal.close();">
+        <i class="hs-icon hs-icon-close"></i>
+    </button>
+    <div id="main_video_container"></div>
+</div>
+<!-- End Youtube video modal window -->
 <!-- JS Global Compulsory -->
 <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
 <script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
@@ -3326,6 +3341,7 @@
 <script src="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
 <script src="/public/unity_assets/vendor/slick-carousel/slick/slick.js"></script>
 <script src="/public/unity_assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="/public/unity_assets/vendor/custombox/custombox.min.js"></script>
 
 <!-- JS Unify -->
 <script src="/public/unity_assets/js/hs.core.js"></script>
@@ -3338,6 +3354,7 @@
 <script src="/public/unity_assets/js/components/hs.carousel.js"></script>
 <script src="/public/unity_assets/js/components/hs.popup.js"></script>
 <script src="/public/unity_assets/js/components/hs.go-to.js"></script>
+<script src="/public/unity_assets/js/components/hs.modal-window.js"></script>
 
 <!-- JS Customization -->
 <script src="/public/unity_assets/js/custom.js"></script>
@@ -3373,6 +3390,8 @@
 
         // initialization of popups
         $.HSCore.components.HSPopup.init('.js-fancybox');
+        // initialization of popups
+        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
     });
 
     $(window).on('load', function () {
@@ -3382,5 +3401,6 @@
         }, 1);
     });
 </script>
+
 </body>
 </html>
