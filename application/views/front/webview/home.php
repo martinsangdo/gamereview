@@ -192,7 +192,7 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">8 health benefits and drawbacks of coffee</a></h3>
@@ -209,7 +209,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">5 Best cofee places with free WiFi in Victoria, BC</a>
@@ -227,7 +227,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 7 Luxury places to visit around Victoria, BC</a>
@@ -246,7 +246,7 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -264,7 +264,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6"><a class="g-color-main" href="#!">10 Most beautiful beaches</a></h3>
                                                     <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
@@ -280,7 +280,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -373,7 +373,7 @@
                                         <div class="col-lg-4">
                                             <article>
                                                 <figure class="g-pos-rel">
-                                                    <img class="img-fluid w-100 g-mb-20" src="/public/unity_assets/img-temp/900x600/img7.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 g-mb-20" src="/public/unity_assets/img-temp/900x600/img7.jpg">
                                                 </figure>
                                                 <h3 class="h4 g-mb-10"><a class="g-color-gray-dark-v2" href="#!">Love the mother nature</a>
                                                 </h3>
@@ -394,7 +394,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -412,7 +412,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6"><a class="g-color-main" href="#!">10 Most beautiful beaches</a></h3>
                                                     <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
@@ -428,7 +428,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -446,7 +446,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img1.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">8 health benefits and drawbacks of coffee</a></h3>
@@ -463,7 +463,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img2.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Stylish things to do, see and buy this week</a></h3>
@@ -480,7 +480,7 @@
                                             </article>
 
                                             <article class="media g-mb-20">
-                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description"></a>
+                                                <a class="d-flex mr-3" href="#!"><img class="g-width-120 g-height-70" src="/public/unity_assets/img-temp/500x320/img3.jpg"></a>
                                                 <div class="media-body">
                                                     <h3 class="h6">
                                                         <a class="g-color-main" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
@@ -517,7 +517,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Fashion</a>
@@ -538,7 +538,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Beaches</a>
@@ -559,7 +559,7 @@
                                         <div class="col-lg-4">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
+                                                    <img class="img-fluid u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">Food</a>
@@ -682,7 +682,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img1.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -714,7 +714,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img3.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -746,7 +746,7 @@
                                         <div class="col-lg-4 g-mb-30 g-mb-0--lg">
                                             <article class="u-block-hover">
                                                 <figure class="g-bg-cover g-bg-black-gradient-opacity-v1--after">
-                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg" alt="Image Description">
+                                                    <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="/public/unity_assets/img-temp/500x320/img2.jpg">
                                                 </figure>
                                                 <span class="g-pos-abs g-top-20 g-left-20">
                             <a class="btn btn-sm u-btn-red rounded-0" href="#!">
@@ -938,10 +938,6 @@
                             </div>
                         </figure>
 
-                        <span class="g-hidden-xs-down g-pos-abs g-top-30 g-left-30">
-                  <a class="btn btn-xs u-btn-darkpurple text-uppercase rounded-0" href="#!"><?php echo $block_key_1[0]->category_name;?></a>
-                </span>
-
                         <div class="g-pos-abs g-bottom-30 g-left-30 g-right-30">
                             <small class="g-color-white">
                                 <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($block_key_1[0]->time); ?>
@@ -969,10 +965,6 @@
                                  style="background-image: url('<?php echo $block_key_1[1]->thumb_url;?>');">
                             </div>
                         </figure>
-
-                        <span class="g-hidden-xs-down g-pos-abs g-top-30 g-left-30">
-                  <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!"><?php echo $block_key_1[1]->category_name;?></a>
-                </span>
 
                         <div class="g-pos-abs g-bottom-30 g-left-30 g-right-30">
                             <small class="g-color-white">
@@ -1003,7 +995,6 @@
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_1[2]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_1[2]->title; ?></a>
                             </h3>
@@ -1025,7 +1016,6 @@
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!"><?php echo $block_key_1[3]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_1[3]->title;; ?></a>
                             </h3>
@@ -1047,7 +1037,6 @@
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <a class="btn btn-xs u-btn-primary text-uppercase rounded-0" href="#!"><?php echo $block_key_1[4]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_1[4]->title;; ?></a>
                             </h3>
@@ -1065,7 +1054,7 @@
     <!-- End Promo Block -->
 
     <!-- News Content -->
-    <section class="g-pb-100">
+    <section>
         <div class="container">
             <!-- News Section 1 -->
             <div class="row g-mb-60">
@@ -1082,11 +1071,7 @@
                             <div class="col-lg-7 g-mb-50 g-mb-0--lg">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo $block_key_13[0]->thumb_url;?>" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!"><?php echo $block_key_13[0]->category_name;?></a>
-                                        </figcaption>
+                                        <img class="img-fluid w-100" src="<?php echo $block_key_13[0]->thumb_url;?>"/>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
@@ -1119,7 +1104,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[1]->thumb_url;?>" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[1]->thumb_url;?>"/>
                                     </a>
 
                                     <div class="media-body">
@@ -1147,7 +1132,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[2]->thumb_url;?>" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[2]->thumb_url;?>"/>
                                     </a>
 
                                     <div class="media-body">
@@ -1175,7 +1160,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[3]->thumb_url;?>" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[3]->thumb_url;?>"/>
                                     </a>
 
                                     <div class="media-body">
@@ -1203,7 +1188,7 @@
                                 <!-- Article -->
                                 <article class="media">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#!">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[4]->thumb_url;?>" alt="Image Description">
+                                        <img class="g-width-80 g-height-80" src="<?php echo $block_key_13[4]->thumb_url;?>"/>
                                     </a>
 
                                     <div class="media-body">
@@ -1241,11 +1226,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $block_key_11[0]->thumb_url;?>" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!"><?php echo $block_key_11[0]->category_name;?></a>
-                                    </figcaption>
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_11[0]->thumb_url;?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -1290,11 +1271,9 @@
                                 <!-- Article -->
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo $block_key_2[0]->thumb_url;?>" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!"><?php echo $block_key_2[0]->category_name;?></a>
-                                        </figcaption>
+                                        <div class="home3-center-cropped"
+                                             style="background-image: url('<?php echo $block_key_2[0]->thumb_url;?>');">
+                                        </div>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
@@ -1376,11 +1355,9 @@
                                 <!-- Article -->
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="<?php echo $block_key_2[5]->thumb_url;?>" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_2[5]->category_name;?></a>
-                                        </figcaption>
+                                        <div class="home3-center-cropped"
+                                             style="background-image: url('<?php echo $block_key_2[5]->thumb_url;?>');">
+                                        </div>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
@@ -1471,12 +1448,8 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="<?php echo $video_list_1[0]['thumb']; ?>" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-blue text-uppercase rounded-0" href="#!">Spa</a>
-                                    </figcaption>
-                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_list_1[0]['original_id']; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[0]->thumb_url; ?>"/>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[0]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
                                         <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
                                             <i class="fa fa-play g-left-2"></i>
                                         </span>
@@ -1485,7 +1458,7 @@
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_list_1[0]['title']; ?></a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[0]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1495,19 +1468,17 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img6.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[1]->thumb_url; ?>"/>
 
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Marketing</a>
-                                    </figcaption>
-
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[1]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">How to run a ticket: Best 10 point..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[1]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1517,19 +1488,17 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img7.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[2]->thumb_url; ?>"/>
 
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Art</a>
-                                    </figcaption>
-
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[2]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Skyscrapers from blocking sunlight..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[2]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1539,19 +1508,17 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img9.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[3]->thumb_url; ?>"/>
 
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!">Architecture</a>
-                                    </figcaption>
-
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[3]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Architects plan to from blocking out sunlight..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[3]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1561,19 +1528,17 @@
                         <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img8.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[4]->thumb_url; ?>"/>
 
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-indigo text-uppercase rounded-0" href="#!">Coworking</a>
-                                    </figcaption>
-
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[4]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Cooltex is one of the best technology company..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[4]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1583,19 +1548,17 @@
                         <div class="col-lg-4 col-sm-6">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img10.jpg" alt="Image Description">
+                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[5]->thumb_url; ?>"/>
 
-                                    <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                        <a class="btn btn-xs u-btn-brown text-uppercase rounded-0" href="#!">Apple</a>
-                                    </figcaption>
-
-                                    <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
-                        <i class="fa fa-play g-left-2"></i>
-                      </span>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[5]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                        <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
+                                            <i class="fa fa-play g-left-2"></i>
+                                        </span>
+                                    </a>
                                 </figure>
 
                                 <h3 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Cameron's silence on defence is shameful..</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $video_block_1[5]->title; ?></a>
                                 </h3>
                             </article>
                         </div>
@@ -1684,7 +1647,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[0]->thumb_url;?>" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[0]->thumb_url;?>"/>
                             </a>
 
                             <div class="media-body">
@@ -1710,7 +1673,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[1]->thumb_url;?>" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[1]->thumb_url;?>"/>
                             </a>
 
                             <div class="media-body">
@@ -1736,7 +1699,7 @@
                         <!-- Article -->
                         <article class="media g-mb-30">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[2]->thumb_url;?>" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[2]->thumb_url;?>"/>
                             </a>
 
                             <div class="media-body">
@@ -1762,7 +1725,7 @@
                         <!-- Article -->
                         <article class="media">
                             <a class="d-flex u-shadow-v25 mr-3" href="#!">
-                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[3]->thumb_url;?>" alt="Image Description">
+                                <img class="g-width-60 g-height-60" src="<?php echo $block_key_3[3]->thumb_url;?>"/>
                             </a>
 
                             <div class="media-body">
@@ -1878,11 +1841,10 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[0]->thumb_url;?>" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[0]->thumb_url;?>"/>
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-deeporange text-uppercase rounded-0" href="#!"><?php echo $block_key_5[0]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_5[0]->title;?></a>
                             </h3>
@@ -1898,10 +1860,9 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[1]->thumb_url;?>" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[1]->thumb_url;?>"/>
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!"><?php echo $block_key_5[1]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_5[1]->title;?></a>
                             </h3>
@@ -1917,10 +1878,9 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[2]->thumb_url;?>" alt="Image Description">
+                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $block_key_5[2]->thumb_url;?>"/>
                         </figure>
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!"><?php echo $block_key_5[2]->category_name;?></a>
                             <h3 class="h4 g-mt-10">
                                 <a class="g-color-white" href="#!"><?php echo $block_key_5[2]->title;?></a>
                             </h3>
@@ -1949,64 +1909,53 @@
                                 <!-- Article -->
                                 <article class="g-mb-40">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img11.jpg" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Holiday</a>
-                                        </figcaption>
+                                        <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[0]->thumb_url;?>');"></div>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">10 Best tips and resources for UX/UI Designers in 2017</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_6[0]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_6[0]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
-                                            July 20, 2017
+                                            <?php echo format_post_time($block_key_6[0]->time);?>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
                                             <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
+                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_6[0]->comment_num;?>
                                             </a>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten. If you are a designer, you have probably gotten.</p>
-                                    <a class="g-font-size-12" href="#!">Read More..</a>
+                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_6[0]->excerpt;?></p>
                                 </article>
                                 <!-- Article -->
 
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img1.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[0]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 0:46
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[0]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">8 health benefits and drawbacks of coffee</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[0]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[0]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 16, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 31
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[0]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2018,29 +1967,23 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img3.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[1]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 2:14
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[1]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">Top 7 Luxury places to visit around Victoria, BC</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[1]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[1]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 12, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 15
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[1]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2052,29 +1995,23 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img4.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[2]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 1:07
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[2]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">Top 10 Luxury Hotels - 5 Star Best Luxury Hotels</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[2]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[2]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 11, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[2]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2086,64 +2023,53 @@
                                 <!-- Article -->
                                 <article class="g-mb-40">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img12.jpg" alt="Image Description">
-
-                                        <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                            <a class="btn btn-xs u-btn-red text-uppercase rounded-0" href="#!">School</a>
-                                        </figcaption>
+                                        <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[1]->thumb_url;?>');"></div>
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Exclusive interview with InVision's CEO at Pixeel</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_6[1]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_6[1]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
-                                            July 20, 2017
+                                            <?php echo format_post_time($block_key_6[1]->time);?>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
                                             <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
+                                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_6[1]->comment_num;?>
                                             </a>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2">Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten. If you are a designer, you have probably gotten.</p>
-                                    <a class="g-font-size-12" href="#!">Read More..</a>
+                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_6[1]->excerpt;?></p>
                                 </article>
                                 <!-- End Article -->
 
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img5.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[3]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 1:54
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[3]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">10 Most beautiful and popular beaches in the Wrold</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[3]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[3]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 10, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 42
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[3]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2155,29 +2081,23 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img2.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[4]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 1:35
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[4]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">5 Best cofee places with free WiFi in Victoria, BC</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[4]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[4]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 14, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 28
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[4]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2189,29 +2109,23 @@
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="/public/unity_assets/img-temp/200x115/img6.jpg" alt="Image Description">
+                                        <img class="g-width-140 g-height-80" src="<?php echo $video_block_2[5]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">
-                                                <i class="fa fa-play g-mr-5"></i> 0:28
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[5]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
                                     </figure>
 
                                     <div class="media-body">
                                         <h3 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="#!">Stylish things to do, buy one get 2 free</a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_2[5]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_2[5]->title; ?></a>
                                         </h3>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                July 08, 2017
-                                            </li>
-                                            <li class="list-inline-item">/</li>
-                                            <li class="list-inline-item">
-                                                <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#!">
-                                                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 34
-                                                </a>
+                                                <?php echo format_post_time($video_block_2[5]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -2233,11 +2147,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img13.jpg" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-darkpurple text-uppercase rounded-0" href="#!">Web Design</a>
-                                    </figcaption>
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[0]->thumb_url; ?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -2245,27 +2155,26 @@
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
                                 <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Exclusive interview with InVision's CEO at Pixeel Ltd.</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[0]->title; ?></a>
                                 </h3>
 
                                 <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                     <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[0]->author_name; ?></a>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
-                                        July 19, 2017
+                                        <?php echo format_post_time($block_key_9[0]->time); ?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 38
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[0]->comment_num; ?>
                                         </a>
                                     </li>
                                 </ul>
 
-                                <p class="g-color-gray-dark-v2">Pellentesque turpis lacus, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh. Sed ultrices velit vitae tortor posuere ultrices.</p>
-                                <a class="g-font-size-12" href="#!">Read More..</a>
+                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[0]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
                         </div>
@@ -2276,11 +2185,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img14.jpg" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Music</a>
-                                    </figcaption>
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[1]->thumb_url; ?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -2288,27 +2193,26 @@
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
                                 <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">10 Best Festivals Around the World in 2017</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[1]->title; ?></a>
                                 </h3>
 
                                 <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                     <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[1]->author_name; ?></a>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
-                                        July 19, 2017
+                                        <?php echo format_post_time($block_key_9[1]->time); ?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 38
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[1]->comment_num; ?>
                                         </a>
                                     </li>
                                 </ul>
 
-                                <p class="g-color-gray-dark-v2">Pellentesque turpis lacus, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh. Sed ultrices velit vitae tortor posuere ultrices.</p>
-                                <a class="g-font-size-12" href="#!">Read More..</a>
+                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[1]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
                         </div>
@@ -2319,11 +2223,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img15.jpg" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="#!">Interior Design</a>
-                                    </figcaption>
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[2]->thumb_url; ?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -2331,27 +2231,26 @@
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
                                 <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Fashion's first showcase: It is a nice idea to make great design</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[2]->title; ?></a>
                                 </h3>
 
                                 <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                     <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[2]->author_name; ?></a>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
-                                        July 18, 2017
+                                        <?php echo format_post_time($block_key_9[2]->time); ?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 45
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[2]->comment_num; ?>
                                         </a>
                                     </li>
                                 </ul>
 
-                                <p class="g-color-gray-dark-v2">Ulvinar leo ultricies fringilla lectus tellusimp imperdiet molestie. Sed viverra cursus nibh. Sed ultrices velit vitae tortor posuere.</p>
-                                <a class="g-font-size-12" href="#!">Read More..</a>
+                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[2]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
                         </div>
@@ -2362,11 +2261,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img16.jpg" alt="Image Description">
-
-                                    <figcaption class="g-pos-abs g-top-20 g-left-20">
-                                        <a class="btn btn-xs u-btn-cyan text-uppercase rounded-0" href="#!">Leisure</a>
-                                    </figcaption>
+                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[3]->thumb_url; ?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -2374,64 +2269,32 @@
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
                                 <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Ice Cream drinks for all in 2017</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[3]->title; ?></a>
                                 </h3>
 
                                 <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                     <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[3]->author_name; ?></a>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
-                                        July 19, 2017
+                                        <?php echo format_post_time($block_key_9[3]->time); ?>
                                     </li>
                                     <li class="list-inline-item">/</li>
                                     <li class="list-inline-item">
                                         <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 38
+                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[3]->comment_num; ?>
                                         </a>
                                     </li>
                                 </ul>
 
-                                <p class="g-color-gray-dark-v2">Pellentesque turpis lacus, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh. Sed ultrices velit vitae tortor posuere ultrices.</p>
-                                <a class="g-font-size-12" href="#!">Read More..</a>
+                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[3]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
                         </div>
                         <!-- End Articles -->
                     </div>
                     <!-- End Weekly News -->
-
-                    <!-- Pagination -->
-                    <nav id="stickyblock-end-1" aria-label="Page Navigation">
-                        <ul class="list-inline text-center mb-0">
-                            <li class="list-inline-item">
-                                <a class="active u-pagination-v1__item g-width-30 g-height-30 g-brd-secondary-light-v2 g-brd-primary--active g-color-white g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">1</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">2</a>
-                            </li>
-                            <li class="list-inline-item g-hidden-xs-down">
-                                <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">3</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <span class="g-width-30 g-height-30 g-color-gray-dark-v5 g-font-size-12 rounded g-pa-5">...</span>
-                            </li>
-                            <li class="list-inline-item g-hidden-xs-down">
-                                <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">15</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="u-pagination-v1__item g-brd-secondary-light-v2 g-brd-primary--hover g-color-gray-dark-v5 g-color-primary--hover g-font-size-12 rounded g-px-15 g-py-5 g-ml-15" href="#!" aria-label="Next">
-                      <span aria-hidden="true">
-                        Next
-                        <i class="ml-2 fa fa-angle-right"></i>
-                      </span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- End Pagination -->
                 </div>
                 <!-- End Articles -->
 
@@ -2524,39 +2387,33 @@
                                 <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Top Authors</h2>
                             </div>
 
-                            <article class="media g-mb-35">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img1.jpg" alt="Image Description">
+                            <article class="media g-mb-10">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[0]->thumb_url; ?>"/>
                                 <div class="media-body">
                                     <h4 class="g-font-size-16">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Htmlstream</a>
-                                        <small class="g-color-gray-dark-v4">@Htmlstream</small>
+                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[0]->author_name; ?></small>
                                     </h4>
-                                    <p class="g-color-gray-dark-v2">Sed ultrices velit vitae tortor posuere and dial in the details.</p>
-                                    <a class="btn u-btn-outline-primary g-font-size-11 text-uppercase" href="#!">Follow</a>
+                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[0]->title; ?></a>
                                 </div>
                             </article>
 
-                            <article class="media g-mb-35">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img3.jpg" alt="Image Description">
+                            <article class="media g-mb-10">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[1]->thumb_url; ?>"/>
                                 <div class="media-body">
                                     <h4 class="g-font-size-16 g-color-gray-dark-v1">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Pixeel</a>
-                                        <small class="g-color-gray-dark-v4">@Pixeeluk</small>
+                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[1]->author_name; ?></small>
                                     </h4>
-                                    <p class="g-color-gray-dark-v2">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                                    <a class="btn u-btn-outline-primary g-font-size-11 text-uppercase" href="#!">Follow</a>
+                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[1]->title; ?></a>
                                 </div>
                             </article>
 
                             <article class="media">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="/public/unity_assets/img-temp/100x100/img2.jpg" alt="Image Description">
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[2]->thumb_url; ?>"/>
                                 <div class="media-body">
                                     <h4 class="g-font-size-16 g-color-gray-dark-v1">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">WrapBootstrap</a>
-                                        <small class="g-color-gray-dark-v4">@WrapBootstrap</small>
+                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[2]->author_name; ?></small>
                                     </h4>
-                                    <p class="g-color-gray-dark-v2">Ulvinar leo ultricies ut, grab a cup of coffee and dial in the details.</p>
-                                    <a class="btn u-btn-outline-primary g-font-size-11 text-uppercase" href="#!">Follow</a>
+                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[2]->title ?></a>
                                 </div>
                             </article>
                         </div>
@@ -2611,7 +2468,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img10.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img10.jpg">
 
                                 <figcaption class="g-absolute-centered">
                                     <a class="js-fancybox d-block" href="javascript:;"
@@ -2637,7 +2494,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img5.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img5.jpg">
                             </figure>
 
                             <div class="media-body">
@@ -2652,7 +2509,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img6.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img6.jpg">
 
                                 <figcaption class="g-absolute-centered">
                                     <a class="js-fancybox d-block" href="javascript:;"
@@ -2678,7 +2535,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img7.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img7.jpg">
                             </figure>
 
                             <div class="media-body">
@@ -2693,7 +2550,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img8.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img8.jpg">
                             </figure>
 
                             <div class="media-body">
@@ -2708,7 +2565,7 @@
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img9.jpg" alt="Image Description">
+                                <img class="img-fluid" src="/public/unity_assets/img-temp/230x230/img9.jpg">
                             </figure>
 
                             <div class="media-body">
@@ -2863,7 +2720,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img3.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img3.jpg">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Singer<br>of the Year</h2>
@@ -2883,7 +2740,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img2.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img2.jpg">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Trip to<br>Wonderland</h2>
@@ -2903,7 +2760,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img1.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img1.jpg">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Science<br>in Yellow</h2>
@@ -2923,7 +2780,7 @@
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
-                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img4.jpg" alt="Image Description">
+                                        <img class="img-fluid u-block-hover__main--zoom-v1 g-transition-0_5" src="/public/unity_assets/img-temp/350x400/img4.jpg">
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
                                                 <h2 class="h4 g-color-white">Magnificent<br>Woman</h2>
@@ -3321,7 +3178,7 @@
 <div class="u-outer-spaces-helper"></div>
 <!-- Youtube video modal window -->
 <div id="yt_modal" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
-    <button type="button" class="close" onclick="Custombox.modal.close();">
+    <button type="button" class="close pointer" onclick="Custombox.modal.close();">
         <i class="hs-icon hs-icon-close"></i>
     </button>
     <div id="main_video_container"></div>

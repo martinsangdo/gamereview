@@ -1,4 +1,7 @@
 /* Add here all your css styles (customizations) */
+/* author: SangDo
+*/
+.pointer {cursor:pointer;}
 /* homepage */
 .home1-center-cropped {
     width: 554px;
@@ -9,6 +12,13 @@
 .home2-center-cropped {
     width: 368px;
     height: 184px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.home3-center-cropped {
+    width: 398px;
+    height: 180px;
     background-position: center center;
     background-repeat: no-repeat;
 }

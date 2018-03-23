@@ -29,7 +29,7 @@ class Welcome extends MY_Controller
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
     public function index(){
-        //get data of block 1
+        //get data of blocks
         $this->data[BLOCK_KEY_1] = $this->block_content_model->get_pagination_rand(array('site_id' => 4), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_2] = $this->block_content_model->get_pagination_rand(array('site_id' => 1), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_3] = $this->block_content_model->get_pagination_rand(array('site_id' => 6), 0, DEFAULT_PAGE_LEN);
@@ -44,24 +44,13 @@ class Welcome extends MY_Controller
         $this->data[BLOCK_KEY_12] = $this->block_content_model->get_pagination_rand(array('site_id' => 15), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_13] = $this->block_content_model->get_pagination_rand(array('site_id' => 16), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_14] = $this->block_content_model->get_pagination_rand(array('site_id' => 20), 0, DEFAULT_PAGE_LEN);
-
-        //
-        $yt_videos = $this->sendGetWithoutHeader('https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&maxResults=8&playlistId=UUXa_bzvv7Oo1glaW9FldDhQ&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE');
-        $vid_len = count($yt_videos['items']);
-        $vid_list = array();
-        for ($i = 0; $i < $vid_len; $i++) {
-            $vid_list[$i] = array(
-                'original_id'=>'dAULt5cQXKU',
-                'thumb' => $yt_videos['items'][$i]['snippet']['thumbnails']['medium']['url'],
-                'title' => $yt_videos['items'][$i]['snippet']['title'],
-                'embed' => '<iframe width="255" height="172" src="https://www.youtube.com/embed/dAULt5cQXKU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
-            );
-        }
-        $this->data['video_list_1'] = $vid_list;
-        //
-//        $this->data['rss_feed'] = $this->parse_rss();
-
+        //get videos
+        $this->load->model('video_model');
+        $this->data['video_block_1'] = $this->video_model->get_pagination_rand(array('playlist_id' => 1), 0, DEFAULT_PAGE_LEN);
+        //https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&maxResults=8&playlistId=UUXa_bzvv7Oo1glaW9FldDhQ&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
+        $this->data['video_block_2'] = $this->video_model->get_pagination_rand(array('playlist_id' => 1), 0, DEFAULT_PAGE_LEN);
+
         $this->load->view('front/webview/home', $this->data);
     }
     //test data to get from link
