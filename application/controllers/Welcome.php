@@ -62,11 +62,12 @@ class Welcome extends MY_Controller
     }
 
     //test data to get from link
-    public function test()
+    public function test_cron()
     {
-//        $this->load->model('site_model');
-//        $this->site_model->update_by_condition(array('_id'=>1),
-//            array('crawl_time'=>date('Y-m-d H:i:s')));
+//        $this->load->model('tmp_model');
+//        $this->tmp_model->create(array(
+//            'value'=>'aa'.$this->uri->segment(3)
+//        ));
     }
 
 

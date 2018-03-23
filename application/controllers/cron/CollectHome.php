@@ -76,7 +76,7 @@ Class CollectHome extends REST_Controller
                 $this->block_content_model->create($final_data[$j]);
             }
             //update crawling time of site
-            $this->site_model->update_by_condition(array('_id'=>1),
+            $this->site_model->update_by_condition(array('_id'=>$site_info[0]->_id),
                 array('crawl_time'=>date('Y-m-d H:i:s')));
         }
         echo 'finished';
@@ -213,5 +213,12 @@ Class CollectHome extends REST_Controller
             echo 'error parse rss';
             return null;
         }
+    }
+    //
+    public function show_crawl_time_get(){
+        $this->load->model('site_model');
+        $this->data['list'] = $this->site_model->get_pagination(array('status' => 1), 0, 0);
+//        var_dump($this->data['list']);
+        $this->load->view('front/webview/show_crawl_time', $this->data);
     }
 }
