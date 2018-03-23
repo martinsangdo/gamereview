@@ -62,21 +62,20 @@ class Welcome extends MY_Controller
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->load->view('front/webview/home', $this->data);
     }
-
-    /*
-     * function test
-     * method:
-     * params:
-     */
-    //
-
     //test data to get from link
     public function test_link()
     {
-
         $this->load->view('front/block/header_webview', $this->data);
         $this->load->view('front/webview/test_link', $this->data);
         $this->load->view('front/block/footer_webview', $this->data);
+    }
+
+    //test data to get from link
+    public function test()
+    {
+//        $this->load->model('site_model');
+//        $this->site_model->update_by_condition(array('_id'=>1),
+//            array('crawl_time'=>date('Y-m-d H:i:s')));
     }
 
 

@@ -12,80 +12,7 @@ Class CollectHome extends REST_Controller
     }
     //collect all content from another site, called from Crontab
     public function index_get(){
-        if ($this->uri->segment(2)==null){
-            return;
-        }
-        $site_id = $this->uri->segment(2);
-        //get all sites info
-        $where = array('status'=> 1, '_id' => $site_id, 'type'=> 'wp');     //default is Wordpress site
-        $site_info = $this->site_model->get_pagination($where, 0, 1);
-        if (!$site_info){
-            return;
-        }
-        $post_list = $this->sendGetWithoutHeader($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
-//        var_dump($site_info[0]->api_uri.$site_info[0]->post_uri.'&per_page='.$site_info[0]->item_num);
-//        var_dump($post_list);
-        //collect info of each post & upsert into DB
-        $post_len = count($post_list);
-        $final_data = array();
-        for ($j=0; $j<$post_len; $j++){
-            $final_data[$j] = $this->get_meaningful_detail($site_info[0], $post_list[$j]);
-        }
-//        $this->block_content_model->delete_by_condition(array('site_id'=>$site_id));     //clear all to update latest info
-        for ($j=0; $j<$post_len; $j++){
-            //check if the post existed in db
-            $exist_cond = array(
-                'site_id'=>$site_info[0]->_id,
-                'original_post_id'=>$final_data[$j]['original_post_id']
-            );
-            if ($this->block_content_model->get_total($exist_cond) > 0){
-                //update its content
-                $this->block_content_model->update_by_condition($exist_cond, $final_data[$j]);
-            } else {
-                //insert new one
-                $this->block_content_model->create($final_data[$j]);
-            }
-        }
-        echo 'finished';
-    }
-    //convert from post info of site into our own format
-    private function get_meaningful_detail($site_info, $raw_detail){
-        $data = array(
-          'site_id' => $site_info->_id,
-          'title'=>$raw_detail['title']['rendered'],
-          'thumb_url'=>'',
-          'slug'=>$raw_detail['slug'],
-          'time'=>$raw_detail['date'],
-          'author_name'=>'',
-          'excerpt'=>$raw_detail['excerpt']['rendered'],
-          'category_name'=>'',      //should be first category
-          'category_slug'=>'',
-          'comment_num'=>0,
-          'youtube_url'=>'',
-          'original_post_id'=>$raw_detail['id'],
-          'original_url'=>$raw_detail['link']
-        );
-        //get thumbnail url
-        $data['thumb_url'] = $this->get_thumbnail_url($site_info, $raw_detail);
-        //get author name
-        if ($raw_detail['author'] > 0){
-            $user_info = $this->sendGetWithoutHeader($site_info->api_uri.'users/'.$raw_detail['author']);
-            if (isset($user_info['name'])){
-                $data['author_name'] = $user_info['name'];
-            }
-        }
-        //get category name (first one)
-        if (count($raw_detail['categories']) > 0){
-            $cat_info = $this->sendGetWithoutHeader($site_info->api_uri.'categories/'.$raw_detail['categories'][0]);
-            $data['category_name'] = $cat_info['name'];
-            $data['category_slug'] = $cat_info['slug'];
-        }
-        //get comment number
-        $comment_list = $this->sendGet($site_info->api_uri.'comments?post='.$raw_detail['id']);
-        if (isset($comment_list['header']['X-WP-Total'])){
-            $data['comment_num'] = count($comment_list['header']['X-WP-Total']);
-        }
-        return $data;
+        echo 'do nothing';
     }
     //get data from RSS url
     public function collect_data_from_site_id_get(){
@@ -134,6 +61,7 @@ Class CollectHome extends REST_Controller
                 );
             }
         }
+        //upsert data to content
         for ($j=0; $j<$post_len; $j++){
             //check if the post existed in db
             $exist_cond = array(
@@ -147,8 +75,50 @@ Class CollectHome extends REST_Controller
                 //insert new one
                 $this->block_content_model->create($final_data[$j]);
             }
+            //update crawling time of site
+            $this->site_model->update_by_condition(array('_id'=>1),
+                array('crawl_time'=>date('Y-m-d H:i:s')));
         }
         echo 'finished';
+    }
+    //convert from post info of site into our own format
+    private function get_meaningful_detail($site_info, $raw_detail){
+        $data = array(
+            'site_id' => $site_info->_id,
+            'title'=>$raw_detail['title']['rendered'],
+            'thumb_url'=>'',
+            'slug'=>$raw_detail['slug'],
+            'time'=>$raw_detail['date'],
+            'author_name'=>'',
+            'excerpt'=>$raw_detail['excerpt']['rendered'],
+            'category_name'=>'',      //should be first category
+            'category_slug'=>'',
+            'comment_num'=>0,
+            'youtube_url'=>'',
+            'original_post_id'=>$raw_detail['id'],
+            'original_url'=>$raw_detail['link']
+        );
+        //get thumbnail url
+        $data['thumb_url'] = $this->get_thumbnail_url($site_info, $raw_detail);
+        //get author name
+        if ($raw_detail['author'] > 0){
+            $user_info = $this->sendGetWithoutHeader($site_info->api_uri.'users/'.$raw_detail['author']);
+            if (isset($user_info['name'])){
+                $data['author_name'] = $user_info['name'];
+            }
+        }
+        //get category name (first one)
+        if (count($raw_detail['categories']) > 0){
+            $cat_info = $this->sendGetWithoutHeader($site_info->api_uri.'categories/'.$raw_detail['categories'][0]);
+            $data['category_name'] = $cat_info['name'];
+            $data['category_slug'] = $cat_info['slug'];
+        }
+        //get comment number
+        $comment_list = $this->sendGet($site_info->api_uri.'comments?post='.$raw_detail['id']);
+        if (isset($comment_list['header']['X-WP-Total'])){
+            $data['comment_num'] = count($comment_list['header']['X-WP-Total']);
+        }
+        return $data;
     }
     //get thumbnail url of a blog from WP response
     private function get_thumbnail_url($site_info, $raw_detail){
@@ -243,10 +213,5 @@ Class CollectHome extends REST_Controller
             echo 'error parse rss';
             return null;
         }
-    }
-    //get meta data og:image
-    private function get_open_graph($link){
-        $graph = OpenGraph::fetch($link);
-        return $graph->image;
     }
 }
