@@ -89,6 +89,7 @@ Class CollectHome extends REST_Controller
             'thumb_url'=>'',
             'slug'=>$raw_detail['slug'],
             'time'=>$raw_detail['date'],
+            'content'=>$raw_detail['content'],
             'author_name'=>'',
             'excerpt'=>$raw_detail['excerpt']['rendered'],
             'category_name'=>'',      //should be first category

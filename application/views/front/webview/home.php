@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <!-- Title -->
-    <title>Game review collections</title>
+    <title>Latest game review, news, trailer</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-
+    <meta name="description" content="Latest PC, Mobile, Playstation game review, trailers and news">
+    <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
+    <meta name="author" content="Martin SangDo">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/public/favicon.ico"/>
 
