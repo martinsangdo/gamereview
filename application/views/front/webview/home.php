@@ -2482,10 +2482,10 @@
                             <!-- Article -->
                             <article>
                     <span class="g-font-size-12">
-                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Jonathan Owen</a>
+                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_14[0]->author_name; ?></a>
                     </span>
                                 <h3 class="h6">
-                                    <a class="g-color-gray-dark-v1" href="#!"><?php echo $rss_feed[0]['title']; ?></a>
+                                    <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_14[0]->title; ?></a>
                                 </h3>
                             </article>
                             <!-- End Article -->
@@ -2495,10 +2495,10 @@
                             <!-- Article -->
                             <article>
                     <span class="g-font-size-12">
-                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!">James Doe</a>
+                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_14[1]->author_name; ?></a>
                     </span>
                                 <h3 class="h6">
-                                    <a class="g-color-gray-dark-v1" href="#!">Cooltex is one of the best technology company of our age and future</a>
+                                    <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_14[1]->title; ?></a>
                                 </h3>
                             </article>
                             <!-- End Article -->
@@ -2508,10 +2508,10 @@
                             <!-- Article -->
                             <article>
                     <span class="g-font-size-12">
-                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!">Albert Coolmen</a>
+                      <a class="u-link-v5 g-color-gray-dark-v4" href="#!"><?php echo $block_key_14[2]->author_name; ?></a>
                     </span>
                                 <h3 class="h6">
-                                    <a class="g-color-gray-dark-v1" href="#!">Some text goes here with plain English and much more other texts go there..</a>
+                                    <a class="g-color-gray-dark-v1" href="#!"><?php echo $block_key_14[2]->title; ?></a>
                                 </h3>
                             </article>
                             <!-- End Article -->
