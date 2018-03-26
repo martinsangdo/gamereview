@@ -43,6 +43,25 @@ Class Block_content_model extends MY_Model
         }
     }
 
+    function get_latest_posts($where, $offset, $limit, $last_id = ''){
+        $this->db->from($this->table_name);
+        $this->db->where($where);
+        if(!empty($last_id)) {
+            $this->db->where('block_content._id <', $last_id);
+        } else if ($limit > 0){
+            $this->db->limit($limit, $offset);
+        }
+        $this->db->order_by('update_time', 'desc');
+        $query = $this->db->get();
+
+        if($query->result()){
+            return $query->result();
+
+        }else{
+            return false;
+        }
+    }
+
     function findOne($where, $select = '*'){
         $this->db->select($select);
         $this->db->from($this->table_name);
