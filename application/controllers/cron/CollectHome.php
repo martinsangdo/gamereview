@@ -114,11 +114,11 @@ Class CollectHome extends REST_Controller
             $data['category_name'] = $cat_info['name'];
             $data['category_slug'] = $cat_info['slug'];
         }
-        //get comment number
-        $comment_list = $this->sendGet($site_info->api_uri.'comments?post='.$raw_detail['id']);
-        if (isset($comment_list['header']['X-WP-Total'])){
-            $data['comment_num'] = count($comment_list['header']['X-WP-Total']);
-        }
+        //get comment number (skip it)
+//        $comment_list = $this->sendGet($site_info->api_uri.'comments?post='.$raw_detail['id']);
+//        if (isset($comment_list['header']['X-WP-Total'])){
+//            $data['comment_num'] = count($comment_list['header']['X-WP-Total']);
+//        }
         return $data;
     }
     //get thumbnail url of a blog from WP response
@@ -221,5 +221,21 @@ Class CollectHome extends REST_Controller
         $this->data['list'] = $this->site_model->get_pagination(array('status' => 1), 0, 0);
 //        var_dump($this->data['list']);
         $this->load->view('front/webview/show_crawl_time', $this->data);
+    }
+    //try to parse some website content
+    public function test_parse_get(){
+        $url = 'https://www.gamespot.com/videos/';
+//        $url = 'http://vnexpress.net';
+
+        $this->load->library('simple_html_dom');
+        $html = file_get_html($url);
+        // Find all images
+        foreach($html->find('li.media') as $element){
+            foreach($element->find('img') as $img){
+                echo $img->src.'<br/>';
+            }
+
+        }
+        var_dump('done');
     }
 }
