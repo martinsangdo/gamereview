@@ -79,7 +79,7 @@ Class CollectHome extends REST_Controller
             $this->site_model->update_by_condition(array('_id'=>$site_info[0]->_id),
                 array('crawl_time'=>date('Y-m-d H:i:s')));
         }
-        echo 'finished';
+//        echo 'finished';
     }
     //convert from post info of site into our own format
     private function get_meaningful_detail($site_info, $raw_detail){
@@ -223,19 +223,25 @@ Class CollectHome extends REST_Controller
         $this->load->view('front/webview/show_crawl_time', $this->data);
     }
     //try to parse some website content
+    //https://davidwalsh.name/php-notifications
     public function test_parse_get(){
-        $url = 'https://www.gamespot.com/videos/';
-//        $url = 'http://vnexpress.net';
+//        $url = 'https://www.gamespot.com/videos/';
+//        $url = 'https://www.gamespot.com/videos/pubgs-creator-talks-mobile-mods-and-more/2300-6443375/';
+        $url = 'http://www.ign.com/videos';
 
         $this->load->library('simple_html_dom');
         $html = file_get_html($url);
         // Find all images
-        foreach($html->find('li.media') as $element){
-            foreach($element->find('img') as $img){
-                echo $img->src.'<br/>';
-            }
-
+        foreach($html->find('a.grid_4.alpha') as $element){
+            echo $element->href.'<br/>';
         }
-        var_dump('done');
+//        foreach($html->find('div.av-wrapper') as $element){
+//            echo $element->innertext;
+//            foreach($element->find('video') as $video){
+//                echo $video;
+//            }
+//        }
+//        echo ('<video id="video_js-vid-player-uvpjs725743919" style="width: 100%; visibility: visible;" src="blob:https://www.gamespot.com/01c693be-ea83-410c-bea3-46eecc5804cd"></video>');
+//        $this->load->view('front/webview/video', $this->data);
     }
 }

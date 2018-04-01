@@ -46,7 +46,7 @@ class Welcome extends MY_Controller
         $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 20), 0, DEFAULT_PAGE_LEN);
         //get videos
         $this->load->model('video_model');
-        $this->data['video_block_1'] = $this->video_model->get_pagination_rand(array('playlist_id' => 1), 0, DEFAULT_PAGE_LEN);
+        $this->data['video_block_1'] = $this->video_model->get_latest_posts(array('playlist_id' => 1), 0, DEFAULT_PAGE_LEN);
         //https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,snippet&maxResults=8&playlistId=UUXa_bzvv7Oo1glaW9FldDhQ&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         //https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&forUsername=GamingBoltLive&key=AIzaSyCbEOvBCOQrBl4xHaKoDaSguRxmC4RZUiE
         $this->data['video_block_2'] = $this->video_model->get_pagination_rand(array('playlist_id' => 1), 0, DEFAULT_PAGE_LEN);
