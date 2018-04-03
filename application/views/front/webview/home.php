@@ -987,7 +987,7 @@
                             </small>
 
                             <h3 class="h4 g-my-10">
-                                <a class="g-color-white g-color-white--hover" href="#!"><?php echo $block_key_1[0]->title; ?></a>
+                                <a class="g-color-white g-color-white--hover" href="/article/<?php echo $block_key_1[0]->slug; ?>"><?php echo $block_key_1[0]->title; ?></a>
                             </h3>
 
                             <ul class="g-hidden-xs-down u-list-inline g-font-size-12 g-color-white">
@@ -1320,7 +1320,7 @@
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_2[0]->title;?></a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="/article/<?php echo $block_key_2[0]->slug; ?>"><?php echo $block_key_2[0]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
