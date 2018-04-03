@@ -40,6 +40,24 @@ Common.prototype.ajaxPost = function(uri, params, callback, callback_err){
         }
     });
 };
+//get data from URL
+Common.prototype.ajaxRawGet = function(url, callback, callback_err){
+    $.ajax({
+        url: url,//url is a link request
+        type: 'GET',
+        dataType: 'json',	//jsonp causes error in IE
+        success: function (msg) {
+            if (callback !== undefined){
+                callback(msg);
+            }
+        },
+        error: function (errormessage) {
+            if (callback_err !== undefined) {
+                callback_err(errormessage.responseText);
+            }
+        }
+    });
+};
 //
 Common.prototype.redirect = function(url){
     window.location.href = url;

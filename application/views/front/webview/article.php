@@ -50,6 +50,10 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
+
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/article_detail.js"></script>
+
 </head>
 
 <body>
@@ -1100,24 +1104,15 @@
                 <div class="col-lg-9 g-mb-50 g-mb-0--lg">
                     <article class="g-mb-60">
                         <header class="g-mb-30">
-                            <h2 class="h1 g-mb-15">Exclusive interview with InVision's CEO</h2>
+                            <h2 class="h1 g-mb-15"><?php echo $article_detail->title; ?></h2>
 
                             <ul class="list-inline d-sm-flex g-color-gray-dark-v4 mb-0">
                                 <li class="list-inline-item">
-                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">Mike Coolman</a>
+                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $article_detail->author_name; ?></a>
                                 </li>
                                 <li class="list-inline-item g-mx-10">/</li>
                                 <li class="list-inline-item">
-                                    July 20, 2017
-                                </li>
-                                <li class="list-inline-item g-mx-10">/</li>
-                                <li class="list-inline-item g-mr-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                        <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> 24
-                                    </a>
-                                </li>
-                                <li class="list-inline-item ml-auto">
-                                    <i class="icon-eye u-line-icon-pro align-middle mr-1"></i> Views 3821
+                                    <?php echo format_post_time($article_detail->time); ?>
                                 </li>
                             </ul>
 
@@ -1148,106 +1143,8 @@
                             </ul>
                         </header>
 
-                        <div class="g-font-size-16 g-line-height-1_8 g-mb-30">
-                            <figure class="u-shadow-v25 g-mb-30">
-                                <img class="img-fluid w-100" src="/public/unity_assets/img-temp/900x600/img1.jpg" alt="Image Description">
-                            </figure>
-
-                            <p class="g-color-gray-dark-v2">Aliquam ante ipsum, maximus in orci ut, blandit aliquam ipsum. Phasellus sed tortor non magna lobortis faucibus. Mauris pharetra convallis urna, eu porttitor velit pretium eget. Vestibulum vehicula quis felis eget imperdiet. Sed vulputate tincidunt facilisis. Morbi eu suscipit dolor. Quisque nec turpis quis ante gravida placerat non at turpis. Phasellus tincidunt nisi eget posuere porta.</p>
-
-                            <div class="text-center g-width-70x--md mx-auto g-my-40">
-                                <h3 class="text-uppercase g-color-primary">If you can design one thing, you can design everything. Just believe it.</h3>
-                            </div>
-
-                            <p class="g-color-gray-dark-v2">Consectetur adipiscing elit. In risus neque, semper sed congue eget, ultricies et tortor. Duis lorem libero, dapibus lacinia tellus id, pulvinar rutrum diam. Cras tempor lectus quis erat facilisis, a commodo mi volutpat. Sed vitae libero libero. Vestibulum non leo lobortis, placerat est a, laoreet mauris. Aenean vitae erat interdum, dignissim tellus quis, pellentesque libero. Nullam feugiat magna non justo sodales mattis. Phasellus mattis velit justo, non hendrerit felis tincidunt vitae. In at mi finibus, finibus sem dictum, convallis libero. In condimentum euismod nunc id dapibus. Praesent sagittis posuere felis et viverra. Mauris eros dui, malesuada nec risus nec, placerat porta sem.</p>
-
-                            <p class="g-color-gray-dark-v2">Cras sit amet mi eros. Pellentesque auctor, massa at laoreet lobortis, mi lorem commodo enim, non mollis arcu erat ac augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris maximus enim in mauris ornare bibendum. Cras bibendum, nibh non interdum lacinia, sem augue convallis nibh, sit amet eleifend lacus felis quis turpis. Suspendisse potenti.</p>
-
-                            <figure class="text-center text-md-left float-md-left g-pr-30--sm g-py-20 mb-0">
-                                <img class="u-shadow-v25 img-fluid g-width-300" src="/public/unity_assets/img-temp/500x650/img1.jpg" alt="Image Description">
-                                <figcaption class="figure-caption g-font-size-12 g-color-gray-dark-v4 g-mt-5">
-                                    <em>A caption for the above image.</em>
-                                </figcaption>
-                            </figure>
-
-                            <p class="g-color-gray-dark-v2">Proin laoreet massa vitae pulvinar accumsan. Aenean auctor ipsum mauris, et sodales odio tristique non. Quisque eget diam a mi condimentum ullamcorper imperdiet sed urna. Pellentesque cursus convallis blandit. Mauris lorem eros, consequat et rutrum id, vestibulum quis felis. Proin non mollis eros. Curabitur vel laoreet mauris.</p>
-
-                            <p class="g-color-gray-dark-v2">Curabitur dolor elit, egestas eget lectus vel, pretium semper tellus. Nunc urna lectus, vulputate ut tellus aliquam, pharetra consectetur enim. Nunc scelerisque libero diam, nec tempor justo hendrerit eu. Donec sed diam mattis, ullamcorper eros eu, aliquam dui. Maecenas rutrum suscipit risus sed posuere. Vestibulum imperdiet turpis mauris, sit amet consectetur ex porttitor ut. Duis sit amet auctor nunc. Praesent ultrices, enim a varius condimentum, nunc elit rhoncus ligula, quis fringilla risus augue sit amet enim. Mauris et porttitor diam. In semper volutpat mauris, ac fermentum orci commodo vitae. Curabitur ut feugiat tellus. Quisque consequat pharetra massa ultricies auctor. Sed mollis vulputate sapien eget tincidunt. Curabitur tempus lacus a sapien rutrum, feugiat blandit nunc tincidunt. Donec nec ornare tellus nunc elit rhoncus ligula.</p>
-
-                            <p class="g-color-gray-dark-v2">In neque ipsum, auctor eu bibendum cursus, fringilla sed magna. Vestibulum lobortis libero et lectus congue efficitur. Suspendisse varius varius finibus. Maecenas luctus convallis euismod.</p><br>
-
-                            <h3 class="h5 g-color-gray-dark-v1 g-font-weight-600 g-mb-10">Unify Template v2</h3>
-
-                            <p class="g-color-gray-dark-v2">Praesent ultrices, enim a varius condimentum, nunc elit rhoncus ligula, quis fringilla risus augue sit amet enim. Curabitur dolor elit, egestas eget lectus vel, pretium semper tellus. Nunc urna lectus, vulputate ut tellus aliquam, pharetra consectetur enim. Nunc scelerisque libero diam, nec tempor justo hendrerit eu. Donec sed diam mattis, ullamcorper eros eu, aliquam dui. Maecenas rutrum suscipit risus sed posuere. Vestibulum imperdiet turpis mauris, sit amet consectetur ex porttitor ut. Duis sit amet auctor nunc.</p>
-
-                            <div class="g-width-70x--md g-my-40">
-                                <blockquote class="blockquote g-brd-left g-brd-2 g-brd-gray-light-v4 g-brd-primary--hover text-uppercase g-font-size-22 g-transition-0_2 g-pl-20 g-mb-30">
-                                    <p class="g-color-primary">The best ideas come as jokes. Make your thinking as funny as possible and use them in your projects.</p>
-                                    <footer class="blockquote-footer g-font-size-12">John Doe</footer>
-                                </blockquote>
-                            </div>
-
-                            <p class="g-color-gray-dark-v2">Adipiscing elit, in risus neque, semper sed congue eget, ultricies et tortor. Duis lorem libero, dapibus lacinia tellus id, pulvinar rutrum diam. Cras tempor lectus quis erat facilisis, a commodo mi volutpat. Sed vitae libero libero. Vestibulum non leo lobortis, placerat est a, laoreet mauris. Aenean vitae erat interdum, dignissim tellus quis, pellentesque libero. Nullam feugiat magna non justo sodales mattis. Phasellus mattis velit justo, non hendrerit felis tincidunt vitae. In at mi finibus, finibus sem dictum, convallis libero. In condimentum euismod nunc id dapibus. Praesent sagittis posuere felis et viverra. Mauris eros dui, malesuada nec risus nec, placerat porta sem. Suspendisse id quam in ante lobortis fringilla. Aenean euismod ante eget  auctor fringilla. Morbi consequat ut felis a scelerisque. Aliquam purus sem, rutrum sit amet ligula a, tristique porttitor mauris.</p>
-
-                            <figure class="text-center g-my-40">
-                                <img class="u-shadow-v25 img-fluid" src="/public/unity_assets/img-temp/430x270/img1.jpg" alt="Image Description">
-                                <figcaption class="figure-caption g-font-size-12 g-color-gray-dark-v4 g-mt-5">
-                                    <em>A caption for the above image.</em>
-                                </figcaption>
-                            </figure>
-
-                            <p class="g-color-gray-dark-v2">Curabitur dolor elit, egestas eget lectus vel, pretium semper tellus. Nunc urna lectus. Vulputate ut tellus aliquam, pharetra consectetur enim. Nunc scelerisque libero diam, nec tempor justo hendrerit eu. Donec sed diam mattis, ullamcorper eros eu, aliquam dui. Maecenas rutrum suscipit risus sed posuere. Vestibulum imperdiet turpis mauris, sit amet consectetur ex porttitor ut. Duis sit amet auctor nunc.</p><br>
-
-                            <h3 class="h5 g-color-gray-dark-v1 g-font-weight-600 g-mb-10">Now and Future</h3>
-
-                            <p class="g-color-gray-dark-v2">Praesent sagittis posuere felis et viverra. Mauris eros dui, malesuada nec risus nec, placerat porta sem. Suspendisse id quam in ante lobortis fringilla. Aenean euismod ante eget auctor fringilla. Morbi consequat ut felis a scelerisque. Aliquam purus sem, rutrum sit amet ligula a, tristique porttitor mauris.</p>
-
-                            <ul class="list-unstyled g-font-size-16 g-my-30">
-                                <li class="g-mb-15">
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Wrapbootstrap Marketplace egestas eget lectus vel, pretium semper tellus</span>
-                                    </h4>
-                                </li>
-                                <li class="g-mb-15">
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Google Adwords &amp; Adsense purus sem, rutrum sit amet ligula a, tristique port</span>
-                                    </h4>
-                                </li>
-                                <li class="g-mb-15">
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Web Design with UX/UI enim a varius condimentum, nunc elit rhoncus</span>
-                                    </h4>
-                                </li>
-                                <li class="g-mb-15">
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Digital Marketing scelerisque libero diam, nec tempor justo hendreri</span>
-                                    </h4>
-                                </li>
-                                <li class="g-mb-15">
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Support Forum &amp; Community rutrum suscipit risus sed posuere</span>
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4 class="h6 d-flex align-items-baseline">
-                                        <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-10"></i>
-                                        <span>Unify Template Pages eros duiesuada nec risus nec, placerat porta sem</span>
-                                    </h4>
-                                </li>
-                            </ul>
-
-                            <p class="g-color-gray-dark-v2">Praesent ultrices, enim a varius condimentum, nunc elit rhoncus ligula, quis fringilla risus augue sit amet enim. Curabitur dolor elit, egestas eget lectus vel, pretium semper tellus. Nunc urna lectus, vulputate ut tellus aliquam, pharetra consectetur enim. Nunc scelerisque libero diam, nec tempor justo hendrerit eu.</p>
-
-                            <div class="text-center g-width-70x--md mx-auto g-my-40">
-                                <h3 class="text-uppercase g-color-primary">Finding ways to help tell your story through video is a powerful tool.</h3>
-                            </div>
-
-                            <p class="g-color-gray-dark-v2">Mauris et porttitor diam. In semper volutpat mauris, ac fermentum orci commodo vitae. Curabitur ut feugiat tellus. Quisque consequat pharetra massa ultricies auctor. Sed mollis vulputate sapien eget tincidunt. Curabitur tempus lacus a sapien rutrum, feugiat blandit nunc tincidunt. Donec nec ornare tellus. In neque ipsum, auctor eu bibendum cursus, fringilla sed magna. Vestibulum lobortis libero et lectus congue efficitur. Suspendisse varius varius finibus. Maecenas luctus convallis euismod. Praesent ultrices, enim a varius condimentum, nunc elit rhoncus ligula, quis fringilla risus augue sit amet enim.</p>
+                        <div class="g-font-size-16 g-line-height-1_8 g-mb-30" id="article_detail_container">
+                            <!-- content be here -->
                         </div>
 
                         <!-- Sources & Tags -->
