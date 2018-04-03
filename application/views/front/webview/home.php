@@ -11,6 +11,17 @@
     <meta name="description" content="Latest PC, Mobile, Playstation game review, trailers and news">
     <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
     <meta name="author" content="Martin SangDo">
+    <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
+
+    <meta property="og:title" content="Latest game review, news, trailer" />
+    <meta property="og:description" content="Latest PC, Mobile, Playstation game review, trailers and news" />
+    <meta property="og:type" content="gamereviewnews:article" />
+    <meta property="og:url" content="gamereviewnews.com" />
+    <meta property="og:site_name" content="Gamereviewnews" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="<?php echo $block_key_1[0]->thumb_url;?>"  />
+    <meta property="og:image:url" content="<?php echo $block_key_1[0]->thumb_url;?>" />
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="/public/favicon.ico"/>
 

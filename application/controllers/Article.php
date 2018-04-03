@@ -10,8 +10,15 @@ Class Article extends REST_Controller
         $this->load->model('site_model');
         $this->load->model('block_content_model');
     }
-    //collect all content from another site, called from Crontab
+    //show post detail
     public function index_get(){
+        //find post detail
+        $slug = $this->uri->segment(2);
+        $article_detail = $this->block_content_model->read_row(array('slug'=>$slug));
+//        var_dump($article_detail);
+        $site_detail = $this->site_model->read_row(array('_id'=>$article_detail->site_id));
+
+        $this->data['article_detail'] = $article_detail;
         $this->load->view('front/webview/article', $this->data);
     }
 }

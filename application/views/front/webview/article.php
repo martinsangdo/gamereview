@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
     <!-- Title -->
-    <title>Article detail</title>
+    <title><?php echo $article_detail->title; ?></title>
+    <meta name="title" content="<?php echo $article_detail->title; ?>"/>
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="description" content="Latest PC, Mobile, Playstation game review, trailers and news">
+    <meta name="description" content="<?php echo preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt)); ?>">
     <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
     <meta name="author" content="Martin SangDo">
+    <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
+
+    <meta property="og:title" content="<?php echo $article_detail->title; ?>" />
+    <meta property="og:description" content="<?php echo strip_tags($article_detail->excerpt); ?>" />
+    <meta property="og:type" content="gamereviewnews:article" />
+    <meta property="og:url" content="<?php echo full_url($_SERVER); ?>" />
+    <meta property="og:site_name" content="Gamereviewnews" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="<?php echo $article_detail->thumb_url; ?>"  />
+    <meta property="og:image:url" content="<?php echo $article_detail->thumb_url; ?>" />
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C300%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
