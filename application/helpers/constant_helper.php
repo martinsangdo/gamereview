@@ -18,7 +18,7 @@ define('CAPTCHA_FONT_SIZE', 80);
 
 define('UNKNOWN_ERROR', 'unknown_error');
 //block key, display in Home
-define('DEFAULT_PAGE_LEN', 10); //used in paging
+define('DEFAULT_PAGE_LEN', 20); //used in paging
 define('BLOCK_KEY_1', 'block_key_1');
 define('BLOCK_KEY_2', 'block_key_2');
 define('BLOCK_KEY_3', 'block_key_3');

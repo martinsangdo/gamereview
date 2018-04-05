@@ -113,3 +113,7 @@ function full_url( $s, $use_forwarded_host = false )
 {
     return url_origin( $s, $use_forwarded_host ) . $s['REQUEST_URI'];
 }
+//create link of detail page (should follow SEO)
+function detail_uri($slug){
+    return '/news/'.$slug;
+}

@@ -2,7 +2,7 @@
 
 require (APPPATH.'/libraries/REST_Controller.php');
 
-Class Article extends REST_Controller
+Class News extends REST_Controller
 {
     function __construct()
     {
@@ -19,6 +19,6 @@ Class Article extends REST_Controller
         $site_detail = $this->site_model->read_row(array('_id'=>$article_detail->site_id));
 
         $this->data['article_detail'] = $article_detail;
-        $this->load->view('front/webview/article', $this->data);
+        $this->load->view('front/webview/news', $this->data);
     }
 }
