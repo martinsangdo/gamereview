@@ -632,162 +632,34 @@
                     <!-- End Popular News -->
 
                     <!-- Weekly News -->
-                    <div class="g-mb-60">
+                    <div class="g-mb-10">
                         <div class="u-heading-v3-1 g-mb-30">
                             <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Weekly News</h2>
                         </div>
-
-                        <!-- Articles -->
-                        <div class="row g-mb-30">
-                            <!-- Article Image -->
-                            <div class="col-md-5">
-                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[0]->thumb_url; ?>"/>
-                                </figure>
-                            </div>
-                            <!-- End Article Image -->
-
-                            <!-- Article Content -->
-                            <div class="col-md-7 align-self-center">
-                                <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[0]->title; ?></a>
-                                </h3>
-
-                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[0]->author_name; ?></a>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <?php echo format_post_time($block_key_9[0]->time); ?>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[0]->comment_num; ?>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[0]->excerpt; ?></p>
-                            </div>
-                            <!-- End Article Content -->
-                        </div>
-                        <!-- End Articles -->
-
-                        <!-- Articles -->
-                        <div class="row g-mb-30">
-                            <!-- Article Image -->
-                            <div class="col-md-5">
-                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[1]->thumb_url; ?>"/>
-                                </figure>
-                            </div>
-                            <!-- End Article Image -->
-
-                            <!-- Article Content -->
-                            <div class="col-md-7 align-self-center">
-                                <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[1]->title; ?></a>
-                                </h3>
-
-                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[1]->author_name; ?></a>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <?php echo format_post_time($block_key_9[1]->time); ?>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[1]->comment_num; ?>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[1]->excerpt; ?></p>
-                            </div>
-                            <!-- End Article Content -->
-                        </div>
-                        <!-- End Articles -->
-
-                        <!-- Articles -->
-                        <div class="row g-mb-30">
-                            <!-- Article Image -->
-                            <div class="col-md-5">
-                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[2]->thumb_url; ?>"/>
-                                </figure>
-                            </div>
-                            <!-- End Article Image -->
-
-                            <!-- Article Content -->
-                            <div class="col-md-7 align-self-center">
-                                <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[2]->title; ?></a>
-                                </h3>
-
-                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[2]->author_name; ?></a>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <?php echo format_post_time($block_key_9[2]->time); ?>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[2]->comment_num; ?>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[2]->excerpt; ?></p>
-                            </div>
-                            <!-- End Article Content -->
-                        </div>
-                        <!-- End Articles -->
-
+                        <?php
+                        $data_block = $block_key_9;
+                        for ($i=0;$i<5;$i++){ ?>
                         <!-- Articles -->
                         <div class="row">
                             <!-- Article Image -->
                             <div class="col-md-5">
-                                <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $block_key_9[3]->thumb_url; ?>"/>
+                                <figure class="u-shadow-v25 g-pos-rel g-mb-10 g-mb-0--lg">
+                                    <img class="img-fluid w-100" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
 
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
-                                <h3 class="h4 g-mb-15">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_9[3]->title; ?></a>
+                                <h3 class="h4">
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo format_post_time($data_block[$i]->time); ?>"><?php echo $data_block[$i]->title; ?></a>
                                 </h3>
-
-                                <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_9[3]->author_name; ?></a>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <?php echo format_post_time($block_key_9[3]->time); ?>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i> <?php echo $block_key_9[3]->comment_num; ?>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <p class="g-color-gray-dark-v2"><?php echo $block_key_9[3]->excerpt; ?></p>
+                                <p class="g-color-gray-dark-v2"><?php echo $data_block[$i]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
                         </div>
                         <!-- End Articles -->
+                        <?php } //end for ?>
                     </div>
                     <!-- End Weekly News -->
                 </div>
@@ -862,36 +734,19 @@
                             <div class="u-heading-v3-1 g-mb-30">
                                 <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Top Authors</h2>
                             </div>
-
+                            <?php
+                            $data_block = $block_key_7;
+                            for ($i=0; $i<10; $i++){ ?>
                             <article class="media g-mb-10">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[0]->thumb_url; ?>"/>
+                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                                 <div class="media-body">
                                     <h4 class="g-font-size-16">
-                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[0]->author_name; ?></small>
+                                        <small class="g-color-gray-dark-v4"><?php echo $data_block[$i]->author_name; ?></small>
                                     </h4>
-                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[0]->title; ?></a>
+                                    <a class="g-color-gray-dark-v1" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                 </div>
                             </article>
-
-                            <article class="media g-mb-10">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[1]->thumb_url; ?>"/>
-                                <div class="media-body">
-                                    <h4 class="g-font-size-16 g-color-gray-dark-v1">
-                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[1]->author_name; ?></small>
-                                    </h4>
-                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[1]->title; ?></a>
-                                </div>
-                            </article>
-
-                            <article class="media">
-                                <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $block_key_7[2]->thumb_url; ?>"/>
-                                <div class="media-body">
-                                    <h4 class="g-font-size-16 g-color-gray-dark-v1">
-                                        <small class="g-color-gray-dark-v4"><?php echo $block_key_7[2]->author_name; ?></small>
-                                    </h4>
-                                    <a class="g-color-gray-dark-v1" href="#"><?php echo $block_key_7[2]->title; ?></a>
-                                </div>
-                            </article>
+                            <?php } //end for ?>
                         </div>
                         <!-- End Top Authors -->
                     </div>
@@ -905,10 +760,9 @@
 
     <!-- Footer -->
     <footer class="g-bg-secondary">
-        <div class="g-brd-bottom g-brd-secondary-light-v2 g-py-50 g-mb-50">
+        <div class="g-brd-bottom g-brd-secondary-light-v2 g-py-10">
             <div class="container">
                 <h3 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">Popular Stories</h3>
-
                 <!-- Footer - Popular Stories Carousel -->
                 <div class="js-carousel g-mx-minus-10"
                      data-infinite="true"
@@ -940,90 +794,24 @@
                      "slidesToShow": 1
                    }
                  }]'>
+                    <?php
+                    $data_block = $block_key_10;
+                    for ($i=0;$i<10;$i++){ ?>
                     <div class="js-slide g-px-10">
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
                             <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[0]->thumb_url; ?>"/>
+                                <img class="img-fluid" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                             </figure>
 
                             <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[0]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[0]->author_name; ?></small>
+                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h4>
+                                <small class="g-color-gray-dark-v4"><?php echo $data_block[$i]->author_name; ?></small>
                             </div>
                         </article>
                         <!-- End Article -->
                     </div>
-
-                    <div class="js-slide g-px-10">
-                        <!-- Article -->
-                        <article class="media g-bg-white g-pa-10">
-                            <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[1]->thumb_url; ?>"/>
-                            </figure>
-                            <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[1]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[1]->author_name; ?></small>
-                            </div>
-                        </article>
-                        <!-- End Article -->
-                    </div>
-
-                    <div class="js-slide g-px-10">
-                        <!-- Article -->
-                        <article class="media g-bg-white g-pa-10">
-                            <figure class="d-flex g-width-70 g-height-70 g-pos-rel mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[2]->thumb_url; ?>"/>
-                            </figure>
-                            <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[2]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[2]->author_name; ?></small>
-                            </div>
-                        </article>
-                        <!-- End Article -->
-                    </div>
-
-                    <div class="js-slide g-px-10">
-                        <!-- Article -->
-                        <article class="media g-bg-white g-pa-10">
-                            <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[3]->thumb_url; ?>"/>
-                            </figure>
-                            <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[3]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[3]->author_name; ?></small>
-                            </div>
-                        </article>
-                        <!-- End Article -->
-                    </div>
-
-                    <div class="js-slide g-px-10">
-                        <!-- Article -->
-                        <article class="media g-bg-white g-pa-10">
-                            <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[4]->thumb_url; ?>"/>
-                            </figure>
-                            <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[4]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[4]->author_name; ?></small>
-                            </div>
-                        </article>
-                        <!-- End Article -->
-                    </div>
-
-                    <div class="js-slide g-px-10">
-                        <!-- Article -->
-                        <article class="media g-bg-white g-pa-10">
-                            <figure class="d-flex g-width-70 g-height-70 mr-3">
-                                <img class="img-fluid" src="<?php echo $block_key_10[5]->thumb_url; ?>"/>
-                            </figure>
-                            <div class="media-body">
-                                <h4 class="g-font-size-13 mb-0"><a class="u-link-v5 g-color-main g-color-primary--hover" href="#!"><?php echo $block_key_10[5]->title; ?></a></h4>
-                                <small class="g-color-gray-dark-v4"><?php echo $block_key_10[5]->author_name; ?></small>
-                            </div>
-                        </article>
-                        <!-- End Article -->
-                    </div>
+                    <?php } //end for ?>
                 </div>
                 <!-- End Footer - Popular Stories Carousel -->
             </div>
@@ -1038,46 +826,14 @@
 
                         <!-- News -->
                         <ul class="list-unstyled mb-0">
+                            <?php
+                            $data_block = $block_key_12;
+                            for ($i=0;$i<10;$i++){ ?>
                             <li class="g-px-0 g-my-8">
                                 <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[0]->title; ?></a>
+                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                             </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[1]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[2]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[3]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[4]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[5]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[6]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[7]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[8]->title; ?></a>
-                            </li>
-                            <li class="g-px-0 g-my-8">
-                                <i class="g-color-primary mr-2 fa fa-angle-right"></i>
-                                <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="#!"><?php echo $block_key_12[9]->title; ?></a>
-                            </li>
+                            <?php } //end for ?>
                         </ul>
                         <!-- End News -->
                     </div>
@@ -1116,81 +872,28 @@
                            "slidesToShow": 1
                          }
                        }]'>
+                                <?php
+                                $data_block = $block_key_8;
+                                for ($i=0;$i<4;$i++){ ?>
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
                                         <div class="home4-center-cropped"
-                                             style="background-image: url('<?php echo $block_key_8[0]->thumb_url;?>');">
+                                             style="background-image: url('<?php echo $data_block[$i]->thumb_url;?>');">
                                         </div>
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
-                                                <h2 class="h4 g-color-white"><?php echo $block_key_8[0]->title;?></h2>
+                                                <h2 class="h4 g-color-white"><?php echo $data_block[$i]->title;?></h2>
                                             </div>
                                             <div class="w-50 g-pos-abs g-bottom-0 g-left-0 g-pa-20">
-                                                <span class="d-block h6 g-color-white"><?php echo $block_key_8[0]->author_name;?></span>
+                                                <span class="d-block h6 g-color-white"><?php echo $data_block[$i]->author_name;?></span>
                                             </div>
-                                            <a class="u-link-v2" href="bm-classic-single-2.html"></a>
+                                            <a class="u-link-v2" href="<?php echo detail_uri($data_block[$i]->slug); ?>"></a>
                                         </figcaption>
                                     </figure>
                                     <!-- End Magazines -->
                                 </div>
-
-                                <div class="js-slide g-px-5">
-                                    <!-- Magazines -->
-                                    <figure class="u-block-hover g-pos-rel">
-                                        <div class="home4-center-cropped"
-                                             style="background-image: url('<?php echo $block_key_8[1]->thumb_url;?>');">
-                                        </div>
-                                        <figcaption class="g-color-white">
-                                            <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
-                                                <h2 class="h4 g-color-white"><?php echo $block_key_8[1]->title;?></h2>
-                                            </div>
-                                            <div class="w-50 g-pos-abs g-bottom-0 g-left-0 g-pa-20">
-                                                <span class="d-block h6 g-color-white"><?php echo $block_key_8[1]->author_name;?></span>
-                                            </div>
-                                            <a class="u-link-v2" href="bm-classic-single-2.html"></a>
-                                        </figcaption>
-                                    </figure>
-                                    <!-- End Magazines -->
-                                </div>
-
-                                <div class="js-slide g-px-5">
-                                    <!-- Magazines -->
-                                    <figure class="u-block-hover g-pos-rel">
-                                        <div class="home4-center-cropped"
-                                             style="background-image: url('<?php echo $block_key_8[2]->thumb_url;?>');">
-                                        </div>
-                                        <figcaption class="g-color-white">
-                                            <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
-                                                <h2 class="h4 g-color-white"><?php echo $block_key_8[2]->title;?></h2>
-                                            </div>
-                                            <div class="w-50 g-pos-abs g-bottom-0 g-left-0 g-pa-20">
-                                                <span class="d-block h6 g-color-white"><?php echo $block_key_8[2]->author_name;?></span>
-                                            </div>
-                                            <a class="u-link-v2" href="bm-classic-single-2.html"></a>
-                                        </figcaption>
-                                    </figure>
-                                    <!-- End Magazines -->
-                                </div>
-
-                                <div class="js-slide g-px-5">
-                                    <!-- Magazines -->
-                                    <figure class="u-block-hover g-pos-rel">
-                                        <div class="home4-center-cropped"
-                                             style="background-image: url('<?php echo $block_key_8[3]->thumb_url;?>');">
-                                        </div>
-                                        <figcaption class="g-color-white">
-                                            <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
-                                                <h2 class="h4 g-color-white"><?php echo $block_key_8[3]->title;?></h2>
-                                            </div>
-                                            <div class="w-50 g-pos-abs g-bottom-0 g-left-0 g-pa-20">
-                                                <span class="d-block h6 g-color-white"><?php echo $block_key_8[3]->author_name;?></span>
-                                            </div>
-                                            <a class="u-link-v2" href="bm-classic-single-2.html"></a>
-                                        </figcaption>
-                                    </figure>
-                                    <!-- End Magazines -->
-                                </div>
+                                <?php } //end for ?>
                             </div>
                             <!-- End Carousel -->
                         </div>
@@ -1200,127 +903,7 @@
             </div>
             <!-- End Footer - Content -->
 
-            <!-- Footer - Top Section -->
-            <div class="g-brd-bottom g-brd-secondary-light-v2 g-mb-30">
-                <div class="row align-items-center">
-                    <div class="col-md-4 g-hidden-sm-down g-mb-30">
-                        <!-- Logo -->
-                        <a href="bm-classic-home-2.html">
-                            <img class="g-width-150" src="/public/unity_assets/img/logo.png" alt="Logo">
-                        </a>
-                        <!-- End Logo -->
-                    </div>
-
-                    <div class="col-md-4 ml-auto g-mb-30">
-                        <!-- Social Icons -->
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Like Us on Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Follow Us on Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Join Our Cirlce on Google Plus">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Subscribe to Our YouTube Channel">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Follow Us on Instagram">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item g-mx-2">
-                                <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                                   data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="RSS">
-                                    <i class="fa fa-rss"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- End Social Icons -->
-                    </div>
-
-                    <div class="col-md-4 text-center text-md-right g-mb-30">
-                        <!-- Subscribe Form -->
-                        <form class="input-group rounded">
-                            <input class="form-control g-brd-secondary-light-v2 g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-secondary-light-v3 g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="email" placeholder="Enter your email address">
-                            <span class="input-group-addon g-brd-none g-py-0 g-pr-0">
-                    <button class="btn u-btn-white g-color-primary--hover g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="submit">Subscribe</button>
-                  </span>
-                        </form>
-                        <!-- End Subscribe Form -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer - Top Section -->
-
-            <!-- Footer - Bottom Section -->
-            <div class="row align-items-center">
-                <div class="col-md-2 g-mb-30">
-                    <!-- Copyright -->
-                    <p class="g-color-secondary-light-v1 g-font-size-12 mb-0">&copy; 2018 XuFa Ltd.</p>
-                    <!-- End Copyright -->
-                </div>
-
-                <div class="col-md-8 g-mb-30">
-                    <!-- Links -->
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item g-pl-0 g-pr-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Contact Us</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Help</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Work with Us</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Advertise</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Your Ad Choices</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Privacy</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Terms of Use</a>
-                        </li>
-                        <li class="list-inline-item g-px-10">
-                            <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Send Feedback</a>
-                        </li>
-                    </ul>
-                    <!-- End Links -->
-                </div>
-
-            </div>
-            <!-- End Footer - Bottom Section -->
+        <?php require_once("footer.php"); ?>
         </div>
     </footer>
     <!-- End Footer -->
