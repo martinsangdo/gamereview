@@ -12,7 +12,8 @@ function window_onload(){
             var $content_container = $('#article_detail_container');
             $content_container.html(resp.content.rendered);
             $('a', $content_container).attr('target', '_blank');
-            $('img', $content_container).css('max-width', '825px');
+            $('img', $content_container).css('max-width', '100%').css('height', 'auto');
+            $('iframe', $content_container).css('max-width', '100%').css('height', 'auto');
         }
     }, function(err){});
 }

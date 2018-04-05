@@ -57,7 +57,7 @@
 
 <body>
 <main>
-    <?php require('header.php'); ?>
+    <?php require_once('header.php'); ?>
 
     <!-- Promo Block -->
     <section class="g-py-50">
