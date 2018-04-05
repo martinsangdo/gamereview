@@ -18,6 +18,8 @@ Class News extends REST_Controller
 //        var_dump($article_detail);
         $site_detail = $this->site_model->read_row(array('_id'=>$article_detail->site_id));
 
+
+        $this->data['site_detail'] = $site_detail;
         $this->data['article_detail'] = $article_detail;
         $this->load->view('front/webview/news', $this->data);
     }

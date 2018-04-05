@@ -2,6 +2,7 @@
 /* author: SangDo
 */
 .pointer {cursor:pointer;}
+.hidden {display: none !important;}
 /* homepage */
 .home1-center-cropped {
     width: 554px;

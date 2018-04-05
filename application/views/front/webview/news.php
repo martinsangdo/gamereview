@@ -916,7 +916,14 @@
     <!-- End Go To -->
 </main>
 
-<div class="u-outer-spaces-helper"></div>
+<div class="u-outer-spaces-helper">
+    <div id="meta_data_container">
+        <input type="hidden" id="site_api_uri" value="<?php echo $site_detail->api_uri; ?>"/>
+        <input type="hidden" id="original_post_id" value="<?php echo $article_detail->original_post_id; ?>"/>
+        <input type="hidden" id="site_type" value="<?php echo $site_detail->type; ?>"/>
+        <div class="hidden" id="post_excerpt"><?php echo htmlspecialchars_decode($article_detail->excerpt); ?></div>
+    </div>
+</div>
 
 <!-- JS Global Compulsory -->
 <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>

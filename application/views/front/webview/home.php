@@ -519,12 +519,12 @@
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_6[0]->title;?></a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[0]->slug); ?>"><?php echo $block_key_6[0]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_6[0]->author_name;?></a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[0]->slug); ?>"><?php echo $block_key_6[0]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
@@ -578,12 +578,12 @@
                                     </figure>
 
                                     <h3 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $block_key_6[1]->title;?></a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[1]->slug); ?>"><?php echo $block_key_6[1]->title;?></a>
                                     </h3>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_6[1]->author_name;?></a>
+                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[1]->slug); ?>"><?php echo $block_key_6[1]->author_name;?></a>
                                         </li>
                                         <li class="list-inline-item">/</li>
                                         <li class="list-inline-item">
@@ -652,7 +652,7 @@
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
                                 <h3 class="h4">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo format_post_time($data_block[$i]->time); ?>"><?php echo $data_block[$i]->title; ?></a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                 </h3>
                                 <p class="g-color-gray-dark-v2"><?php echo $data_block[$i]->excerpt; ?></p>
                             </div>
