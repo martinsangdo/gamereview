@@ -199,9 +199,9 @@ Class CollectHome extends REST_Controller
     }
     //
     private function parse_rss($link_rss){
-        $this->load->library('lastRSS.php');
+        $this->load->library('LastRSS.php');
 // create lastRSS object
-        $rss = new lastRSS;
+        $rss = new LastRSS;
 // setup transparent cache
         $rss->cache_dir = './cache';
         $rss->cache_time = 3600; // one hour

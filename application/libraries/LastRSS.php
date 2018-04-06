@@ -31,7 +31,7 @@
 * lastRSS
 * Simple yet powerfull PHP class to parse RSS files.
 */
-class lastRSS {
+class LastRSS {
 	// -------------------------------------------------------------------
 	// Public properties
 	// -------------------------------------------------------------------
