@@ -47,7 +47,7 @@ Class CollectHome extends REST_Controller
                 $final_data[$j] = array(
                     'site_id'=>$site_info[0]->_id,
                     'title'=>$rss_items[$j]['title'],
-                    'thumb_url'=>$graph->image,
+                    'thumb_url'=>isset($graph->image)?$graph->image:'',
                     'slug'=>sanitize($rss_items[$j]['title']),
                     'time'=>date('Y-m-d h:m:s', strtotime($rss_items[$j]['pubDate'])),
                     'author_name'=>'',
