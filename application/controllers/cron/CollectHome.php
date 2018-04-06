@@ -89,13 +89,9 @@ Class CollectHome extends REST_Controller
             'thumb_url'=>'',
             'slug'=>$raw_detail['slug'],
             'time'=>$raw_detail['date'],
-//            'content'=>$raw_detail['content']['rendered'],
             'author_name'=>'',
             'excerpt'=>$raw_detail['excerpt']['rendered'],
-            'category_name'=>'',      //should be first category
-            'category_slug'=>'',
             'comment_num'=>0,
-            'youtube_url'=>'',
             'original_post_id'=>$raw_detail['id'],
             'original_url'=>$raw_detail['link']
         );
@@ -109,11 +105,11 @@ Class CollectHome extends REST_Controller
             }
         }
         //get category name (first one)
-        if (count($raw_detail['categories']) > 0){
-            $cat_info = $this->sendGetWithoutHeader($site_info->api_uri.'categories/'.$raw_detail['categories'][0]);
-            $data['category_name'] = $cat_info['name'];
-            $data['category_slug'] = $cat_info['slug'];
-        }
+//        if (count($raw_detail['categories']) > 0){
+//            $cat_info = $this->sendGetWithoutHeader($site_info->api_uri.'categories/'.$raw_detail['categories'][0]);
+//            $data['category_name'] = $cat_info['name'];
+//            $data['category_slug'] = $cat_info['slug'];
+//        }
         //get comment number (skip it)
 //        $comment_list = $this->sendGet($site_info->api_uri.'comments?post='.$raw_detail['id']);
 //        if (isset($comment_list['header']['X-WP-Total'])){
@@ -184,10 +180,7 @@ Class CollectHome extends REST_Controller
                     'time'=>$rss_items[$j]['pubDate'],
                     'author_name'=>'',
                     'excerpt'=>$rss_items[$j]['description'],
-                    'category_name'=>'',      //should be first category
-                    'category_slug'=>'',
                     'comment_num'=>0,
-                    'youtube_url'=>'',
                     'original_post_id'=>$rss_items[$j]['guid'],
                     'original_url'=>$rss_items[$j]['link']
                 );

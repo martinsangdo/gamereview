@@ -34,3 +34,7 @@
 .slick-slide .media.g-bg-white {min-height:110px;}
 
 .block_data_2_hr {margin-top:0.5rem !important;margin-bottom:0.5rem !important;}
+
+/* detail page */
+#article_detail_container p {color:#000;}
+#article_detail_container figcaption {color: #999;}
