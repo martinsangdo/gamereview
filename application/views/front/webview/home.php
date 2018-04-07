@@ -51,6 +51,8 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css"/>
+    <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="/public/js/home.js"></script>
 
 </head>
@@ -200,7 +202,9 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $data_block[7]->thumb_url;?>"/>
+                                    <div class="home5-center-cropped"
+                                         style="background-image: url('<?php echo $data_block[7]->thumb_url;?>');">
+                                    </div>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -482,7 +486,9 @@
                     <!-- Article -->
                     <article class="u-block-hover">
                         <figure class="u-shadow-v25 u-bg-overlay g-bg-white-gradient-opacity-v1--after">
-                            <img class="u-block-hover__main--zoom-v1 img-fluid" src="<?php echo $data_block[$i]->thumb_url;?>"/>
+                            <div class="home2-center-cropped"
+                                 style="background-image: url('<?php echo $data_block[$i]->thumb_url;?>');">
+                            </div>
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-20">
@@ -933,8 +939,6 @@
 </div>
 <!-- End Youtube video modal window -->
 <!-- JS Global Compulsory -->
-<script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
-<script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
 <script src="/public/unity_assets/vendor/popper.min.js"></script>
 <script src="/public/unity_assets/vendor/bootstrap/bootstrap.min.js"></script>
 
@@ -963,49 +967,6 @@
 
 <!-- JS Customization -->
 <script src="/public/unity_assets/js/custom.js"></script>
-
-<!-- JS Plugins Init. -->
-<script>
-    $(document).on('ready', function () {
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of MegaMenu
-        $('.js-mega-menu').HSMegaMenu();
-
-        // initialization of HSDropdown component
-        $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
-            afterOpen: function () {
-                $(this).find('input[type="search"]').focus();
-            }
-        });
-
-        // initialization of scroll animation
-        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
-
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of counters
-        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('[class*="js-carousel"]');
-
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox');
-        // initialization of popups
-        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
-    });
-
-    $(window).on('load', function () {
-        // initialization of sticky blocks
-        setTimeout(function() { // important in this case
-            $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-        }, 1);
-    });
-</script>
 
 </body>
 </html>
