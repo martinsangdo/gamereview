@@ -1,6 +1,5 @@
 
 var submitting = false;
-
 //========== CLASS
 function Common() { }
 

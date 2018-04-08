@@ -53,6 +53,9 @@
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css"/>
     <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
     <script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+
+    <script src="/public/js/constant.js"></script>
+    <script src="/public/js/common.js"></script>
     <script src="/public/js/home.js"></script>
 
 </head>
@@ -679,31 +682,13 @@
                             <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Popular Tags</h2>
                         </div>
 
-                        <ul class="u-list-inline g-font-size-11 text-uppercase mb-0">
+                        <ul class="u-list-inline g-font-size-11 text-uppercase mb-0 hidden" id="popular_tags_tmpl">
                             <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Web Design</a>
+                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!"></a>
                             </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Bootstrap</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">SASS</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Marketing</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Unify</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Htmlstream</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Pixeel</a>
-                            </li>
-                            <li class="list-inline-item g-mb-10">
-                                <a class="u-tags-v1 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15" href="#!">Free Themes</a>
-                            </li>
+                        </ul>
+                        <ul class="u-list-inline g-font-size-11 text-uppercase mb-0" id="popular_tags">
+                            <!-- real tags loaded by javascript here -->
                         </ul>
                     </div>
                     <!-- End Popular Tags -->

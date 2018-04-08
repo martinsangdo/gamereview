@@ -51,6 +51,7 @@
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
 
+    <script src="/public/js/constant.js"></script>
     <script src="/public/js/common.js"></script>
     <script src="/public/js/article_detail.js"></script>
 

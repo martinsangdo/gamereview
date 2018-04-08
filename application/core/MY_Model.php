@@ -60,7 +60,7 @@ class MY_Model extends CI_Model {
             return FALSE;
         }
 		$rows = $this->db->query($sql);
-		return $rows->result;
+		return $rows->result();
 	}
 
 	/**

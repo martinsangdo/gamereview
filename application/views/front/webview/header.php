@@ -6,7 +6,7 @@
             <div class="row align-items-center">
                 <!-- Logo -->
                 <div class="col-md-3 g-hidden-md-down">
-                    <a href="bm-classic-home-page-1.html" class="navbar-brand">
+                    <a href="<?php echo base_url(); ?>" class="navbar-brand">
                         <img src="/public/unity_assets/img/logo.png" alt="Logo">
                     </a>
                 </div>

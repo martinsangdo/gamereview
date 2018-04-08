@@ -3,8 +3,9 @@ var SERVER_URI = window.location.protocol + '//' + window.location.hostname + ':
 
 //API URI
 var STR_MESS = {
-    MISSING_INPUT: 'Please input values',       //something missing in form
-    WRONG_CAPTCHA: 'Wrong captcha',
-    INVALID_LOGIN_ADMIN: 'Username or password is not correct'
 
+};
+//link of APIs
+var API_URI = {
+    GET_TOP_CAT: '/category/get_top_most'
 };
