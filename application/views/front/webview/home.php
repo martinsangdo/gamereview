@@ -8,13 +8,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="description" content="Latest PC, Mobile, Playstation game review, trailers and news">
+    <meta name="description" content="Gamereviewnews is one of the most latest news source for PS4, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS, and DS video game trailers, and more.">
     <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
     <meta name="author" content="Martin SangDo">
     <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
 
     <meta property="og:title" content="Latest game review, news, trailer" />
-    <meta property="og:description" content="Latest PC, Mobile, Playstation game review, trailers and news" />
+    <meta property="og:description" content="Gamereviewnews is one of the most latest news source for PS4, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS, and DS video game trailers, and more." />
     <meta property="og:type" content="gamereviewnews:article" />
     <meta property="og:url" content="gamereviewnews.com" />
     <meta property="og:site_name" content="Gamereviewnews" />
@@ -57,6 +57,15 @@
     <script src="/public/js/constant.js"></script>
     <script src="/public/js/common.js"></script>
     <script src="/public/js/home.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103883-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117103883-1');
+    </script>
 
 </head>
 
@@ -86,9 +95,9 @@
                                 <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($data_block[$i]->time); ?>
                             </small>
 
-                            <h3 class="h4 g-my-10">
+                            <h1 class="h4 g-my-10">
                                 <a class="g-color-white g-color-white--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
-                            </h3>
+                            </h1>
 
                         </div>
                     </article>
@@ -107,9 +116,9 @@
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-30">
-                            <h3 class="h4 g-mt-10">
+                            <h1 class="h4 g-mt-10">
                                 <a class="g-color-white" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
-                            </h3>
+                            </h1>
                             <small class="g-color-white">
                                 <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($data_block[$i]->time); ?>
                             </small>
@@ -145,9 +154,9 @@
                                         <img class="img-fluid w-100" src="<?php echo $block_key_13[0]->thumb_url;?>"/>
                                     </figure>
 
-                                    <h3 class="h4 g-mb-10">
+                                    <h1 class="h4 g-mb-10">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_13[0]->slug); ?>"><?php echo $block_key_13[0]->title;?></a>
-                                    </h3>
+                                    </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
@@ -172,9 +181,9 @@
                                     </a>
 
                                     <div class="media-body">
-                                        <h3 class="h6">
+                                        <h1 class="h6">
                                             <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                        </h3>
+                                        </h1>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
@@ -214,9 +223,9 @@
 
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
-                                <h3 class="h4">
+                                <h1 class="h4">
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[7]->slug); ?>"><?php echo $data_block[7]->title;?></a>
-                                </h3>
+                                </h1>
 
                                 <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                     <li class="list-inline-item">
@@ -247,9 +256,9 @@
                                         </div>
                                     </figure>
 
-                                    <h3 class="h4 g-mb-10">
+                                    <h1 class="h4 g-mb-10">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_2[0]->slug); ?>"><?php echo $block_key_2[0]->title;?></a>
-                                    </h3>
+                                    </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
@@ -274,9 +283,9 @@
                                         </a>
 
                                         <div class="media-body">
-                                            <h3 class="h6">
+                                            <h1 class="h6">
                                                 <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                            </h3>
+                                            </h1>
                                             <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time);?></span>
                                         </div>
                                     </article>
@@ -296,9 +305,9 @@
                                         </div>
                                     </figure>
 
-                                    <h3 class="h4 g-mb-10">
+                                    <h1 class="h4 g-mb-10">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $data_block[10]->title;?></a>
-                                    </h3>
+                                    </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
@@ -324,9 +333,9 @@
                                         </a>
 
                                         <div class="media-body">
-                                            <h3 class="h6">
+                                            <h1 class="h6">
                                                 <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                            </h3>
+                                            </h1>
                                             <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time);?></span>
                                         </div>
                                     </article>
@@ -362,9 +371,9 @@
 
                                 </figure>
 
-                                <h3 class="g-font-size-16 g-mb-10">
+                                <h1 class="g-font-size-16 g-mb-10">
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_1[$i]->title; ?></a>
-                                </h3>
+                                </h1>
                             </article>
                         </div>
                         <!-- End Article Video -->
@@ -381,7 +390,7 @@
                     <!-- Useful Links -->
                     <div class="g-mb-50">
                         <div class="u-heading-v3-1 g-mb-30">
-                            <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Useful Links</h2>
+                            <h3 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Useful Links</h3>
                         </div>
 
                         <ul class="list-unstyled">
@@ -403,12 +412,12 @@
                     <div class="u-shadow-v25 u-bg-overlay g-bg-img-hero g-bg-white-gradient-opacity-v2--after g-py-40 g-px-20 g-mb-50" style="background-image: url(/public/unity_assets/img-temp/500x600/img1.jpg);">
                         <div class="u-bg-overlay__inner text-center">
                             <div class="g-mb-40">
-                                <h2 class="g-color-white">Vancouver, BC</h2>
+                                <h3 class="g-color-white">Vancouver, BC</h3>
                                 <p class="g-color-white-opacity-0_8">Unit 25 Suite 3, 925 Prospect PI,<br>Beach Resort, 23001</p>
                             </div>
 
                             <div class="g-mb-30">
-                                <h3 class="d-inline-block g-bg-primary-opacity-0_6 g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-py-5 g-px-10">Phone number</h3>
+                                <h1 class="d-inline-block g-bg-primary-opacity-0_6 g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-py-5 g-px-10">Phone number</h1>
                                 <span class="d-block g-color-white g-font-size-18">+01 (0) 333 444 55</span>
                             </div>
 
@@ -440,9 +449,9 @@
                             </a>
 
                             <div class="media-body">
-                                <h3 class="h6">
+                                <h1 class="h6">
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                </h3>
+                                </h1>
                             </div>
                         </article>
                         <!-- End Article -->
@@ -466,9 +475,9 @@
                     </span>
 
                                 <header class="g-pos-abs g-bottom-20 g-left-0">
-                                    <h3 class="h5 g-bg-red-opacity-0_5 g-pa-5-10--sm">
+                                    <h1 class="h5 g-bg-red-opacity-0_5 g-pa-5-10--sm">
                                         <a class="g-color-white g-color-white--hover" href="#!">Traveling</a>
-                                    </h3>
+                                    </h1>
                                 </header>
                             </article>
                         </div>
@@ -495,9 +504,9 @@
                         </figure>
 
                         <div class="w-100 text-center g-absolute-centered g-px-20">
-                            <h3 class="h4 g-mt-10">
+                            <h1 class="h4 g-mt-10">
                                 <a class="g-color-white" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                            </h3>
+                            </h1>
                             <small class="g-color-white">
                                 <i class="icon-clock g-pos-rel g-top-1 g-mr-2"></i> <?php echo format_post_time($data_block[$i]->time);?>
                             </small>
@@ -527,9 +536,9 @@
                                         <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[0]->thumb_url;?>');"></div>
                                     </figure>
 
-                                    <h3 class="h4 g-mb-10">
+                                    <h1 class="h4 g-mb-10">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[0]->slug); ?>"><?php echo $block_key_6[0]->title;?></a>
-                                    </h3>
+                                    </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
@@ -561,9 +570,9 @@
                                     </figure>
 
                                     <div class="media-body">
-                                        <h3 class="g-font-size-16">
+                                        <h1 class="g-font-size-16">
                                             <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $data_block[$i]->title; ?></a>
-                                        </h3>
+                                        </h1>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
@@ -586,9 +595,9 @@
                                         <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[1]->thumb_url;?>');"></div>
                                     </figure>
 
-                                    <h3 class="h4 g-mb-10">
+                                    <h1 class="h4 g-mb-10">
                                         <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($block_key_6[1]->slug); ?>"><?php echo $block_key_6[1]->title;?></a>
-                                    </h3>
+                                    </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
@@ -619,9 +628,9 @@
                                         </figure>
 
                                         <div class="media-body">
-                                            <h3 class="g-font-size-16">
+                                            <h1 class="g-font-size-16">
                                                 <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $data_block[$i]->title; ?></a>
-                                            </h3>
+                                            </h1>
 
                                             <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                                 <li class="list-inline-item">
@@ -660,9 +669,9 @@
 
                             <!-- Article Content -->
                             <div class="col-md-7 align-self-center">
-                                <h3 class="h4">
+                                <h1 class="h4">
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
-                                </h3>
+                                </h1>
                                 <p class="g-color-gray-dark-v2"><?php echo $data_block[$i]->excerpt; ?></p>
                             </div>
                             <!-- End Article Content -->
@@ -710,9 +719,9 @@
                                     </a>
 
                                     <div class="media-body">
-                                        <h3 class="h6">
+                                        <h1 class="h6">
                                             <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                        </h3>
+                                        </h1>
                                     </div>
                                 </article>
                                 <!-- End Article -->
@@ -753,7 +762,7 @@
     <footer class="g-bg-secondary">
         <div class="g-brd-bottom g-brd-secondary-light-v2 g-py-10">
             <div class="container">
-                <h3 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">Popular Stories</h3>
+                <h1 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">Popular Stories</h1>
                 <!-- Footer - Popular Stories Carousel -->
                 <div class="js-carousel g-mx-minus-10"
                      data-infinite="true"
@@ -813,7 +822,7 @@
             <div class="g-brd-bottom--md g-brd-secondary-light-v2 g-pb-30--md g-mb-30">
                 <div class="row">
                     <div class="col-6 col-md-6 g-brd-right--md g-brd-secondary-light-v2 g-mb-30 g-mb-0--md">
-                        <h3 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">News</h3>
+                        <h1 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">News</h1>
 
                         <!-- News -->
                         <ul class="list-unstyled mb-0">
@@ -832,7 +841,7 @@
 
                     <div class="col-md-6">
                         <div class="g-pl-10--md">
-                            <h3 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">Magazines</h3>
+                            <h1 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">Magazines</h1>
 
                             <!-- Carousel -->
                             <div class="js-carousel g-mx-minus-5"
@@ -874,7 +883,7 @@
                                         </div>
                                         <figcaption class="g-color-white">
                                             <div class="g-pos-abs g-top-0 g-left-0 g-pa-20">
-                                                <h2 class="h4 g-color-white"><?php echo $data_block[$i]->title;?></h2>
+                                                <h3 class="h4 g-color-white"><?php echo $data_block[$i]->title;?></h3>
                                             </div>
                                             <div class="w-50 g-pos-abs g-bottom-0 g-left-0 g-pa-20">
                                                 <span class="d-block h6 g-color-white"><?php echo $data_block[$i]->author_name;?></span>

@@ -88,4 +88,19 @@ Class Block_content_model extends MY_Model
             return 0;
         }
     }
+    //get categories of this post
+    function get_tags($post_id){
+        $this->db->select('category._id, name, slug');
+        $this->db->from('category_post');
+        $this->db->where('post_id', $post_id);
+        $this->db->join('category', 'category_post.cat_id = category._id', 'right');
+        $query = $this->db->get();
+
+        if($query->result()){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
+
 }

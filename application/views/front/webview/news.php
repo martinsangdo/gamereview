@@ -61,34 +61,6 @@
 <main>
     <?php require_once('header.php'); ?>
 
-    <!-- Page Title -->
-    <section class="g-bg-secondary g-py-50" hidden>
-        <div class="container">
-            <div class="d-sm-flex text-center">
-                <div class="align-self-center">
-                    <h2 class="h3 g-mb-10 g-mb-0--md">Blog Single Page</h2>
-                </div>
-
-                <div class="align-self-center ml-auto">
-                    <ul class="u-list-inline">
-                        <li class="list-inline-item g-mr-5">
-                            <a class="u-link-v5 g-color-main" href="#!">Home</a>
-                            <i class="g-color-gray-light-v2 g-ml-5">/</i>
-                        </li>
-                        <li class="list-inline-item g-mr-5">
-                            <a class="u-link-v5 g-color-main" href="#!">Pages</a>
-                            <i class="g-color-gray-light-v2 g-ml-5">/</i>
-                        </li>
-                        <li class="list-inline-item g-color-primary">
-                            <span>Blog Single Page</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Page Title -->
-
     <!-- News Content -->
     <section class="g-pt-50 g-pb-100">
         <div class="container">
@@ -108,32 +80,6 @@
                                     <?php echo format_post_time($article_detail->time); ?>
                                 </li>
                             </ul>
-
-                            <hr class="g-brd-gray-light-v4 g-my-15">
-
-                            <ul class="list-inline text-uppercase mb-0">
-                                <li class="list-inline-item g-mr-10">
-                                    <strong class="align-middle g-font-size-24">423</strong>
-                                </li>
-                                <li class="list-inline-item g-mr-10">
-                                    <span class="g-color-gray-dark-v5">|</span>
-                                </li>
-                                <li class="list-inline-item g-mr-10">
-                                    <a class="btn u-btn-facebook g-font-size-12 rounded g-px-20--sm g-py-10" href="#!">
-                                        <i class="fa fa-facebook g-mr-5--sm"></i> <span class="g-hidden-xs-down">Share on Facebook</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item g-mr-10">
-                                    <a class="btn u-btn-twitter g-font-size-12 rounded g-px-20--sm g-py-10" href="#!">
-                                        <i class="fa fa-twitter g-mr-5--sm"></i> <span class="g-hidden-xs-down">Tweet on Twitter</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-lightred g-font-size-12 rounded g-py-10" href="#!">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                </li>
-                            </ul>
                         </header>
 
                         <div class="g-font-size-16 g-line-height-1_8 g-mb-30" id="article_detail_container">
@@ -147,10 +93,12 @@
                             </h6>
                             <h6 class="g-color-gray-dark-v1">
                                 <strong class="g-mr-5">Tags:</strong>
-                                <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="#!">Business</a>
-                                <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="#!">SaaS</a>
-                                <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="#!">Web Design</a>
-                                <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="#!">IT</a>
+                                <?php
+                                for ($i=0; $i<count($tag_list); $i++){
+                                ?>
+                                <a class="u-tags-v1 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover
+                                        g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="/category/<?php echo $tag_list[$i]->slug; ?>/<?php echo $tag_list[$i]->_id; ?>"><?php echo $tag_list[$i]->name; ?></a>
+                                <?php } //end for ?>
                             </h6>
                         </div>
                         <!-- End Sources & Tags -->
@@ -160,12 +108,6 @@
                         <!-- Social Shares -->
                         <div class="g-mb-30">
                             <ul class="list-inline text-uppercase mb-0">
-                                <li class="list-inline-item g-mr-10">
-                                    <strong class="align-middle g-font-size-24">423</strong>
-                                </li>
-                                <li class="list-inline-item g-mr-10">
-                                    <span class="g-color-gray-dark-v5">|</span>
-                                </li>
                                 <li class="list-inline-item g-mr-10">
                                     <a class="btn u-btn-facebook g-font-size-12 rounded g-px-20--sm g-py-10" href="#!">
                                         <i class="fa fa-facebook g-mr-5--sm"></i> <span class="g-hidden-xs-down">Share on Facebook</span>
