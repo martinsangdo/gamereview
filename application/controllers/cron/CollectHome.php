@@ -213,6 +213,8 @@ Class CollectHome extends REST_Controller
         $this->load->model('site_model');
         $this->data['list'] = $this->site_model->get_pagination(array('status' => 1), 0, 0);
 //        var_dump($this->data['list']);
+        //get total posts
+        $this->data['total_post'] = $this->block_content_model->get_total(array('status'=>1));
         $this->load->view('front/webview/show_crawl_time', $this->data);
     }
     //try to parse some website content
