@@ -7,5 +7,6 @@ var STR_MESS = {
 };
 //link of APIs
 var API_URI = {
-    GET_TOP_CAT: '/category/get_top_most'
+    GET_TOP_CAT: '/category/get_top_most',
+    GET_RELATED_POSTS: '/news/get_related_posts'
 };

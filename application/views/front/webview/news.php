@@ -62,12 +62,12 @@
     <?php require_once('header.php'); ?>
 
     <!-- News Content -->
-    <section class="g-pt-50 g-pb-100">
+    <section class="g-pt-50">
         <div class="container">
             <div class="row">
                 <!-- Articles Content -->
                 <div class="col-lg-9 g-mb-50 g-mb-0--lg">
-                    <article class="g-mb-60">
+                    <article class="g-mb-20">
                         <header class="g-mb-30">
                             <h2 class="h1 g-mb-15"><?php echo $article_detail->title; ?></h2>
 
@@ -91,6 +91,7 @@
                             <h6 class="g-color-gray-dark-v1 g-mb-15">
                                 <strong class="g-mr-5">Source:</strong> <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $site_detail->name; ?></a>
                             </h6>
+                            <?php if ($tag_list){ ?>
                             <h6 class="g-color-gray-dark-v1">
                                 <strong class="g-mr-5">Tags:</strong>
                                 <?php
@@ -100,6 +101,7 @@
                                         g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" href="/category/<?php echo $tag_list[$i]->slug; ?>/<?php echo $tag_list[$i]->_id; ?>"><?php echo $tag_list[$i]->name; ?></a>
                                 <?php } //end for ?>
                             </h6>
+                            <?php } //end if ?>
                         </div>
                         <!-- End Sources & Tags -->
 
@@ -118,11 +120,6 @@
                                         <i class="fa fa-twitter g-mr-5--sm"></i> <span class="g-hidden-xs-down">Tweet on Twitter</span>
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-lightred g-font-size-12 rounded g-py-10" href="#!">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                         <!-- End Social Shares -->
@@ -135,159 +132,28 @@
                                 <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Related Articles</h2>
                             </div>
 
-                            <div class="row">
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6 g-mb-30">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img2.jpg" alt="Image Description">
+                            <!-- Article Video -->
+                            <div class="col-lg-4 col-sm-6 g-mb-10 hidden" id="related_post_tmpl">
+                                <article>
+                                    <figure class="u-shadow-v25 g-pos-rel g-mb-20">
+                                        <div class="detail-center-cropped thumb_url"></div>
+                                    </figure>
 
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-blue text-uppercase rounded-0" href="#!">Spa</a>
-                                            </figcaption>
-                                        </figure>
+                                    <h3 class="g-font-size-16 g-mb-10">
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover title" href="#!"></a>
+                                    </h3>
+                                </article>
+                            </div>
+                            <!-- End Article Video -->
 
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Clark Valberg is a new CEO of InVision..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
-
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6 g-mb-30">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img3.jpg" alt="Image Description">
-
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-pink text-uppercase rounded-0" href="#!">Internet</a>
-                                            </figcaption>
-                                        </figure>
-
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">How to run a ticket: Best 10 point..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
-
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6 g-mb-30">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img8.jpg" alt="Image Description">
-
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-teal text-uppercase rounded-0" href="#!">Support</a>
-                                            </figcaption>
-                                        </figure>
-
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Skyscrapers from blocking sunlight..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
-
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img15.jpg" alt="Image Description">
-
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-darkred text-uppercase rounded-0" href="#!">Coworking</a>
-                                            </figcaption>
-                                        </figure>
-
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Architects plan to from blocking out sunlight..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
-
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6 g-mb-30 g-mb-0--sm">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img12.jpg" alt="Image Description">
-
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-indigo text-uppercase rounded-0" href="#!">Finance</a>
-                                            </figcaption>
-                                        </figure>
-
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Cooltex is one of the best technology company..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
-
-                                <!-- Article Video -->
-                                <div class="col-lg-4 col-sm-6">
-                                    <article>
-                                        <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                            <img class="img-fluid w-100" src="/public/unity_assets/img-temp/400x270/img13.jpg" alt="Image Description">
-
-                                            <figcaption class="g-pos-abs g-top-10 g-left-10">
-                                                <a class="btn btn-xs u-btn-brown text-uppercase rounded-0" href="#!">Meeting</a>
-                                            </figcaption>
-                                        </figure>
-
-                                        <h3 class="g-font-size-16 g-mb-10">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Cameron's silence on defence is shameful..</a>
-                                        </h3>
-                                    </article>
-                                </div>
-                                <!-- End Article Video -->
+                            <div class="row" id="related_posts_container">
+                                <!-- related posts will be here -->
                             </div>
                         </div>
 
-                        <!-- Author Block -->
-                        <div class="g-mb-60">
-                            <div class="u-heading-v3-1 g-mb-30">
-                                <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">About The Author</h2>
-                            </div>
-
-                            <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-30 g-mb-20">
-                                <img class="d-flex u-shadow-v25 g-width-80 g-height-80 rounded-circle g-mr-15" src="/public/unity_assets/img-temp/100x100/img8.jpg" alt="Image Description">
-
-                                <div class="media-body">
-                                    <h4 class="g-color-gray-dark-v1 g-mb-15">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!">Marina Olsson</a>
-                                    </h4>
-
-                                    <div class="g-mb-15">
-                                        <p class="g-color-gray-dark-v2">About my site amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
-                                    </div>
-
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item g-mr-10">
-                                            <a class="u-icon-v3 u-icon-size--xs g-font-size-12 g-bg-gray-light-v5 g-bg-primary--hover g-color-gray-dark-v5 g-color-white--hover rounded-circle" href="#!">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item g-mr-10">
-                                            <a class="u-icon-v3 u-icon-size--xs g-font-size-12 g-bg-gray-light-v5 g-bg-primary--hover g-color-gray-dark-v5 g-color-white--hover rounded-circle" href="#!">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item g-mr-10">
-                                            <a class="u-icon-v3 u-icon-size--xs g-font-size-12 g-bg-gray-light-v5 g-bg-primary--hover g-color-gray-dark-v5 g-color-white--hover rounded-circle" href="#!">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Author Block -->
 
                         <!-- Comments -->
-                        <div class="g-mb-60">
+                        <div class="g-mb-20">
                             <div class="u-heading-v3-1 g-mb-30">
                                 <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">24 Comments</h2>
                             </div>
@@ -409,7 +275,7 @@
                         <!-- Comments -->
 
                         <!-- Add Comment -->
-                        <div class="g-mb-60">
+                        <div class="g-mb-20">
                             <div class="u-heading-v3-1 g-mb-30">
                                 <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Add a Comment</h2>
                             </div>
@@ -861,6 +727,7 @@
 
 <div class="u-outer-spaces-helper">
     <div id="meta_data_container">
+        <input type="hidden" id="post_id" value="<?php echo $article_detail->_id; ?>"/>
         <input type="hidden" id="site_api_uri" value="<?php echo $site_detail->api_uri; ?>"/>
         <input type="hidden" id="original_post_id" value="<?php echo $article_detail->original_post_id; ?>"/>
         <input type="hidden" id="site_type" value="<?php echo $site_detail->type; ?>"/>

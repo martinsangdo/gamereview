@@ -1,8 +1,8 @@
 /**
  * author: Martin SangDo
  */
-
-function window_onload(){
+//get & show post detail
+function get_article_detail(){
     var site_type = $('#site_type').val();
     var $content_container = $('#article_detail_container');
 
@@ -23,7 +23,29 @@ function window_onload(){
         $content_container.append('<a href="'+$('#original_post_id').val()+'">Go detail >></a>');
         $('a', $content_container).attr('target', '_blank');
     }
-
+}
+//get & show related posts
+function get_related_posts(){
+    common.ajaxPost(API_URI.GET_RELATED_POSTS, {post_id: $('#post_id').val()}, function(top_list){
+        var len = top_list.length;
+        if (len == 0){
+            return;
+        }
+        var $item_tmpl = $('#related_post_tmpl');      //item template
+        var $item;
+        for (var i=0; i<len; i++){
+            $item = $item_tmpl.clone(false);
+            $('div.thumb_url', $item).css('background-image', 'url('+top_list[i]['thumb_url']+')').
+                css('cursor', 'pointer').attr('onclick', 'common.redirect("/news/'+top_list[i]['slug']+'");');
+            $('a.title', $item).html(top_list[i]['title']).attr('href', '/news/'+top_list[i]['slug']);
+            $('#related_posts_container').append($item.removeClass('hidden'));
+        }
+    });
+}
+//
+function window_onload(){
+    get_article_detail();
+    get_related_posts();
 }
 
 window.onload = window_onload;

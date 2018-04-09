@@ -47,3 +47,5 @@ define('BLOCK_KEY_SIDE_PREFIX', 'block_key_');
 //site type in DB
 define('WORDPRESS_TYPE', 'wp');
 define('RSS_TYPE', 'rss');
+//
+define('RELATED_POST_NUM', 9);      //number of related posts
