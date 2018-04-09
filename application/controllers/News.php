@@ -19,7 +19,10 @@ Class News extends REST_Controller
         $article_detail = $this->block_content_model->read_row(array('slug'=>$slug));
         $site_detail = $this->site_model->read_row(array('_id'=>$article_detail->site_id));
         $tag_list = $this->block_content_model->get_tags($article_detail->_id);
-
+        //
+        $this->data[BLOCK_KEY_3] = $this->block_content_model->get_latest_posts(array('site_id' => 6), 0, DEFAULT_PAGE_LEN, $article_detail->_id);
+        $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 20), 0, DEFAULT_PAGE_LEN);
+        //
         $this->data['site_detail'] = $site_detail;
         $this->data['article_detail'] = $article_detail;
         $this->data['tag_list'] = $tag_list;

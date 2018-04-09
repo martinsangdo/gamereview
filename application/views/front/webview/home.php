@@ -306,7 +306,7 @@
                                     </figure>
 
                                     <h1 class="h4 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#!"><?php echo $data_block[10]->title;?></a>
+                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[10]->title;?></a>
                                     </h1>
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">

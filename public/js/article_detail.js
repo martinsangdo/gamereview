@@ -46,6 +46,13 @@ function get_related_posts(){
 function window_onload(){
     get_article_detail();
     get_related_posts();
+    //replace broken images
+    $('img').each(function() {
+        if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+            // image was broken, replace with your new image
+            this.src = '/public/unity_assets/img/missing_img.png';
+        }
+    });
 }
 
 window.onload = window_onload;

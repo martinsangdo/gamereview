@@ -43,11 +43,11 @@ Class Block_content_model extends MY_Model
         }
     }
 
-    function get_latest_posts($where, $offset, $limit, $last_id = ''){
+    function get_latest_posts($where, $offset, $limit, $except_id = ''){
         $this->db->from($this->table_name);
         $this->db->where($where);
-        if(!empty($last_id)) {
-            $this->db->where('block_content._id <', $last_id);
+        if(!empty($except_id)) {
+            $this->db->where('block_content._id <>', $except_id);
         } else if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
