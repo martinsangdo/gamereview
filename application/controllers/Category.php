@@ -22,10 +22,11 @@ Class Category extends REST_Controller
             CAT_POST_NUM.' OFFSET '.$offset);
         $this->data['posts'] = $posts_in_cat;
         //get total posts in category
-        $total_posts = $this->category_model->read_row(array('_id'=>$cat_id));
+        $cat_detail = $this->category_model->read_row(array('_id'=>$cat_id));
         //create paging
         $base_url = '/category/'.$cat_slug.'/'.$cat_id.'/';
-        $this->data['pagination'] = $this->create_pagination($base_url, $total_posts->post_num, CAT_POST_NUM);
+        $this->data['pagination'] = $this->create_pagination($base_url, $cat_detail->post_num, CAT_POST_NUM);
+        $this->data['cat_detail'] = $cat_detail;
         //
         $this->load->view('front/webview/category', $this->data);
     }

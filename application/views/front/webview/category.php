@@ -2,13 +2,26 @@
 <html lang="en">
 <head>
     <!-- Title -->
-    <title>Multipage - Blog and Magazine Page Layout 2 | Unify - Responsive Website Template</title>
+    <title><?php echo $cat_detail->name; ?></title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <meta name="description" content="All game articles of <?php echo $cat_detail->name; ?>">
+    <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
+    <meta name="author" content="Martin SangDo">
+    <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
+
+    <meta property="og:title" content="<?php echo $cat_detail->name; ?>" />
+    <meta property="og:description" content="All game articles of <?php echo $cat_detail->name; ?>" />
+    <meta property="og:type" content="gamereviewnews:category" />
+    <meta property="og:url" content="<?php echo full_url($_SERVER); ?>" />
+    <meta property="og:site_name" content="Gamereviewnews" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="<?php echo $posts[0]->thumb_url; ?>"  />
+    <meta property="og:image:url" content="<?php echo $posts[0]->thumb_url; ?>" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="/public/favicon.ico">
 
@@ -142,6 +155,9 @@
 
     <!-- Related Posts -->
     <div class="g-bg-secondary g-py-20">
+        <?php
+        for ($j=0; $j<4; $j++){
+        ?>
         <div class="container">
             <!-- Carousel -->
             <div class="js-carousel g-mx-minus-10"
@@ -173,8 +189,9 @@
                  }
                }]'>
                 <?php
-                for ($i=6; $i<10; $i++){
-                if (isset($posts[$i])) {
+                $start_index = 6 + $j*4;
+                for ($i=$start_index; $i<$start_index + 4; $i++){
+                    if (isset($posts[$i])) {
                     ?>
                     <div class="js-slide g-px-10 cat_fix_height_slide">
                         <!-- Article -->
@@ -193,175 +210,10 @@
                     </div>
                     <?php
                     }   //end if
-                } //end for ?>
+                } //end for $i?>
             </div>
         </div>
-
-        <div class="container g-mt-20">
-            <!-- Carousel -->
-            <div class="js-carousel g-mx-minus-10"
-                 data-infinite="true"
-                 data-slides-show="4"
-                 data-lazy-load="ondemand"
-                 data-arrows-classes="u-arrow-v1 g-pos-abs g-top-minus-40 g-width-30 g-height-30 g-color-secondary-dark-v1 g-color-primary--hover"
-                 data-arrow-left-classes="fa fa-angle-left g-right-30"
-                 data-arrow-right-classes="fa fa-angle-right g-right-0"
-                 data-responsive='[{
-                 "breakpoint": 1200,
-                 "settings": {
-                   "slidesToShow": 4
-                 }
-               }, {
-                 "breakpoint": 992,
-                 "settings": {
-                   "slidesToShow": 3
-                 }
-               }, {
-                 "breakpoint": 768,
-                 "settings": {
-                   "slidesToShow": 2
-                 }
-               }, {
-                 "breakpoint": 480,
-                 "settings": {
-                   "slidesToShow": 1
-                 }
-               }]'>
-                <?php
-                for ($i=10; $i<14; $i++){
-                    if (isset($posts[$i])) {
-                        ?>
-                        <div class="js-slide g-px-10 cat_fix_height_slide">
-                            <!-- Article -->
-                            <article>
-                                <div class="detail-center-cropped thumb_url"
-                                     style="background-image: url(<?php echo $posts[$i]->thumb_url; ?>);"></div>
-
-                                <div class="g-bg-white g-pa-20 cat_desc_cut">
-                                    <h3 class="g-font-size-15"><a class="u-link-v5 g-color-main g-color-primary--hover"
-                                                                  href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
-                                    </h3>
-                                    <p class="g-font-size-13"><?php echo $posts[$i]->excerpt; ?></p>
-                                </div>
-                            </article>
-                            <!-- End Article -->
-                        </div>
-                        <?php
-                    }   //end if
-                } //end for ?>
-            </div>
-        </div>
-
-        <div class="container g-mt-20">
-            <!-- Carousel -->
-            <div class="js-carousel g-mx-minus-10"
-                 data-infinite="true"
-                 data-slides-show="4"
-                 data-lazy-load="ondemand"
-                 data-arrows-classes="u-arrow-v1 g-pos-abs g-top-minus-40 g-width-30 g-height-30 g-color-secondary-dark-v1 g-color-primary--hover"
-                 data-arrow-left-classes="fa fa-angle-left g-right-30"
-                 data-arrow-right-classes="fa fa-angle-right g-right-0"
-                 data-responsive='[{
-                 "breakpoint": 1200,
-                 "settings": {
-                   "slidesToShow": 4
-                 }
-               }, {
-                 "breakpoint": 992,
-                 "settings": {
-                   "slidesToShow": 3
-                 }
-               }, {
-                 "breakpoint": 768,
-                 "settings": {
-                   "slidesToShow": 2
-                 }
-               }, {
-                 "breakpoint": 480,
-                 "settings": {
-                   "slidesToShow": 1
-                 }
-               }]'>
-                <?php
-                for ($i=14; $i<18; $i++){
-                    if (isset($posts[$i])) {
-                        ?>
-                        <div class="js-slide g-px-10 cat_fix_height_slide">
-                            <!-- Article -->
-                            <article>
-                                <div class="detail-center-cropped thumb_url"
-                                     style="background-image: url(<?php echo $posts[$i]->thumb_url; ?>);"></div>
-
-                                <div class="g-bg-white g-pa-20 cat_desc_cut">
-                                    <h3 class="g-font-size-15"><a class="u-link-v5 g-color-main g-color-primary--hover"
-                                                                  href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
-                                    </h3>
-                                    <p class="g-font-size-13"><?php echo $posts[$i]->excerpt; ?></p>
-                                </div>
-                            </article>
-                            <!-- End Article -->
-                        </div>
-                        <?php
-                    }   //end if
-                } //end for ?>
-            </div>
-        </div>
-
-        <div class="container g-mt-20">
-            <!-- Carousel -->
-            <div class="js-carousel g-mx-minus-10"
-                 data-infinite="true"
-                 data-slides-show="4"
-                 data-lazy-load="ondemand"
-                 data-arrows-classes="u-arrow-v1 g-pos-abs g-top-minus-40 g-width-30 g-height-30 g-color-secondary-dark-v1 g-color-primary--hover"
-                 data-arrow-left-classes="fa fa-angle-left g-right-30"
-                 data-arrow-right-classes="fa fa-angle-right g-right-0"
-                 data-responsive='[{
-                 "breakpoint": 1200,
-                 "settings": {
-                   "slidesToShow": 4
-                 }
-               }, {
-                 "breakpoint": 992,
-                 "settings": {
-                   "slidesToShow": 3
-                 }
-               }, {
-                 "breakpoint": 768,
-                 "settings": {
-                   "slidesToShow": 2
-                 }
-               }, {
-                 "breakpoint": 480,
-                 "settings": {
-                   "slidesToShow": 1
-                 }
-               }]'>
-                <?php
-                for ($i=18; $i<22; $i++){
-                    if (isset($posts[$i])) {
-                        ?>
-                        <div class="js-slide g-px-10 cat_fix_height_slide">
-                            <!-- Article -->
-                            <article>
-                                <div class="detail-center-cropped thumb_url"
-                                     style="background-image: url(<?php echo $posts[$i]->thumb_url; ?>);"></div>
-
-                                <div class="g-bg-white g-pa-20 cat_desc_cut">
-                                    <h3 class="g-font-size-15"><a class="u-link-v5 g-color-main g-color-primary--hover"
-                                                                  href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
-                                    </h3>
-                                    <p class="g-font-size-13"><?php echo $posts[$i]->excerpt; ?></p>
-                                </div>
-                            </article>
-                            <!-- End Article -->
-                        </div>
-                        <?php
-                    }   //end if
-                } //end for ?>
-            </div>
-        </div>
-
+        <?php } //end for $j ?>
     </div>
     <!-- End Related Posts -->
 
