@@ -91,6 +91,7 @@
                         </header>
 
                         <div class="g-font-size-16 g-line-height-1_8 g-mb-30" id="article_detail_container">
+                            <img id="loading_img" src="/public/unity_assets/img/loading.gif"/>
                             <!-- content be here -->
                         </div>
 

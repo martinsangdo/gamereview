@@ -16,12 +16,14 @@ function get_article_detail(){
                 $('a', $content_container).attr('target', '_blank');
                 $('img', $content_container).css('max-width', '100%').css('height', 'auto');
                 // $('iframe', $content_container).css('max-width', '100%').css('height', 'auto');
+                $('#loading_img').remove();
             }
         }, function(err){});
     } else if (site_type == 'rss'){
         $content_container.html($('#post_excerpt').html());
         $content_container.append('<a href="'+$('#original_post_id').val()+'">Go detail >></a>');
         $('a', $content_container).attr('target', '_blank');
+        $('#loading_img').remove();
     }
 }
 //get & show related posts

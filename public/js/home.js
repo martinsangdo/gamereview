@@ -14,12 +14,22 @@ function get_top_read_categories(){
         }
         var $item_tmpl = $('li', $('#popular_tags_tmpl'));      //item template
         var $item;
+        //group categories which have same name
+        var distinct_cat = {};
         for (var i=0; i<len; i++){
-            $item = $item_tmpl.clone(false);
-            $('a', $item).text(top_list[i]['name']).
-                attr('href', '/category/'+top_list[i]['slug']+'/'+top_list[i]['_id']);
-            $('#popular_tags').append($item);
+            if (common.isEmpty(distinct_cat[top_list[i]['name']])){
+                distinct_cat[top_list[i]['name']] = [];
+            }
+            distinct_cat[top_list[i]['name']].push(top_list[i]['_id']);
+
+
         }
+        $.each(distinct_cat, function (key, val) {
+            $item = $item_tmpl.clone(false);
+            $('a', $item).text(key).
+                attr('href', '/category/popular-tags/'+distinct_cat[key].join('-'));
+            $('#popular_tags').append($item);
+        });
     });
 }
 //

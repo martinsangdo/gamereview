@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <!-- Title -->
-    <title><?php echo $cat_detail->name; ?></title>
+    <title>Latest game review, news, trailer</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <meta name="description" content="All game articles of <?php echo $cat_detail->name; ?>">
+    <meta name="description" content="Latest game review, news, trailer">
     <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
     <meta name="author" content="Martin SangDo">
     <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
 
-    <meta property="og:title" content="<?php echo $cat_detail->name; ?>" />
-    <meta property="og:description" content="All game articles of <?php echo $cat_detail->name; ?>" />
+    <meta property="og:title" content="Latest game review, news, trailer" />
+    <meta property="og:description" content="Latest game review, news, trailer" />
     <meta property="og:type" content="gamereviewnews:category" />
     <meta property="og:url" content="<?php echo full_url($_SERVER); ?>" />
     <meta property="og:site_name" content="Gamereviewnews" />
@@ -156,9 +156,9 @@
     <!-- Related Posts -->
     <div class="g-bg-secondary g-py-20">
         <?php
-        for ($j=0; $j<4; $j++){
+        for ($j=0; $j<6; $j++){     //6 rows
         ?>
-        <div class="container">
+        <div class="container g-mt-20">
             <!-- Carousel -->
             <div class="js-carousel g-mx-minus-10"
                  data-infinite="true"
@@ -217,38 +217,6 @@
     </div>
     <!-- End Related Posts -->
 
-    <!-- Articles -->
-    <div class="g-max-width-700 mx-auto g-px-20 g-px-0--md g-pt-20">
-        <?php
-        for ($i=22;$i<26;$i++){
-            if (isset($posts[$i])) {
-                ?>
-                <!-- Article -->
-                <article class="g-mb-20">
-                    <div class="text-center">
-                        <h2 class="h3 mb-3"><a class="u-link-v5 g-color-main g-color-primary--hover"
-                                               href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
-                        </h2>
-                    </div>
-
-                    <figure class="mb-4 pointer text_center">
-                        <img class="img-fluid" src="<?php echo $posts[$i]->thumb_url; ?>"
-                             alt="<?php echo $posts[$i]->title; ?>"
-                             onclick="common.redirect('<?php echo detail_uri($posts[$i]->slug); ?>');">
-                    </figure>
-
-                    <!-- Info -->
-                    <div class="mb-4 text-center">
-                        <p><?php echo $posts[$i]->excerpt; ?></p>
-                    </div>
-                    <!-- End Info -->
-                </article>
-                <!-- End Article -->
-                <?php
-                }   //end if
-            } //end for ?>
-    </div>
-    <!-- End Articles -->
     <!-- Pagination -->
     <?php echo $pagination; ?>
     <!-- End Pagination -->
