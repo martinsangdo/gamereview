@@ -351,7 +351,7 @@
 
                     <!-- Recent Videos -->
                     <div class="u-heading-v3-1 g-mb-30">
-                        <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Videos</h2>
+                        <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary pointer" onclick="common.redirect('/video')">Recent Videos</h2>
                     </div>
 
                     <div class="row">

@@ -713,14 +713,14 @@ Class MY_Controller extends CI_Controller
         return $result;
     }
     //create pagination links
-    protected function create_pagination($url, $total, $per_page){
+    protected function create_pagination($url, $total, $per_page, $uri_segment){
         $this->load->library('pagination');
         $config = array(
             'base_url' => $url,
             'total_rows' => $total,
             'per_page' => $per_page,
             'num_links' => 3,
-            'uri_segment' => 4,
+            'uri_segment' => $uri_segment, //segment of offset
             'full_tag_open' => '<ul class="list-inline text-center mb-0">',
             'full_tag_close' => '</ul>',
             'first_tag_open' => '<li class="list-inline-item g-hidden-xs-down">',

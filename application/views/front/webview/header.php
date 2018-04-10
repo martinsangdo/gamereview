@@ -125,7 +125,7 @@
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/videos">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/video">
                                 Videos
                             </a>
                         </li>
