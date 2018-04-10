@@ -11,6 +11,16 @@ Class Category extends REST_Controller
     }
     //show list of posts inside category
     public function index_get(){
+        $cat_id = $this->uri->segment(3);
+        $this->load->model('category_model');
+        //get all posts belong to this category id
+        $posts_in_cat = $this->category_model->custom_query('SELECT block_content.* FROM category_post'.
+            ' LEFT JOIN block_content ON block_content._id = category_post.post_id '.
+            ' WHERE cat_id='.$cat_id.' ORDER BY block_content._id DESC LIMIT '.DEFAULT_PAGE_LEN);
+        $this->data['posts'] = $posts_in_cat;
+        //create paging
+
+        //
         $this->load->view('front/webview/category', $this->data);
     }
     //get most read categories

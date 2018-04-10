@@ -3,6 +3,7 @@
 */
 .pointer {cursor:pointer;}
 .hidden {display: none !important;}
+.text_center {text-align:center;}
 /* homepage */
 .home1-center-cropped {
     width: 554px;
@@ -50,4 +51,11 @@
     height: 143px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+/* category */
+.cat_fix_height_slide {height:300px !important;}
+.cat_desc_cut p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
