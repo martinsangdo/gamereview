@@ -4,6 +4,7 @@
 .pointer {cursor:pointer;}
 .hidden {display: none !important;}
 .text_center {text-align:center;}
+.bold {font-weight:bold;}
 /* homepage */
 .home1-center-cropped {
     width: 554px;
@@ -47,7 +48,7 @@
 #article_detail_container p {color:#000;}
 #article_detail_container figcaption {color: #999;}
 .detail-center-cropped {
-    width: 255px;
+    width: 263px;
     height: 143px;
     background-position: center center;
     background-repeat: no-repeat;

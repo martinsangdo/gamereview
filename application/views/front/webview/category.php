@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,33 +111,38 @@
     <div class="g-max-width-700 mx-auto g-px-20 g-px-0--md g-pt-20">
     <?php
     for ($i=2;$i<6;$i++){
-    ?>
-        <!-- Article -->
-        <article class="g-mb-20">
-            <div class="text-center">
-                <h2 class="h3 mb-3"><a class="u-link-v5 g-color-main g-color-primary--hover" href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a></h2>
-            </div>
+        if (isset($posts[$i])) {
+            ?>
+            <!-- Article -->
+            <article class="g-mb-20">
+                <div class="text-center">
+                    <h2 class="h3 mb-3"><a class="u-link-v5 g-color-main g-color-primary--hover"
+                                           href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
+                    </h2>
+                </div>
 
-            <figure class="mb-4 pointer text_center">
-                <img class="img-fluid" src="<?php echo $posts[$i]->thumb_url; ?>" alt="<?php echo $posts[$i]->title; ?>"  onclick="common.redirect('<?php echo detail_uri($posts[$i]->slug); ?>');">
-            </figure>
+                <figure class="mb-4 pointer text_center">
+                    <img class="img-fluid" src="<?php echo $posts[$i]->thumb_url; ?>"
+                         alt="<?php echo $posts[$i]->title; ?>"
+                         onclick="common.redirect('<?php echo detail_uri($posts[$i]->slug); ?>');">
+                </figure>
 
-            <!-- Info -->
-            <div class="mb-4 text-center">
-                <p><?php echo $posts[$i]->excerpt; ?></p>
-            </div>
-            <!-- End Info -->
-        </article>
-    <!-- End Article -->
-    <?php } //end for ?>
+                <!-- Info -->
+                <div class="mb-4 text-center">
+                    <p><?php echo $posts[$i]->excerpt; ?></p>
+                </div>
+                <!-- End Info -->
+            </article>
+            <!-- End Article -->
+            <?php
+            } //end if
+        } //end for ?>
     </div>
     <!-- End Articles -->
 
     <!-- Related Posts -->
     <div class="g-bg-secondary g-py-20">
         <div class="container">
-            <h3 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-4">Related Posts</h3>
-
             <!-- Carousel -->
             <div class="js-carousel g-mx-minus-10"
                  data-infinite="true"
@@ -248,7 +252,6 @@
             </div>
         </div>
 
-
         <div class="container g-mt-20">
             <!-- Carousel -->
             <div class="js-carousel g-mx-minus-10"
@@ -303,13 +306,69 @@
                 } //end for ?>
             </div>
         </div>
+
+        <div class="container g-mt-20">
+            <!-- Carousel -->
+            <div class="js-carousel g-mx-minus-10"
+                 data-infinite="true"
+                 data-slides-show="4"
+                 data-lazy-load="ondemand"
+                 data-arrows-classes="u-arrow-v1 g-pos-abs g-top-minus-40 g-width-30 g-height-30 g-color-secondary-dark-v1 g-color-primary--hover"
+                 data-arrow-left-classes="fa fa-angle-left g-right-30"
+                 data-arrow-right-classes="fa fa-angle-right g-right-0"
+                 data-responsive='[{
+                 "breakpoint": 1200,
+                 "settings": {
+                   "slidesToShow": 4
+                 }
+               }, {
+                 "breakpoint": 992,
+                 "settings": {
+                   "slidesToShow": 3
+                 }
+               }, {
+                 "breakpoint": 768,
+                 "settings": {
+                   "slidesToShow": 2
+                 }
+               }, {
+                 "breakpoint": 480,
+                 "settings": {
+                   "slidesToShow": 1
+                 }
+               }]'>
+                <?php
+                for ($i=18; $i<22; $i++){
+                    if (isset($posts[$i])) {
+                        ?>
+                        <div class="js-slide g-px-10 cat_fix_height_slide">
+                            <!-- Article -->
+                            <article>
+                                <div class="detail-center-cropped thumb_url"
+                                     style="background-image: url(<?php echo $posts[$i]->thumb_url; ?>);"></div>
+
+                                <div class="g-bg-white g-pa-20 cat_desc_cut">
+                                    <h3 class="g-font-size-15"><a class="u-link-v5 g-color-main g-color-primary--hover"
+                                                                  href="<?php echo detail_uri($posts[$i]->slug); ?>"><?php echo $posts[$i]->title; ?></a>
+                                    </h3>
+                                    <p class="g-font-size-13"><?php echo $posts[$i]->excerpt; ?></p>
+                                </div>
+                            </article>
+                            <!-- End Article -->
+                        </div>
+                        <?php
+                    }   //end if
+                } //end for ?>
+            </div>
+        </div>
+
     </div>
     <!-- End Related Posts -->
 
     <!-- Articles -->
     <div class="g-max-width-700 mx-auto g-px-20 g-px-0--md g-pt-20">
         <?php
-        for ($i=18;$i<20;$i++){
+        for ($i=22;$i<26;$i++){
             if (isset($posts[$i])) {
                 ?>
                 <!-- Article -->
@@ -338,40 +397,10 @@
             } //end for ?>
     </div>
     <!-- End Articles -->
-
     <!-- Pagination -->
-    <div class="container g-pb-20">
-        <nav aria-label="Page Navigation">
-            <ul class="list-inline text-center mb-0">
-                <li class="list-inline-item">
-                    <a class="active u-pagination-v1__item g-width-30 g-height-30 g-brd-secondary-light-v2 g-brd-primary--active g-color-white g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">1</a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">2</a>
-                </li>
-                <li class="list-inline-item g-hidden-xs-down">
-                    <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">3</a>
-                </li>
-                <li class="list-inline-item">
-                    <span class="g-width-30 g-height-30 g-color-gray-dark-v5 g-font-size-12 rounded g-pa-5">...</span>
-                </li>
-                <li class="list-inline-item g-hidden-xs-down">
-                    <a class="u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5" href="#!">15</a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="u-pagination-v1__item g-brd-secondary-light-v2 g-brd-primary--hover g-color-gray-dark-v5 g-color-primary--hover g-font-size-12 rounded g-px-15 g-py-5 g-ml-15" href="#!" aria-label="Next">
-                <span aria-hidden="true">
-                  Next
-                  <i class="ml-2 fa fa-angle-right"></i>
-                </span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <?php echo $pagination; ?>
     <!-- End Pagination -->
-
+    <div class="g-mb-20"></div>
     <!-- Footer -->
     <footer class="g-bg-secondary">
         <div class="container">

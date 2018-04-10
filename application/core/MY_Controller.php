@@ -712,4 +712,30 @@ Class MY_Controller extends CI_Controller
         curl_close($ch);
         return $result;
     }
+    //create pagination links
+    protected function create_pagination($url, $total, $per_page){
+        $this->load->library('pagination');
+        $config = array(
+            'base_url' => $url,
+            'total_rows' => $total,
+            'per_page' => $per_page,
+            'num_links' => 3,
+            'uri_segment' => 4,
+            'full_tag_open' => '<ul class="list-inline text-center mb-0">',
+            'full_tag_close' => '</ul>',
+            'first_tag_open' => '<li class="list-inline-item g-hidden-xs-down">',
+            'first_tag_close' => '</li>',
+            'num_tag_open' => '<li class="list-inline-item g-hidden-xs-down">',
+            'num_tag_close' => '</li>',
+            'attributes' => array('class' => 'u-pagination-v1__item g-width-30 g-height-30 g-brd-transparent g-brd-primary--hover g-brd-primary--active g-color-secondary-dark-v1 g-bg-primary--active g-font-size-12 rounded g-pa-5'),
+            'cur_tag_open' => '<li class="list-inline-item g-hidden-xs-down bold">',
+            'cur_tag_close' => '</li>',
+            'first_link' => false,
+            'last_link' => false
+        );
+
+        $this->pagination->initialize($config);
+
+        return $this->pagination->create_links();
+    }
 }

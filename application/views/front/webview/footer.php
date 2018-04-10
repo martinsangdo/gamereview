@@ -1,5 +1,5 @@
 <!-- Footer - Top Section -->
-<div class="g-brd-bottom g-brd-secondary-light-v2 g-mb-30">
+<div class="g-brd-bottom g-brd-secondary-light-v2 g-mb-30 g-pt-20">
     <div class="row align-items-center">
         <div class="col-md-4 g-hidden-sm-down g-mb-30">
             <!-- Logo -->
