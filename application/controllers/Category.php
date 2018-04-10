@@ -11,7 +11,7 @@ Class Category extends REST_Controller
     }
     //show list of posts inside category
     public function index_get(){
-
+        $this->load->view('front/webview/category', $this->data);
     }
     //get most read categories
     public function get_top_most_post(){

@@ -51,9 +51,9 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css"/>
+
     <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
     <script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-
     <script src="/public/js/constant.js"></script>
     <script src="/public/js/common.js"></script>
     <script src="/public/js/home.js"></script>
