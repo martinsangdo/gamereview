@@ -12,9 +12,9 @@
         <div class="col-md-4 text-center text-md-right g-mb-30">
             <!-- Subscribe Form -->
             <form class="input-group rounded">
-                <input class="form-control g-brd-secondary-light-v2 g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-secondary-light-v3 g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="email" placeholder="Enter your email address">
+                <input class="form-control g-brd-secondary-light-v2 g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-secondary-light-v3 g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="email" placeholder="Enter your email address" id="txt_email_subscribe"/>
                 <span class="input-group-addon g-brd-none g-py-0 g-pr-0">
-                    <button class="btn u-btn-white g-color-primary--hover g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="submit">Subscribe</button>
+                    <button class="btn u-btn-white g-color-primary--hover g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="button" onclick="common.save_email_subscribe($.trim($('#txt_email_subscribe').val()))">Subscribe</button>
                   </span>
             </form>
             <!-- End Subscribe Form -->

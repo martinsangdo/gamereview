@@ -8,13 +8,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="description" content="<?php echo preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt)); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars(preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt))); ?>">
     <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
     <meta name="author" content="Martin SangDo">
     <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
 
     <meta property="og:title" content="<?php echo $article_detail->title; ?>" />
-    <meta property="og:description" content="<?php echo strip_tags($article_detail->excerpt); ?>" />
+    <meta property="og:description" content="<?php echo htmlspecialchars(preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt))); ?>" />
     <meta property="og:type" content="gamereviewnews:article" />
     <meta property="og:url" content="<?php echo full_url($_SERVER); ?>" />
     <meta property="og:site_name" content="Gamereviewnews" />

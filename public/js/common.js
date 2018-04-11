@@ -71,3 +71,23 @@ Common.prototype.format_date = function(d){
     return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate() +
         ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 };
+//save email subscribe
+Common.prototype.save_email_subscribe = function(email) {
+    if (submitting){
+        return;
+    }
+    if (this.isEmpty(email) || !this.isValidEmail(email)){
+        alert('You should input valid email');
+        return;
+    }
+    submitting = true;
+    this.ajaxPost(API_URI.SAVE_EMAIL_SUBSCRIBE, {email: email}, function(resp){
+        if (resp.result){
+
+        } else {
+            //failed
+        }
+        submitting = false;
+        alert('Thank you! Your email is saved!');
+    });
+};

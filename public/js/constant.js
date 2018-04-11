@@ -10,7 +10,8 @@ var API_URI = {
     GET_TOP_CAT: '/category/get_top_most',
     GET_RELATED_POSTS: '/news/get_related_posts',
     ADD_NEW_COMMENT: '/comment/add_new',
-    GET_COMMENT_PAGING: '/comment/get_list_paging'
+    GET_COMMENT_PAGING: '/comment/get_list_paging',
+    SAVE_EMAIL_SUBSCRIBE: '/subscribe/save_email'
 };
 
 var CONST = {
