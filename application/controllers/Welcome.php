@@ -69,5 +69,8 @@ class Welcome extends MY_Controller
 //        ));
     }
 
+    public function privacy(){
+        $this->load->view('front/webview/privacy', $this->data);
+    }
 
 }

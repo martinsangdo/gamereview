@@ -22,7 +22,7 @@ Class Comment extends REST_Controller
             'time' => date('Y-m-d H:i:s')
         );
         $result = $this->comment_model->create($new_record);
-
+        //todo: increase comment_num in block_content
         $this->response(RestSuccess(array('result'=>$result)), SUCCESS_CODE);
     }
     //get list of comments

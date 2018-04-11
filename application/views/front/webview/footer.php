@@ -9,61 +9,6 @@
             <!-- End Logo -->
         </div>
 
-        <div class="col-md-4 ml-auto g-mb-30">
-            <!-- Social Icons -->
-            <ul class="list-inline mb-0">
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Like Us on Facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Follow Us on Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Join Our Cirlce on Google Plus">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Subscribe to Our YouTube Channel">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="Follow Us on Instagram">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item g-mx-2">
-                    <a class="u-icon-v2 u-icon-size--sm g-brd-secondary-light-v2 g-color-secondary-dark-v2 g-color-white--hover g-bg-primary--hover g-font-size-default rounded" href="#!"
-                       data-toggle="tooltip"
-                       data-placement="top"
-                       title="RSS">
-                        <i class="fa fa-rss"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- End Social Icons -->
-        </div>
-
         <div class="col-md-4 text-center text-md-right g-mb-30">
             <!-- Subscribe Form -->
             <form class="input-group rounded">
@@ -93,25 +38,10 @@
                 <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Contact Us</a>
             </li>
             <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Help</a>
-            </li>
-            <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Work with Us</a>
-            </li>
-            <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Advertise</a>
-            </li>
-            <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Your Ad Choices</a>
-            </li>
-            <li class="list-inline-item g-px-10">
                 <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Privacy</a>
             </li>
             <li class="list-inline-item g-px-10">
                 <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Terms of Use</a>
-            </li>
-            <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Send Feedback</a>
             </li>
         </ul>
         <!-- End Links -->
