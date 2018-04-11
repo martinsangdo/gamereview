@@ -73,4 +73,8 @@ class Welcome extends MY_Controller
         $this->load->view('front/webview/privacy', $this->data);
     }
 
+    public function terms(){
+        $this->load->view('front/webview/terms', $this->data);
+    }
+
 }
