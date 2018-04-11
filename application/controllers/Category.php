@@ -18,7 +18,7 @@ Class Category extends REST_Controller
         //get all posts belong to this category id
         $posts_in_cat = $this->category_model->custom_query('SELECT DISTINCT block_content.* FROM category_post'.
             ' LEFT JOIN block_content ON block_content._id = category_post.post_id '.
-            ' WHERE cat_id IN ('.implode(',',$cat_id_list).') AND block_content.status=1 ORDER BY block_content._id DESC LIMIT '.
+            ' WHERE cat_id IN ('.implode(',',$cat_id_list).') AND block_content.status=1 ORDER BY block_content.update_time DESC LIMIT '.
             CAT_POST_NUM.' OFFSET '.$offset);
         $this->data['posts'] = $posts_in_cat;
         //get total posts in category
@@ -33,5 +33,33 @@ Class Category extends REST_Controller
     public function get_top_most_post(){
         $top_data = $this->category_model->custom_query('SELECT _id,name,slug FROM category ORDER BY post_num DESC LIMIT 20');
         $this->response(RestSuccess($top_data), SUCCESS_CODE);
+    }
+    //search in title & excerpt
+    public function search_get(){
+        $keyword = urldecode($this->uri->segment(3));
+        $offset = is_numeric($this->uri->segment(4)) && intval($this->uri->segment(4)) > 0?$this->uri->segment(4):0;
+        if (!isset($keyword) || strlen($keyword) < 3){
+            //there is no valid keyword
+            $this->data['posts'] = false;
+            $this->data['pagination'] = '';
+        } else {
+            $this->load->model('block_content_model');
+            $posts = $this->block_content_model->custom_query('SELECT * FROM block_content'.
+                ' WHERE status=1 AND (title LIKE "%'.$keyword.'%" OR excerpt LIKE "%'.$keyword.'%") ORDER BY update_time DESC LIMIT '.
+                DEFAULT_PAGE_LEN.' OFFSET '.$offset);
+            $this->data['posts'] = $posts;
+            if ($posts){
+                //found some posts
+                //get total posts in category
+                $total_post = $this->block_content_model->get_total(array('status'=>1));
+                //create paging
+                $base_url = '/category/search/'.$keyword.'/';
+                $this->data['pagination'] = $this->create_pagination($base_url, $total_post, DEFAULT_PAGE_LEN, 4);
+            } else {
+                $this->data['pagination'] = '';
+            }
+        }
+        $this->data['keyword'] = $keyword;
+        $this->load->view('front/webview/search', $this->data);
     }
 }

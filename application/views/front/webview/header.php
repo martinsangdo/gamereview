@@ -14,15 +14,15 @@
 
                 <!-- Subscribe Form -->
                 <div class="col-6 col-md-5">
-                    <form class="input-group rounded">
-                        <input class="form-control w-100 g-brd-secondary-light-v2 g-brd-primary--focus g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-white g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="text" placeholder="Search the entire site">
+                    <div class="input-group rounded">
+                        <input class="form-control w-100 g-brd-secondary-light-v2 g-brd-primary--focus g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-white g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="text" placeholder="Search the entire site" id="txt_search_keyword" value="<?php if (isset($keyword)) echo $keyword; ?>" />
                         <span class="input-group-addon g-brd-none g-py-0 g-pr-0">
-                            <button class="btn u-btn-white g-color-primary--hover g-bg-secondary g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="submit">
+                            <button class="btn u-btn-white g-color-primary--hover g-bg-secondary g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="button" onclick="common.redirect('/category/search/'+$.trim($('#txt_search_keyword').val()));">
                               <span class="g-hidden-md-down">Search</span>
                               <i class="g-hidden-lg-up fa fa-search"></i>
                             </button>
                           </span>
-                    </form>
+                    </div>
                 </div>
                 <!-- End Subscribe Form -->
 
@@ -142,3 +142,12 @@
     </div>
 </header>
 <!-- End Header -->
+<script>
+    $('#txt_search_keyword').unbind();
+    $('#txt_search_keyword').bind('keypress', function(e){
+        if (e.which == 13){
+            //pressed Enter
+            common.redirect('/category/search/'+$.trim($('#txt_search_keyword').val()))
+        }
+    })
+</script>

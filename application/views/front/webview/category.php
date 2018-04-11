@@ -65,6 +65,7 @@
          data-arrow-left-classes="fa fa-angle-left g-ml-minus-50"
          data-arrow-right-classes="fa fa-angle-right g-ml-50"
          data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-30 text-center">
+        <?php if (isset($posts[0])) { ?>
         <div class="js-slide">
             <!-- Promo Articles -->
             <div class="g-bg-secondary">
@@ -78,20 +79,24 @@
                                     <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo $posts[0]->excerpt; ?></p>
                                 </div>
 
-                                <a class="btn u-btn-black g-color-primary--hover g-font-weight-700 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" href="<?php echo detail_uri($posts[0]->slug); ?>">Read More</a>
+                                <a class="btn u-btn-black g-color-primary--hover g-font-weight-700 g-font-size-13 text-uppercase rounded g-py-12 g-px-20"
+                                   href="<?php echo detail_uri($posts[0]->slug); ?>">Read More</a>
                             </div>
                             <!-- End Info -->
                         </div>
 
                         <div class="col-md-6 col-lg-5 g-mb-50">
-                            <img class="img-fluid" src="<?php echo $posts[0]->thumb_url; ?>" alt="<?php echo $posts[0]->title; ?>">
+                            <img class="img-fluid" src="<?php echo $posts[0]->thumb_url; ?>"
+                                 alt="<?php echo $posts[0]->title; ?>">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End Promo Articles -->
         </div>
-
+        <?php
+        } //end if
+        if (isset($posts[1])) { ?>
         <div class="js-slide">
             <!-- Promo Articles -->
             <div class="g-bg-darkblue-v1">
@@ -118,6 +123,7 @@
             </div>
             <!-- End Promo Articles -->
         </div>
+        <?php } //end if ?>
     </div>
     <!-- End Promo Articles -->
     <!-- Articles -->
