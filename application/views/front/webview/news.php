@@ -205,41 +205,6 @@
                             </div>
                             <!-- End Comment 1 -->
 
-                            <!-- Comment 2 -->
-                            <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-30 g-ml-40 g-mb-20">
-                                <img class="d-flex u-shadow-v25 g-width-50 g-height-50 rounded-circle g-mr-15" src="/public/unity_assets/img-temp/100x100/img10.jpg" alt="Image Description">
-
-                                <div class="media-body">
-                                    <div class="g-mb-15">
-                                        <h5 class="g-font-size-16 g-color-gray-dark-v1 mb-0">Alberta Watson</h5>
-                                        <span class="g-color-gray-dark-v4 g-font-size-12">3 days ago</span>
-                                    </div>
-
-                                    <div class="g-mb-15">
-                                        <p class="g-color-gray-dark-v2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-                                    </div>
-
-                                    <ul class="list-inline d-sm-flex my-0">
-                                        <li class="list-inline-item g-mr-20">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-like g-pos-rel g-top-1 g-mr-3"></i> 637
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item g-mr-20">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-dislike g-pos-rel g-top-1 g-mr-3"></i> 12
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item ml-auto">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                                                <i class="icon-note g-pos-rel g-top-1 g-mr-3"></i> Reply
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Comment 2 -->
-
                             <!-- Comment 3 -->
                             <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-30 g-mb-20">
                                 <img class="d-flex u-shadow-v25 g-width-50 g-height-50 rounded-circle g-mr-15" src="/public/unity_assets/img-temp/100x100/img11.jpg" alt="Image Description">
