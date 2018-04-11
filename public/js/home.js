@@ -64,6 +64,14 @@ $(document).on('ready', function () {
     $.HSCore.components.HSPopup.init('.js-fancybox');
     // initialization of popups
     $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+    //
+    $('#txt_search_keyword').unbind();
+    $('#txt_search_keyword').bind('keypress', function (e) {
+        if (e.which == 13) {
+            //pressed Enter
+            common.redirect('/category/search/' + $.trim($('#txt_search_keyword').val()))
+        }
+    });
 });
 
 $(window).on('load', function () {

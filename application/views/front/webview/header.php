@@ -142,12 +142,3 @@
     </div>
 </header>
 <!-- End Header -->
-<script>
-    $('#txt_search_keyword').unbind();
-    $('#txt_search_keyword').bind('keypress', function(e){
-        if (e.which == 13){
-            //pressed Enter
-            common.redirect('/category/search/'+$.trim($('#txt_search_keyword').val()))
-        }
-    })
-</script>
