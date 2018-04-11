@@ -5,6 +5,7 @@
 .hidden {display: none !important;}
 .text_center {text-align:center;}
 .bold {font-weight:bold;}
+.red_color {color:#f00;}
 /* homepage */
 .home1-center-cropped {
     width: 554px;

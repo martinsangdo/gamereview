@@ -40,14 +40,107 @@ function get_related_posts(){
             $('div.thumb_url', $item).css('background-image', 'url('+top_list[i]['thumb_url']+')').
                 css('cursor', 'pointer').attr('onclick', 'common.redirect("/news/'+top_list[i]['slug']+'");');
             $('a.title', $item).html(top_list[i]['title']).attr('href', '/news/'+top_list[i]['slug']);
-            $('#related_posts_container').append($item.removeClass('hidden'));
+            $('#related_posts_container').append($item.removeClass('hidden').removeAttr('id'));
         }
+    });
+}
+//show message in form
+function show_mess(str){
+    $('#message').text(str).removeClass('hidden');
+}
+//insert new comment
+function add_new_comment(){
+    if (submitting){
+        return;
+    }
+    var name = $.trim($('#txt_name').val());
+    var email = $.trim($('#txt_email').val());
+    var content = $.trim($('#txt_content').val());
+    if (common.isEmpty(name)){
+        show_mess('You must type your name');
+        return;
+    } else if (common.isEmpty(email) || !common.isValidEmail(email)){
+        show_mess('You must type valid email');
+        return;
+    } else if (common.isEmpty(content) || content.length < 10){
+        show_mess('You must type the content with minimum length 10 characters');
+        return;
+    }
+    var params = {
+        post_id: $('#post_id').val(),
+        name: name,
+        email: email,
+        content: content
+    };
+    submitting = true;
+    common.ajaxPost(API_URI.ADD_NEW_COMMENT, params, function(resp){
+        if (resp.result){
+            //success, add to comment list
+            show_mess('Your comment is saved!');
+            //should not append to UI yet because of pagination
+            // append_new_comment({
+            //     username: name,
+            //     time: common.format_date(new Date()),
+            //     content: content
+            // });
+            $('#txt_name').val('');
+            $('#txt_email').val('');
+            $('#txt_content').val('');
+            $('#comment_num').text(parseInt($('#comment_num').text()) + 1);
+        } else {
+            //failed to insert
+            show_mess('Something wrong, please try again later!');
+        }
+        submitting = false;
+    });
+}
+//append new comment to UI
+function append_new_comment(detail){
+    var $item = $('#comment_tmpl').clone(false);
+    $('.username', $item).text(detail.username);
+    $('.date', $item).text(detail.time);
+    $('.content', $item).text(detail.content);
+    $('#comment_list').append($item.removeClass('hidden').removeAttr('id'));
+}
+//load next page of comments
+function load_more_comment(){
+    if (submitting){
+        return;
+    }
+    var offset = $('.comment_detail', $('#comment_list')).length;
+    var params = {
+        offset: offset,
+        limit: CONST.DEFAULT_PAGE_LEN,
+        post_id: $('#post_id').val()
+    };
+    submitting = true;
+    common.ajaxPost(API_URI.GET_COMMENT_PAGING, params, function(resp){
+        if (resp.list) {
+            var len = resp.list.length;
+            for (var i=0; i<len; i++){
+                append_new_comment(resp.list[i]);
+            }
+            //
+            $('#comment_num').text(resp.total);
+            if (len >= CONST.DEFAULT_PAGE_LEN){
+                //may have more comments
+                $('#btn_load_more_comment').removeClass('hidden');
+            } else {
+                //no more comments
+                $('#btn_load_more_comment').addClass('hidden');
+            }
+        } else {
+            //no more comments
+            $('#btn_load_more_comment').addClass('hidden');
+        }
+        submitting = false;
     });
 }
 //
 function window_onload(){
     get_article_detail();
     get_related_posts();
+    load_more_comment();
     //replace broken images
     $('img').each(function() {
         if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {

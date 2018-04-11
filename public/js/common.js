@@ -61,3 +61,13 @@ Common.prototype.ajaxRawGet = function(url, callback, callback_err){
 Common.prototype.redirect = function(url){
     window.location.href = url;
 };
+//
+Common.prototype.isValidEmail = function(email){
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+};
+//
+Common.prototype.format_date = function(d){
+    return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate() +
+        ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+};
