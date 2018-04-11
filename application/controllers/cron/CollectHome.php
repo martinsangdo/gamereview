@@ -52,10 +52,7 @@ Class CollectHome extends REST_Controller
                     'time'=>date('Y-m-d h:m:s', strtotime($rss_items[$j]['pubDate'])),
                     'author_name'=>'',
                     'excerpt'=>$rss_items[$j]['description'],
-                    'category_name'=>'',      //should be first category
-                    'category_slug'=>'',
                     'comment_num'=>0,
-                    'youtube_url'=>'',
                     'original_post_id'=>$rss_items[$j]['guid'],
                     'original_url'=>$rss_items[$j]['link']
                 );

@@ -54,6 +54,7 @@
     background-position: center top;
     background-repeat: no-repeat;
 }
+#article_detail_container img {max-width:825px;}
 /* category */
 .cat_fix_height_slide {height:300px !important;}
 .cat_desc_cut p {

@@ -348,6 +348,7 @@
         <input type="hidden" id="original_post_id" value="<?php echo $article_detail->original_post_id; ?>"/>
         <input type="hidden" id="site_type" value="<?php echo $site_detail->type; ?>"/>
         <div class="hidden" id="post_excerpt"><?php echo htmlspecialchars_decode($article_detail->excerpt); ?></div>
+        <input type="hidden" id="original_url" value="<?php echo $article_detail->original_url; ?>"/>
     </div>
 </div>
 

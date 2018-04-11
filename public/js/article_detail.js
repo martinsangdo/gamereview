@@ -21,7 +21,7 @@ function get_article_detail(){
         }, function(err){});
     } else if (site_type == 'rss'){
         $content_container.html($('#post_excerpt').html());
-        $content_container.append('<a href="'+$('#original_post_id').val()+'">Go detail >></a>');
+        $content_container.append('<br/><a href="'+$('#original_url').val()+'">Go detail >></a>');
         $('a', $content_container).attr('target', '_blank');
         $('#loading_img').remove();
     }

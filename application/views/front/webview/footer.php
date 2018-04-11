@@ -35,13 +35,13 @@
         <!-- Links -->
         <ul class="list-inline mb-0">
             <li class="list-inline-item g-pl-0 g-pr-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Contact Us</a>
+                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="">Contact Us</a>
             </li>
             <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Privacy</a>
+                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="<?php echo base_url('/welcome/privacy'); ?>">Privacy</a>
             </li>
             <li class="list-inline-item g-px-10">
-                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="#!">Terms of Use</a>
+                <a class="u-link-v5 g-color-secondary-light-v1 g-font-size-12" href="<?php echo base_url('/welcome/terms'); ?>">Terms of Use</a>
             </li>
         </ul>
         <!-- End Links -->

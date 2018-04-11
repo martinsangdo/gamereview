@@ -50,7 +50,7 @@ Class Video_model extends MY_Model
         } else if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
-        $this->db->order_by('_id', 'desc');
+        $this->db->order_by('time', 'desc');
         $query = $this->db->get();
 
         if($query->result()){

@@ -362,8 +362,8 @@
                         <div class="col-lg-4 col-sm-6 g-mb-10">
                             <article>
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-10">
-                                    <img class="img-fluid w-100" src="<?php echo $video_block_1[$i]->thumb_url; ?>"/>
-                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                    <img class="img-fluid w-100" src="<?php echo $videos[$i]->thumb_url; ?>"/>
+                                    <a href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
                                         <span class="u-icon-v3 u-icon-size--sm g-font-size-13 g-bg-white g-bg-black--hover g-color-white--hover rounded-circle g-cursor-pointer g-absolute-centered">
                                             <i class="fa fa-play g-left-2"></i>
                                         </span>
@@ -372,7 +372,7 @@
                                 </figure>
 
                                 <h1 class="g-font-size-16 g-mb-10">
-                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $video_block_1[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $video_block_1[$i]->title; ?></a>
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
                                 </h1>
                             </article>
                         </div>
@@ -554,16 +554,15 @@
                                 </article>
                                 <!-- Article -->
                                 <?php
-                                $data_block = $video_block_2;
-                                for ($i=0; $i<5; $i++){
+                                for ($i=9; $i<14; $i++){
                                 ?>
                                 <!-- Other Articles -->
                                 <article class="media">
                                     <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
+                                        <img class="g-width-140 g-height-80" src="<?php echo $videos[$i]->thumb_url; ?>"/>
 
                                         <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
                                                 <i class="fa fa-play g-mr-5"></i> Play
                                             </a>
                                         </figcaption>
@@ -571,12 +570,12 @@
 
                                     <div class="media-body">
                                         <h1 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $data_block[$i]->title; ?></a>
+                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
                                         </h1>
 
                                         <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                             <li class="list-inline-item">
-                                                <?php echo format_post_time($data_block[$i]->time); ?>
+                                                <?php echo format_post_time($videos[$i]->time); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -613,15 +612,15 @@
                                 </article>
                                 <!-- End Article -->
                                 <?php
-                                for ($i=5; $i<9; $i++){
+                                for ($i=14; $i<19; $i++){
                                     ?>
                                     <!-- Other Articles -->
                                     <article class="media">
                                         <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                            <img class="g-width-140 g-height-80" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
+                                            <img class="g-width-140 g-height-80" src="<?php echo $videos[$i]->thumb_url; ?>"/>
 
                                             <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                                <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
                                                     <i class="fa fa-play g-mr-5"></i> Play
                                                 </a>
                                             </figcaption>
@@ -629,12 +628,12 @@
 
                                         <div class="media-body">
                                             <h1 class="g-font-size-16">
-                                                <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $data_block[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $data_block[$i]->title; ?></a>
+                                                <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
                                             </h1>
 
                                             <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
                                                 <li class="list-inline-item">
-                                                    <?php echo format_post_time($data_block[$i]->time); ?>
+                                                    <?php echo format_post_time($videos[$i]->time); ?>
                                                 </li>
                                             </ul>
                                         </div>
@@ -874,7 +873,7 @@
                        }]'>
                                 <?php
                                 $data_block = $block_key_8;
-                                for ($i=0;$i<4;$i++){ ?>
+                                for ($i=0;$i<8;$i++){ ?>
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
