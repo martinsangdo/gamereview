@@ -75,7 +75,7 @@
                             <!-- Info -->
                             <div class="">
                                 <div class="mb-4">
-                                    <h1 class="mb-4"><?php echo $posts[0]->title; ?></h1>
+                                    <h1 class="mb-4"><a href="<?php echo detail_uri($posts[0]->slug); ?>"><?php echo $posts[0]->title; ?></a></h1>
                                     <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo shorten_str($posts[0]->excerpt, DETAIL_EXCERPT_LIMIT); ?></p>
                                 </div>
 
@@ -106,7 +106,7 @@
                             <!-- Info -->
                             <div class="g-mb-70">
                                 <div class="mb-4">
-                                    <h2 class="g-color-white mb-4"><?php echo $posts[1]->title; ?></h2>
+                                    <h1 class="g-color-white mb-4"><a href="<?php echo detail_uri($posts[1]->slug); ?>"><?php echo $posts[1]->title; ?></a></h1>
                                     <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo $posts[1]->excerpt; ?></p>
                                 </div>
 

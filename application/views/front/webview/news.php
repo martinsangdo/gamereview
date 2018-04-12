@@ -50,6 +50,7 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acf23ea3368f4001495b81f&product=inline-share-buttons"></script>
 
     <script src="/public/js/constant.js"></script>
     <script src="/public/js/common.js"></script>
@@ -115,21 +116,9 @@
                         <!-- End Sources & Tags -->
 
                         <hr class="g-brd-gray-light-v4">
-
                         <!-- Social Shares -->
                         <div class="g-mb-30">
-                            <ul class="list-inline text-uppercase mb-0">
-                                <li class="list-inline-item g-mr-10">
-                                    <a class="btn u-btn-facebook g-font-size-12 rounded g-px-20--sm g-py-10" href="#!">
-                                        <i class="fa fa-facebook g-mr-5--sm"></i> <span class="g-hidden-xs-down">Share on Facebook</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item g-mr-10">
-                                    <a class="btn u-btn-twitter g-font-size-12 rounded g-px-20--sm g-py-10" href="#!">
-                                        <i class="fa fa-twitter g-mr-5--sm"></i> <span class="g-hidden-xs-down">Tweet on Twitter</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="sharethis-inline-share-buttons"></div>
                         </div>
                         <!-- End Social Shares -->
 
