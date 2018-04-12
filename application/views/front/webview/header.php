@@ -90,48 +90,53 @@
                 <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
                     <ul class="navbar-nav g-font-weight-600">
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-most-read-reviews/18-14-20-23-28-73-2-41-45-46-54-67-76-79-84-91">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/1">
                                 Most read
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-pc/3-5-7-17-36-1-8-9-29-33-59-63-68-69-72-74-75-78-83-92">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/2">
                                 PC
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-ps4/4-30-37-47-53-65-66-77">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/3">
                                 PS4
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-xbox-nintendo/6-35-13-19-32-39-40-58-64-71-80">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/4">
                                 Xbox - Nintendo
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-2ds-3ds/43-55-56-57">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/5">
                                 2DS - 3DS
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-featured/10-15-12-49-11-24-31-44-60-62-70-81">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/6">
                                 Featured
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-mobile-android-ios/50-34-48-51-52-82-87">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/7">
                                 Mobile
+                            </a>
+                        </li>
+                        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/8">
+                                Guides - Cheats
+                            </a>
+                        </li>
+                        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/9">
+                                Uncategorized
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
                             <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/video">
                                 Videos
-                            </a>
-                        </li>
-                        <li class="nav-item g-mx-10--lg g-mx-20--xl">
-                            <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/game-guide-cheat/16-61-21-22-25-26-27-85-86-88-89-90">
-                                Guides - Cheats
                             </a>
                         </li>
                     </ul>

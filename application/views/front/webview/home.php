@@ -709,7 +709,8 @@
                             </div>
                             <?php
                             $data_block = $block_key_14;
-                            for ($i=0;$i<10;$i++){
+                            if ($data_block){
+                                for ($i=0;$i<10;$i++){
                                 ?>
                                 <!-- Article -->
                                 <article class="media g-mb-10">
@@ -724,7 +725,7 @@
                                     </div>
                                 </article>
                                 <!-- End Article -->
-                            <?php } //end for ?>
+                            <?php }} //end for ?>
                         </div>
                         <!-- End News Feed -->
 
@@ -873,6 +874,7 @@
                        }]'>
                                 <?php
                                 $data_block = $block_key_8;
+                                if ($data_block){
                                 for ($i=0;$i<8;$i++){ ?>
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
@@ -892,7 +894,7 @@
                                     </figure>
                                     <!-- End Magazines -->
                                 </div>
-                                <?php } //end for ?>
+                                <?php }} //end for ?>
                             </div>
                             <!-- End Carousel -->
                         </div>
