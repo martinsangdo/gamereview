@@ -136,3 +136,10 @@ function get_client_ip() {
         $ipaddress = 'UNKNOWN';
     return $ipaddress;
 }
+//shorten string with limit of characters, end with ...
+function shorten_str($str, $limit){
+    if (strlen($str) > $limit + 3){        //include "..."
+        return substr($str, 0, $limit).'...';
+    }
+    return $str;
+}

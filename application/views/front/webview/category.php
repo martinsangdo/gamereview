@@ -76,7 +76,7 @@
                             <div class="">
                                 <div class="mb-4">
                                     <h1 class="mb-4"><?php echo $posts[0]->title; ?></h1>
-                                    <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo $posts[0]->excerpt; ?></p>
+                                    <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo shorten_str($posts[0]->excerpt, DETAIL_EXCERPT_LIMIT); ?></p>
                                 </div>
 
                                 <a class="btn u-btn-black g-color-primary--hover g-font-weight-700 g-font-size-13 text-uppercase rounded g-py-12 g-px-20"

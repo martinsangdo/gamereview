@@ -9,11 +9,21 @@ Class Category extends REST_Controller
         parent::__construct();
         $this->load->model('category_model');
     }
-    //show list of posts inside category
+    //show list of posts inside category (get related too)
     public function index_get(){
         $cat_slug = $this->uri->segment(2); //many slugs of categories
         $cat_ids = $this->uri->segment(3);  //many category ids
         $cat_id_list = explode('-', $cat_ids);
+        if (count($cat_id_list) == 1){
+            //this link is popular tag or related tag, get more tags inside group
+            //find category group id of this category (tag)
+            $cat_group_id = $this->category_model->read_row(array('_id'=>$cat_id_list[0]));
+            $cat_id_in_group = $this->category_model->custom_query('SELECT _id FROM category WHERE cat_group_id = '.$cat_group_id->cat_group_id);
+            $cat_id_list = array();
+            for ($i=0; $i<count($cat_id_in_group); $i++){
+                $cat_id_list[$i] = $cat_id_in_group[$i]->_id;
+            }
+        }
         $offset = is_numeric($this->uri->segment(4)) && intval($this->uri->segment(4)) > 0?$this->uri->segment(4):0;
         //get all posts belong to this category id
         $posts_in_cat = $this->category_model->custom_query('SELECT DISTINCT block_content.* FROM category_post'.
