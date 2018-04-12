@@ -91,7 +91,7 @@
                     <ul class="navbar-nav g-font-weight-600">
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">
                             <a id="nav-link--pages" class="nav-link text-uppercase g-color-primary--hover g-px-0" href="/category/group/1">
-                                Most read
+                                Popular
                             </a>
                         </li>
                         <li class="nav-item g-mx-10--lg g-mx-20--xl">

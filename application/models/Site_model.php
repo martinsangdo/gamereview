@@ -11,7 +11,8 @@ Class Site_model extends MY_Model
         $this->db->where($where);
         if(!empty($last_id)) {
             $this->db->where('site._id <', $last_id);
-        } else if ($limit > 0){
+        }
+        if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
 

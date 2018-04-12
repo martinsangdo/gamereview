@@ -31,7 +31,7 @@ class Welcome extends MY_Controller
     public function index(){
         //get data of blocks
         $this->data[BLOCK_KEY_1] = $this->block_content_model->get_latest_posts(array('site_id' => 4), 0, DEFAULT_PAGE_LEN);
-        $this->data[BLOCK_KEY_2] = $this->block_content_model->get_latest_posts(array('site_id' => 1), 0, DEFAULT_PAGE_LEN);
+        $this->data[BLOCK_KEY_2] = $this->block_content_model->get_latest_posts(array('site_id' => 16), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_3] = $this->block_content_model->get_latest_posts(array('site_id' => 6), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_4] = $this->block_content_model->get_latest_posts(array('site_id' => 7), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_5] = $this->block_content_model->get_latest_posts(array('site_id' => 18), 0, DEFAULT_PAGE_LEN);
@@ -41,7 +41,7 @@ class Welcome extends MY_Controller
         $this->data[BLOCK_KEY_9] = $this->block_content_model->get_latest_posts(array('site_id' => 12), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_10] = $this->block_content_model->get_latest_posts(array('site_id' => 13), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_12] = $this->block_content_model->get_latest_posts(array('site_id' => 15), 0, DEFAULT_PAGE_LEN);
-        $this->data[BLOCK_KEY_13] = $this->block_content_model->get_latest_posts(array('site_id' => 16), 0, DEFAULT_PAGE_LEN);
+        $this->data[BLOCK_KEY_13] = $this->block_content_model->get_latest_posts(array('site_id' => 1), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 22), 0, DEFAULT_PAGE_LEN);
         //get videos
         $this->load->model('video_model');

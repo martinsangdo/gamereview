@@ -11,7 +11,8 @@ Class Video_model extends MY_Model
         $this->db->where($where);
         if(!empty($last_id)) {
             $this->db->where('block_content._id <', $last_id);
-        } else if ($limit > 0){
+        }
+        if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
 
@@ -47,7 +48,8 @@ Class Video_model extends MY_Model
         $this->db->where($where);
         if(!empty($last_id)) {
             $this->db->where('video_link._id <', $last_id);
-        } else if ($limit > 0){
+        }
+        if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
         $this->db->order_by('time', 'desc');

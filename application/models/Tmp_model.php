@@ -11,7 +11,8 @@ Class Tmp_model extends MY_Model
         $this->db->where($where);
         if(!empty($last_id)) {
             $this->db->where('block_content._id <', $last_id);
-        } else if ($limit > 0){
+        }
+        if ($limit > 0){
             $this->db->limit($limit, $offset);
         }
 

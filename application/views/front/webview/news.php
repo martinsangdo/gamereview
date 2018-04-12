@@ -227,8 +227,8 @@
                         </div>
 
                         <?php
-                        $data_block = $block_key_3;
-                        for ($i=0;$i<20;$i++){
+                        $data_block = $recent_posts;
+                        for ($i=0;$i<count($data_block);$i++){
                             ?>
                             <!-- Article -->
                             <article class="media g-mb-10">
@@ -271,6 +271,7 @@
                     </div>
                     <!-- End Popular Videos -->
 
+                    <!-- related posts -->
                     <div id="stickyblock-start" class="js-sticky-block g-sticky-block--lg g-pt-20" data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
                         <!-- News Feed -->
                         <div class="g-mb-40">
@@ -298,6 +299,33 @@
                             <?php } //end for ?>
                         </div>
                         <!-- End News Feed -->
+
+                        <!-- Recent Videos -->
+                        <div class="g-mb-30">
+                            <div class="u-heading-v3-1 g-mb-30">
+                                <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Videos</h2>
+                            </div>
+
+                            <?php
+                            $data_block = $recent_videos;
+                            for ($i=0;$i<count($data_block);$i++){
+                                ?>
+                                <!-- Article -->
+                                <article class="media g-mb-10">
+                                    <a class="d-flex u-shadow-v25 mr-3" href="">
+                                        <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
+                                    </a>
+
+                                    <div class="media-body">
+                                        <h1 class="h6">
+                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);"><?php echo $data_block[$i]->title;?></a>
+                                        </h1>
+                                    </div>
+                                </article>
+                                <!-- End Article -->
+                            <?php } //end for ?>
+                        </div>
+                        <!-- End Recent Videos -->
 
                     </div>
                 </div>

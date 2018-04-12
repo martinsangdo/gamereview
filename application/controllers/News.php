@@ -14,14 +14,14 @@ Class News extends REST_Controller
     public function index_get(){
         //find post detail
         $slug = $this->uri->segment(2);
-        $this->load->model('site_model');
-        $this->load->model('block_content_model');
+        $this->load->model(array('site_model', 'block_content_model', 'video_model'));
         $article_detail = $this->block_content_model->read_row(array('slug'=>$slug));
         $site_detail = $this->site_model->read_row(array('_id'=>$article_detail->site_id));
         $tag_list = $this->block_content_model->get_tags($article_detail->_id);
         //
-        $this->data[BLOCK_KEY_3] = $this->block_content_model->get_latest_posts(array('site_id' => 6), 0, DEFAULT_PAGE_LEN, $article_detail->_id);
+        $this->data['recent_posts'] = $this->block_content_model->get_latest_posts(array('status' => 1), 0, 10, $article_detail->_id);
         $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 20), 0, DEFAULT_PAGE_LEN);
+        $this->data['recent_videos'] = $this->video_model->custom_query('SELECT * FROM video_link WHERE status=1 ORDER BY time DESC LIMIT 10');
         //
         $this->data['site_detail'] = $site_detail;
         $this->data['article_detail'] = $article_detail;
