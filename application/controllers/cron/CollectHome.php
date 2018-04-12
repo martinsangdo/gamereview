@@ -59,6 +59,7 @@ Class CollectHome extends REST_Controller
             }
         }
         //upsert data to content
+        $new_post = 0;
         for ($j=0; $j<$post_len; $j++){
             //check if the post existed in db
             $exist_cond = array(
@@ -71,11 +72,11 @@ Class CollectHome extends REST_Controller
             } else {
                 //insert new one
                 $this->block_content_model->create($final_data[$j]);
+                $new_post++;
             }
-            //update crawling time of site
-            $this->site_model->update_by_condition(array('_id'=>$site_info[0]->_id),
-                array('crawl_time'=>date('Y-m-d H:i:s'), 'post_num'=>'post_num+1'));
         }
+        //update crawling time of site
+        $this->site_model->update_crawl($site_info[0]->_id, $new_post);
 //        echo 'finished';
     }
     //convert from post info of site into our own format
