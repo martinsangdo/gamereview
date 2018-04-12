@@ -29,7 +29,7 @@ Class News extends REST_Controller
         $this->load->view('front/webview/news', $this->data);
     }
 
-    //get related posts of this one
+    //get related posts of this one based on same categories
     public function get_related_posts_post(){
         $post_id = $this->input->post('post_id');
         //get all categories of this post

@@ -21,4 +21,36 @@
     <?php } ?>
 </table>
 <br/>
-Total posts: <?php echo $total_post; ?>
+Total posts: <?php echo $total_post; ?><br/><br/>
+Video:<br/>
+<table width="100%" border="1">
+    <thead>
+    <td>No.</td>
+    <td>Id</td>
+    <td>Channel</td>
+    <td>Playlists</td>
+    </thead>
+    <?php for ($i=0;$i<count($videos);$i++){ ?>
+        <tr>
+            <td><?php echo $i+1; ?></td>
+            <td><?php echo $videos[$i]->_id; ?></td>
+            <td><?php echo $videos[$i]->name; ?></td>
+            <td>
+                <table width="100%">
+                <?php
+                $playlists = $videos[$i]->playlists;
+                for ($j=0; $j<count($playlists); $j++){ ?>
+                    <tr>
+                        <td><?php echo $playlists[$j]->name; ?></td>
+                        <td><?php echo $playlists[$j]->original_id; ?></td>
+                        <td><?php echo $playlists[$j]->crawl_time; ?></td>
+                        <td><?php echo $playlists[$j]->video_num; ?></td>
+                    </tr>
+                <?php } ?>
+                </table>
+            </td>
+        </tr>
+    <?php } ?>
+</table>
+<br/>
+Total videos: <?php echo $total_videos; ?>
