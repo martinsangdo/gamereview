@@ -83,13 +83,16 @@ Class News extends REST_Controller
             } else {
                 $each_post_num = ceil(RELATED_POST_NUM / $cat_num);   //number of posts to get in each category
             }
+            $extra_ids = array();
+            $extra_ids[] = $post_id;    //except current post
             //get posts in each category
             for ($i=0; $i<$cat_num; $i++){
                 $posts_in_cat = $this->category_model->custom_query('SELECT block_content._id,title,block_content.slug,thumb_url FROM category_post'.
-                    ' LEFT JOIN block_content ON block_content._id = category_post.post_id WHERE post_id <> '.$post_id.
+                    ' LEFT JOIN block_content ON block_content._id = category_post.post_id WHERE post_id NOT IN ('.implode(',', $extra_ids).') '.
                     ' AND cat_id='.$category_ids[$i]->cat_id.' ORDER BY block_content.time DESC LIMIT '.$each_post_num);
                 if ($posts_in_cat){
                     for ($j=0; $j<count($posts_in_cat);$j++){
+                        $extra_ids[] = $posts_in_cat[$j]->_id;
                         $related_posts[] = $posts_in_cat[$j];
                     }
                 }
@@ -100,7 +103,7 @@ Class News extends REST_Controller
     //get newest posts, except this one
     private function get_recent_posts($extra_ids){
         $recent_sql = 'SELECT _id,slug,title,excerpt,thumb_url,author_name FROM block_content WHERE status=1 AND _id NOT IN ('.
-            implode(',',$extra_ids).') ORDER BY time DESC LIMIT 10';
+            implode(',',$extra_ids).') ORDER BY time DESC LIMIT '.DEFAULT_PAGE_LEN;
         $recent_posts = $this->block_content_model->custom_query($recent_sql);
         return $recent_posts;
     }
@@ -108,10 +111,10 @@ Class News extends REST_Controller
     //get newer & older around current post id by time or _id
     private function get_random_posts($extra_ids, $post_id){
         $newer_sql = 'SELECT _id,slug,title,excerpt,thumb_url,author_name FROM block_content WHERE status=1 AND _id NOT IN ('.
-            implode(',',$extra_ids).') AND _id > '.$post_id.' ORDER BY time DESC LIMIT 5';
+            implode(',',$extra_ids).') AND _id > '.$post_id.' ORDER BY time DESC LIMIT 10';
         $newer_posts = $this->block_content_model->custom_query($newer_sql);
         $older_sql = 'SELECT _id,slug,title,excerpt,thumb_url,author_name FROM block_content WHERE status=1 AND _id NOT IN ('.
-            implode(',',$extra_ids).') AND _id < '.$post_id.' ORDER BY time DESC LIMIT 5';
+            implode(',',$extra_ids).') AND _id < '.$post_id.' ORDER BY time DESC LIMIT 10';
         $older_posts = $this->block_content_model->custom_query($older_sql);
         return array_merge($newer_posts, $older_posts);
     }

@@ -202,7 +202,7 @@
                     <div class="js-slide g-px-10 cat_fix_height_slide">
                         <!-- Article -->
                         <article>
-                            <div class="detail-center-cropped thumb_url"
+                            <div class="detail-center-cropped thumb_url pointer" onclick="common.redirect('<?php echo detail_uri($posts[$i]->slug); ?>');"
                                  style="background-image: url(<?php echo $posts[$i]->thumb_url; ?>);"></div>
 
                             <div class="g-bg-white g-pa-20 cat_desc_cut">

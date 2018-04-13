@@ -79,7 +79,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',              //changeable in new project
 	'username' => 'root',                   //changeable in new project
 	'password' => 'root',                   //changeable in new project
-	'database' => 'game_review',        //changeable in new project
+	'database' => 'game_review_news',        //changeable in new project
 
 //    'hostname' => '166.62.27.173',              //changeable in new project
 //    'username' => 'game_review_user',                   //changeable in new project

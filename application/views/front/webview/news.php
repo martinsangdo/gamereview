@@ -136,7 +136,7 @@
                                 ?>
                                     <div class="col-lg-4 col-sm-6 g-mb-10">
                                         <article>
-                                            <figure class="u-shadow-v25 g-pos-rel g-mb-20">
+                                            <figure class="u-shadow-v25 g-pos-rel g-mb-20 pointer" onclick="common.redirect('<?php echo detail_uri($related_posts[$i]->slug); ?>');">
                                                 <div class="detail-center-cropped" style="background-image: url(<?php echo $related_posts[$i]->thumb_url; ?>);"></div>
                                             </figure>
 
