@@ -130,22 +130,22 @@
                                 <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Related Articles</h2>
                             </div>
 
-                            <!-- Article Video -->
-                            <div class="col-lg-4 col-sm-6 g-mb-10 hidden" id="related_post_tmpl">
-                                <article>
-                                    <figure class="u-shadow-v25 g-pos-rel g-mb-20">
-                                        <div class="detail-center-cropped thumb_url"></div>
-                                    </figure>
-
-                                    <h3 class="g-font-size-16 g-mb-10">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover title" href="#!"></a>
-                                    </h3>
-                                </article>
-                            </div>
-                            <!-- End Article Video -->
-
                             <div class="row" id="related_posts_container">
-                                <!-- related posts will be here -->
+                                <?php
+                                for ($i=0; $i<count($related_posts); $i++){
+                                ?>
+                                    <div class="col-lg-4 col-sm-6 g-mb-10">
+                                        <article>
+                                            <figure class="u-shadow-v25 g-pos-rel g-mb-20">
+                                                <div class="detail-center-cropped" style="background-image: url(<?php echo $related_posts[$i]->thumb_url; ?>);"></div>
+                                            </figure>
+
+                                            <h3 class="g-font-size-16 g-mb-10">
+                                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($related_posts[$i]->slug); ?>"><?php echo $related_posts[$i]->title; ?></a>
+                                            </h3>
+                                        </article>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
 
@@ -220,32 +220,14 @@
 
                 <!-- Sidebar -->
                 <div class="col-lg-3">
-                    <!-- Recent Posts -->
-                    <div class="g-mb-30">
+                    <!-- Random Posts -->
+                    <div class="g-mb-30" id="random_posts_container">
                         <div class="u-heading-v3-1 g-mb-30">
-                            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Posts</h2>
+                            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Random Posts</h2>
                         </div>
-
-                        <?php
-                        $data_block = $recent_posts;
-                        for ($i=0;$i<count($data_block);$i++){
-                            ?>
-                            <!-- Article -->
-                            <article class="media g-mb-10">
-                                <a class="d-flex u-shadow-v25 mr-3" href="<?php echo detail_uri($data_block[$i]->slug); ?>">
-                                    <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
-                                </a>
-
-                                <div class="media-body">
-                                    <h1 class="h6">
-                                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                    </h1>
-                                </div>
-                            </article>
-                            <!-- End Article -->
-                        <?php } //end for ?>
+                        <!-- random posts appear here -->
                     </div>
-                    <!-- End Recent Posts -->
+                    <!-- End Random Posts -->
 
                     <!-- Popular Videos -->
                     <div class="g-mb-20">
@@ -254,13 +236,13 @@
                             </figure>
 
                             <span class="text-center g-pos-abs g-top-20 g-left-0">
-                    <a class="btn u-btn-red text-uppercase rounded-0" href="#!">Discover</a>
-                    <small class="g-bg-black g-color-white g-pa-5 d-block">July 09, 2017</small>
-                  </span>
+                                <a class="btn u-btn-red text-uppercase rounded-0" href="#!">Discover</a>
+                                <small class="g-bg-black g-color-white g-pa-5 d-block">July 09, 2017</small>
+                              </span>
 
                             <span class="u-icon-v3 g-font-size-18 g-bg-white g-color-black g-bg-gray-dark-v2--hover g-color-white--hover g-rounded-50 g-cursor-pointer g-absolute-centered">
-                    <i class="icon-control-play g-left-2"></i>
-                  </span>
+                                <i class="icon-control-play g-left-2"></i>
+                              </span>
 
                             <header class="g-pos-abs g-bottom-20 g-left-0">
                                 <h3 class="h5 g-bg-red-opacity-0_5 g-pa-5-10--sm">
@@ -271,63 +253,51 @@
                     </div>
                     <!-- End Popular Videos -->
 
-                    <!-- related posts -->
-                    <div id="stickyblock-start" class="js-sticky-block g-sticky-block--lg g-pt-20" data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
-                        <!-- News Feed -->
-                        <div class="g-mb-40">
-                            <div class="u-heading-v3-1 g-mb-30">
-                                <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">News Feed</h2>
-                            </div>
+                    <!-- Article -->
+                    <article class="media g-mb-10 hidden" id="post_tmpl">
+                        <a class="d-flex u-shadow-v25 mr-3" href="">
+                            <img class="g-width-60 g-height-60 thumb_url"/>
+                        </a>
 
-                            <?php
-                            $data_block = $block_key_14;
-                            for ($i=0;$i<10;$i++){
-                                ?>
-                                <!-- Article -->
-                                <article class="media g-mb-10">
-                                    <a class="d-flex u-shadow-v25 mr-3" href="<?php echo detail_uri($data_block[$i]->slug); ?>">
-                                        <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h1 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                        </h1>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-                            <?php } //end for ?>
+                        <div class="media-body">
+                            <h1 class="h6">
+                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover title" href=""></a>
+                            </h1>
                         </div>
-                        <!-- End News Feed -->
+                    </article>
+                    <!-- End Article -->
 
-                        <!-- Recent Videos -->
-                        <div class="g-mb-30">
-                            <div class="u-heading-v3-1 g-mb-30">
-                                <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Videos</h2>
-                            </div>
-
-                            <?php
-                            $data_block = $recent_videos;
-                            for ($i=0;$i<count($data_block);$i++){
-                                ?>
-                                <!-- Article -->
-                                <article class="media g-mb-10">
-                                    <a class="d-flex u-shadow-v25 mr-3" href="">
-                                        <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
-                                    </a>
-
-                                    <div class="media-body">
-                                        <h1 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);"><?php echo $data_block[$i]->title;?></a>
-                                        </h1>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-                            <?php } //end for ?>
+                    <!-- Recent Posts -->
+                    <div class="g-mb-30" id="recent_posts_container">
+                        <div class="u-heading-v3-1 g-mb-30">
+                            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Posts</h2>
                         </div>
-                        <!-- End Recent Videos -->
-
+                        <!-- random posts appear here -->
                     </div>
+                    <!-- End Recent Posts -->
+
+                    <!-- Recent Videos -->
+                    <div class="g-mb-30" id="video_list">
+                        <div class="u-heading-v3-1 g-mb-30">
+                            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent Videos</h2>
+                        </div>
+
+                        <!-- Article -->
+                        <article class="media g-mb-10 hidden" id="video_tmpl">
+                            <a class="d-flex u-shadow-v25 mr-3" href="">
+                                <img class="g-width-60 g-height-60" src=""/>
+                            </a>
+
+                            <div class="media-body">
+                                <h1 class="h6">
+                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="javascript:void(0);"></a>
+                                </h1>
+                            </div>
+                        </article>
+                        <!-- End Article -->
+                    </div>
+                    <!-- End Recent Videos -->
+
                 </div>
                 <!-- End Sidebar -->
             </div>
@@ -366,6 +336,7 @@
         <input type="hidden" id="site_type" value="<?php echo $site_detail->type; ?>"/>
         <div class="hidden" id="post_excerpt"><?php echo htmlspecialchars_decode($article_detail->excerpt); ?></div>
         <input type="hidden" id="original_url" value="<?php echo $article_detail->original_url; ?>"/>
+        <input type="hidden" id="extra_ids" value="<?php echo $extra_ids; ?>"/>
     </div>
 </div>
 

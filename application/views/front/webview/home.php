@@ -710,7 +710,7 @@
                             <?php
                             $data_block = $block_key_14;
                             if ($data_block){
-                                for ($i=0;$i<10;$i++){
+                                for ($i=0;$i<count($data_block);$i++){
                                 ?>
                                 <!-- Article -->
                                 <article class="media g-mb-10">

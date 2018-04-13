@@ -107,7 +107,7 @@
                             <div class="g-mb-70">
                                 <div class="mb-4">
                                     <h1 class="g-color-white mb-4"><a href="<?php echo detail_uri($posts[1]->slug); ?>"><?php echo $posts[1]->title; ?></a></h1>
-                                    <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo $posts[1]->excerpt; ?></p>
+                                    <p class="g-color-secondary-dark-v1 g-font-size-16"><?php echo shorten_str($posts[1]->excerpt, DETAIL_EXCERPT_LIMIT); ?></p>
                                 </div>
 
                                 <a class="btn u-btn-white g-color-primary--hover g-font-weight-700 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" href="<?php echo detail_uri($posts[1]->slug); ?>">Read More</a>
@@ -148,7 +148,7 @@
 
                 <!-- Info -->
                 <div class="mb-4 text-center">
-                    <p><?php echo $posts[$i]->excerpt; ?></p>
+                    <p><?php echo shorten_str($posts[$i]->excerpt, DETAIL_EXCERPT_LIMIT); ?></p>
                 </div>
                 <!-- End Info -->
             </article>
