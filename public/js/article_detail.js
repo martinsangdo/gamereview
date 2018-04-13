@@ -160,12 +160,14 @@ function window_onload(){
     get_extra_posts();
     load_more_comment();
     //replace broken images
-    $('img').each(function() {
-        if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            // image was broken, replace with your new image
-            this.src = '/public/unity_assets/img/missing_img.png';
-        }
-    });
+    setTimeout(function() {
+        $('img').each(function () {
+            if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+                // image was broken, replace with your new image
+                this.src = '/public/unity_assets/img/missing_img.png';
+            }
+        });
+    }, 3000);
 }
 
 window.onload = window_onload;

@@ -42,7 +42,7 @@ class Welcome extends MY_Controller
         $this->data[BLOCK_KEY_10] = $this->block_content_model->get_latest_posts(array('site_id' => 13), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_12] = $this->block_content_model->get_latest_posts(array('site_id' => 15), 0, DEFAULT_PAGE_LEN);
         $this->data[BLOCK_KEY_13] = $this->block_content_model->get_latest_posts(array('site_id' => 1), 0, DEFAULT_PAGE_LEN);
-        $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 22), 0, DEFAULT_PAGE_LEN);
+        $this->data[BLOCK_KEY_14] = $this->block_content_model->get_latest_posts(array('site_id' => 23), 0, DEFAULT_PAGE_LEN);
         //get videos
         $this->load->model('video_model');
         $this->data['videos'] = $this->video_model->get_latest_posts(array('status' => 1), 0, DEFAULT_PAGE_LEN);

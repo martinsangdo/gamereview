@@ -80,12 +80,14 @@ $(window).on('load', function () {
         $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
     }, 1);
     //replace broken images
-    $('img').each(function() {
-        if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            // image was broken, replace with your new image
-            this.src = '/public/unity_assets/img/missing_img.png';
-        }
-    });
+    setTimeout(function() {
+        $('img').each(function () {
+            if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+                // image was broken, replace with your new image
+                this.src = '/public/unity_assets/img/missing_img.png';
+            }
+        });
+    }, 3000);
     //
     get_top_read_categories();
 });
