@@ -3,7 +3,7 @@
     <div class="row align-items-center">
         <div class="col-md-4 g-hidden-sm-down g-mb-30">
             <!-- Logo -->
-            <a href="bm-classic-home-2.html">
+            <a href="<?php echo base_url(); ?>">
                 <img class="g-width-150" src="/public/unity_assets/img/logo.png" alt="Logo">
             </a>
             <!-- End Logo -->
