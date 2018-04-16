@@ -11,6 +11,7 @@
 <meta property="og:type" content="gamereviewnews:article" />
 <meta property="fb:app_id" content="" />
 
+<meta name="google-site-verification" content="m7FFojhFIVaVqg_I4BDyYF0G2B6sEZGiadWHac2HZxE" />
 <!-- Favicon -->
 <link rel="shortcut icon" href="/public/favicon.ico"/>
 
@@ -43,3 +44,13 @@
 
 <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
 <script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103883-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117103883-1');
+</script>
