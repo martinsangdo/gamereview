@@ -4,66 +4,19 @@
     <!-- Title -->
     <title><?php echo $article_detail->title; ?></title>
     <meta name="title" content="<?php echo $article_detail->title; ?>"/>
-    <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="description" content="<?php echo htmlspecialchars(preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt))); ?>">
-    <meta name="keywords" content="latest game review, game trailer, game news, pc game, mobile game, xbox game, wii game, ps game">
-    <meta name="author" content="Martin SangDo">
-    <meta name="copyright" content="Copyright © 2018 by gamereviewnews.com"/>
-
     <meta property="og:title" content="<?php echo $article_detail->title; ?>" />
     <meta property="og:description" content="<?php echo htmlspecialchars(preg_replace( "/\r|\n/", "", strip_tags($article_detail->excerpt))); ?>" />
-    <meta property="og:type" content="gamereviewnews:article" />
     <meta property="og:url" content="<?php echo full_url($_SERVER); ?>" />
-    <meta property="og:site_name" content="Gamereviewnews" />
-    <meta property="fb:app_id" content="" />
     <meta property="og:image" content="<?php echo $article_detail->thumb_url; ?>"  />
     <meta property="og:image:url" content="<?php echo $article_detail->thumb_url; ?>" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/public/favicon.ico">
+    <?php require_once('common_head.php'); ?>
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C300%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
-
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="/public/unity_assets/vendor/bootstrap/bootstrap.min.css">
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/animate.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/public/unity_assets/vendor/fancybox/jquery.fancybox.css">
-
-    <!-- CSS Unify Theme -->
-    <link rel="stylesheet" href="/public/unity_assets/css/styles.bm-classic.css">
-
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acf23ea3368f4001495b81f&product=inline-share-buttons"></script>
 
     <script src="/public/js/constant.js"></script>
     <script src="/public/js/common.js"></script>
     <script src="/public/js/article_detail.js"></script>
-    <script>
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/es_LA/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 </head>
 
 <body>
@@ -150,7 +103,7 @@
                         </div>
 
                         <!-- Comment template -->
-                        <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-10 g-mb-20 comment_detail" id="comment_tmpl">
+                        <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-10 g-mb-20 comment_detail hidden" id="comment_tmpl">
                             <img class="d-flex u-shadow-v25 g-width-50 g-height-50 rounded-circle g-mr-15" src="/public/unity_assets/img/default_avatar.jpg" alt="Avatar">
 
                             <div class="media-body">
@@ -340,81 +293,7 @@
     </div>
 </div>
 
-<!-- JS Global Compulsory -->
-<script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
-<script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="/public/unity_assets/vendor/popper.min.js"></script>
-<script src="/public/unity_assets/vendor/bootstrap/bootstrap.min.js"></script>
+<?php require_once ('common_js.php'); ?>
 
-<!-- JS Implementing Plugins -->
-<script src="/public/unity_assets/vendor/appear.js"></script>
-<script src="/public/unity_assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="/public/unity_assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="/public/unity_assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-<script src="/public/unity_assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="/public/unity_assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="/public/unity_assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-
-<!-- JS Unify -->
-<script src="/public/unity_assets/js/hs.core.js"></script>
-<script src="/public/unity_assets/js/components/hs.header.js"></script>
-<script src="/public/unity_assets/js/helpers/hs.hamburgers.js"></script>
-<script src="/public/unity_assets/js/components/hs.dropdown.js"></script>
-<script src="/public/unity_assets/js/components/hs.counter.js"></script>
-<script src="/public/unity_assets/js/components/hs.onscroll-animation.js"></script>
-<script src="/public/unity_assets/js/components/hs.sticky-block.js"></script>
-<script src="/public/unity_assets/js/components/hs.carousel.js"></script>
-<script src="/public/unity_assets/js/components/hs.popup.js"></script>
-<script src="/public/unity_assets/js/components/hs.go-to.js"></script>
-
-<!-- JS Customization -->
-<script src="/public/unity_assets/js/custom.js"></script>
-
-<!-- JS Plugins Init. -->
-<script>
-    $(document).on('ready', function () {
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of MegaMenu
-        $('.js-mega-menu').HSMegaMenu();
-
-        // initialization of HSDropdown component
-        $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
-            afterOpen: function(){
-                $(this).find('input[type="search"]').focus();
-            }
-        });
-
-        // initialization of scroll animation
-        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
-
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of counters
-        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('[class*="js-carousel"]');
-
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox');
-        //
-        $('#txt_search_keyword').unbind();
-        $('#txt_search_keyword').bind('keypress', function (e) {
-            if (e.which == 13) {
-                //pressed Enter
-                common.redirect('/category/search/' + $.trim($('#txt_search_keyword').val()))
-            }
-        });
-    });
-
-    $(window).on('load', function () {
-        // initialization of sticky blocks
-        $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
-    });
-</script>
 </body>
 </html>
