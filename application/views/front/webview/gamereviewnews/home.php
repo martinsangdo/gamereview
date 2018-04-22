@@ -6,8 +6,8 @@
     <meta property="og:title" content="Latest game review, news, trailer" />
     <meta property="og:description" content="Gamereviewnews is one of the most latest news source for PS4, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS, and DS video game trailers, and more." />
     <meta property="og:url" content="gamereviewnews.com" />
-    <meta property="og:image" content="<?php echo $block_key_1[0]->thumb_url;?>"  />
-    <meta property="og:image:url" content="<?php echo $block_key_1[0]->thumb_url;?>" />
+    <meta property="og:image" content="<?php echo isset($block_key_1[0]->thumb_url)?$block_key_1[0]->thumb_url:'';?>"  />
+    <meta property="og:image:url" content="<?php echo isset($block_key_1[0]->thumb_url)?$block_key_1[0]->thumb_url:'';?>" />
 
     <?php require_once('common_head.php'); ?>
     <script src="/public/js/home.js"></script>
@@ -24,7 +24,8 @@
             <div class="row no-gutters">
                 <?php
                 $data_block = $block_key_1;
-                for ($i=0; $i<2; $i++){ ?>
+                for ($i=0; $i<2; $i++){
+                    if (isset($data_block[$i])) {?>
                 <div class="col-lg-6 g-pr-1--lg g-mb-30 g-mb-2--lg">
                     <!-- Article -->
                     <article class="u-block-hover">
@@ -47,9 +48,10 @@
                     </article>
                     <!-- End Article -->
                 </div>
-                <?php } //end for ?>
+                <?php }} //end for ?>
 
-                <?php for ($i=2; $i<5; $i++){ ?>
+                <?php for ($i=2; $i<5; $i++){
+                    if (isset($data_block[$i])) {?>
                 <div class="col-lg-4 g-pr-1--lg g-mb-30 g-mb-0--lg">
                     <!-- Article -->
                     <article class="u-block-hover">
@@ -70,7 +72,7 @@
                     </article>
                     <!-- End Article -->
                 </div>
-                <?php } //end for ?>
+                <?php }} //end for ?>
             </div>
             <!-- News Section -->
         </div>
@@ -92,6 +94,7 @@
 
                         <div class="row">
                             <!-- Article (Leftside) -->
+                            <?php if (isset($block_key_13[0])){ ?>
                             <div class="col-lg-7 g-mb-50 g-mb-0--lg">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
@@ -111,36 +114,41 @@
                                     <p class="g-color-gray-dark-v2"><?php echo $block_key_13[0]->excerpt;?></p>
                                 </article>
                             </div>
+                            <?php } //end if ?>
                             <!-- End Article (Leftside) -->
 
                             <!-- Article (Rightside) -->
                             <div class="col-lg-5">
                                 <?php
                                 $data_block = $block_key_13;
-                                for ($i=1; $i<7; $i++){ ?>
-                                <!-- Article -->
-                                <article class="media">
-                                    <a class="d-flex u-shadow-v25 align-self-center mr-3" href="<?php echo detail_uri($data_block[$i]->slug); ?>">
-                                        <img class="g-width-80 g-height-80" src="<?php echo $data_block[$i]->thumb_url;?>"/>
-                                    </a>
+                                for ($i=1; $i<7; $i++){
+                                    if (isset($data_block[$i])) { ?>
+                                        <!-- Article -->
+                                        <article class="media">
+                                            <a class="d-flex u-shadow-v25 align-self-center mr-3"
+                                               href="<?php echo detail_uri($data_block[$i]->slug); ?>">
+                                                <img class="g-width-80 g-height-80"
+                                                     src="<?php echo $data_block[$i]->thumb_url; ?>"/>
+                                            </a>
 
-                                    <div class="media-body">
-                                        <h1 class="h6">
-                                            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
-                                        </h1>
+                                            <div class="media-body">
+                                                <h1 class="h6">
+                                                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
+                                                       href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
+                                                </h1>
 
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($data_block[$i]->time);?>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Article -->
-                                <?php if ($i!=6){ ?>
-                                <hr class="g-brd-gray-light-v4 g-my-25 block_data_2_hr"/>
-                                <?php } //end if
-                                    } //end for ?>
+                                                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                                    <li class="list-inline-item">
+                                                        <?php echo format_post_time($data_block[$i]->time); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <!-- End Article -->
+                                        <?php if ($i != 6) { ?>
+                                            <hr class="g-brd-gray-light-v4 g-my-25 block_data_2_hr"/>
+                                        <?php } //end if
+                                    }} //end for ?>
 
                             </div>
                             <!-- End Article (Rightside) -->
@@ -153,7 +161,7 @@
                         <div class="u-heading-v3-1 g-mb-30">
                             <h2 class="h5 u-heading-v3__title g-font-primary g-font-weight-700 g-color-gray-dark-v1 text-uppercase g-brd-primary">Breaking News</h2>
                         </div>
-
+                        <?php if (isset($data_block[7])){ ?>
                         <div class="row">
                             <!-- Article Image -->
                             <div class="col-md-5">
@@ -181,6 +189,7 @@
                             </div>
                             <!-- End Article Content -->
                         </div>
+                        <?php } //end if ?>
                     </div>
                     <!-- End Breaking News -->
 
@@ -193,6 +202,7 @@
                         <div class="row g-mb-20">
                             <div class="col-lg-6 g-mb-30 g-mb-0--lg">
                                 <!-- Article -->
+                                <?php if (isset($block_key_2[0])){ ?>
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
                                         <div class="home3-center-cropped"
@@ -216,32 +226,38 @@
 
                                     <p class="g-color-gray-dark-v2"><?php echo $block_key_2[0]->excerpt;?></p>
                                 </article>
+                                <?php }//end if ?>
                                 <!-- End Article -->
                                 <?php
                                 $data_block = $block_key_2;
                                 for ($i=1;$i<10;$i++){
-                                ?>
+                                if (isset($data_block[$i])) {
+                                    ?>
                                     <article class="media g-mb-10">
-                                        <a class="d-flex u-shadow-v25 mr-3" href="<?php echo detail_uri($data_block[$i]->slug); ?>">
-                                            <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
+                                        <a class="d-flex u-shadow-v25 mr-3"
+                                           href="<?php echo detail_uri($data_block[$i]->slug); ?>">
+                                            <img class="g-width-60 g-height-60"
+                                                 src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                                         </a>
 
                                         <div class="media-body">
                                             <h1 class="h6">
-                                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
+                                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
+                                                   href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                             </h1>
-                                            <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time);?></span>
+                                            <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time); ?></span>
                                         </div>
                                     </article>
-                                <!-- End Article -->
-                                <?php if ($i!=9){ ?>
-                                <hr class="g-brd-gray-light-v4 g-mt-5 g-mb-5">
-                                <?php } //end if
-                                    } //end for ?>
+                                    <!-- End Article -->
+                                    <?php if ($i != 9) { ?>
+                                        <hr class="g-brd-gray-light-v4 g-mt-5 g-mb-5">
+                                    <?php } //end if
+                                }} //end for ?>
                             </div>
 
                             <div class="col-lg-6">
                                 <!-- Article -->
+                                <?php if (isset($data_block[10])) { ?>
                                 <article class="g-mb-30">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
                                         <div class="home3-center-cropped"
@@ -265,29 +281,34 @@
 
                                     <p class="g-color-gray-dark-v2"><?php echo $data_block[10]->excerpt;?></p>
                                 </article>
+                                <?php } //end if ?>
                                 <!-- End Article -->
                                 <?php
                                 $data_block = $block_key_2;
                                 for ($i=11;$i<20;$i++){
+                                    if (isset($data_block[$i])) {
                                     ?>
                                     <!-- Article -->
                                     <article class="media g-mb-10">
-                                        <a class="d-flex u-shadow-v25 mr-3" href="<?php echo detail_uri($data_block[$i]->slug); ?>">
-                                            <img class="g-width-60 g-height-60" src="<?php echo $data_block[$i]->thumb_url;?>"/>
+                                        <a class="d-flex u-shadow-v25 mr-3"
+                                           href="<?php echo detail_uri($data_block[$i]->slug); ?>">
+                                            <img class="g-width-60 g-height-60"
+                                                 src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                                         </a>
 
                                         <div class="media-body">
                                             <h1 class="h6">
-                                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
+                                                <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
+                                                   href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                             </h1>
-                                            <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time);?></span>
+                                            <span class=" g-color-gray-dark-v4 g-font-size-12"><?php echo format_post_time($data_block[$i]->time); ?></span>
                                         </div>
                                     </article>
                                     <!-- End Article -->
-                                    <?php if ($i!=19){ ?>
+                                    <?php if ($i != 19) { ?>
                                         <hr class="g-brd-gray-light-v4 g-mt-5 g-mb-5">
                                     <?php } //end if
-                                } //end for ?>
+                                }} //end for ?>
                             </div>
                         </div>
                     </div>
@@ -301,6 +322,7 @@
                     <div class="row">
                         <?php
                         for ($i=0; $i<9; $i++){
+                        if (isset($data_block[$i])) {
                         ?>
                         <!-- Article Video -->
                         <div class="col-lg-4 col-sm-6 g-mb-10">
@@ -321,7 +343,7 @@
                             </article>
                         </div>
                         <!-- End Article Video -->
-                        <?php } //end for ?>
+                        <?php }} //end for ?>
                     </div>
                     <!-- End Recent Videos -->
 
@@ -340,14 +362,15 @@
                         <ul class="list-unstyled">
                             <?php
                             $data_block = $block_key_4;
-                            for ($i=0;$i<10;$i++){ ?>
+                            for ($i=0;$i<10;$i++){
+                            if (isset($data_block[$i])) {?>
                             <li class="g-brd-bottom g-brd-gray-light-v4 g-mb-6">
                                 <h4 class="h6">
                                     <i class="fa fa-angle-right g-color-gray-dark-v5 g-mr-5"></i>
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title;?></a>
                                 </h4>
                             </li>
-                            <?php } //end for ?>
+                            <?php }} //end for ?>
                         </ul>
                     </div>
                     <!-- End Useful Links -->
@@ -385,6 +408,7 @@
                         <?php
                         $data_block = $block_key_3;
                         for ($i=0;$i<20;$i++){
+                            if (isset($data_block[$i])) {
                         ?>
                         <!-- Article -->
                         <article class="media g-mb-10">
@@ -399,7 +423,7 @@
                             </div>
                         </article>
                         <!-- End Article -->
-                        <?php } //end for ?>
+                        <?php }} //end for ?>
                     </div>
                     <!-- End Recent Posts -->
 
@@ -437,7 +461,8 @@
             <div class="row no-gutters g-mb-20">
                 <?php
                 $data_block = $block_key_5;
-                for ($i=0; $i<3; $i++){ ?>
+                for ($i=0; $i<3; $i++){
+                if (isset($data_block[$i])) {?>
                 <div class="col-lg-4 g-pr-2--lg g-mb-30 g-mb-0--lg">
                     <!-- Article -->
                     <article class="u-block-hover">
@@ -458,7 +483,7 @@
                     </article>
                     <!-- End Article -->
                 </div>
-                <?php } //end for ?>
+                <?php }} //end for ?>
             </div>
             <!-- News Section 2 -->
 
@@ -475,6 +500,7 @@
                         <div class="row">
                             <div class="col-lg-6 g-mb-50 g-mb-0--lg">
                                 <!-- Article -->
+                                <?php if (isset($block_key_6[0])) { ?>
                                 <article class="g-mb-20">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
                                         <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[0]->thumb_url;?>');"></div>
@@ -496,43 +522,53 @@
 
                                     <p class="g-color-gray-dark-v2"><?php echo $block_key_6[0]->excerpt;?></p>
                                 </article>
+                                <?php }//end if ?>
                                 <!-- Article -->
                                 <?php
                                 for ($i=9; $i<14; $i++){
-                                ?>
-                                <!-- Other Articles -->
-                                <article class="media">
-                                    <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                        <img class="g-width-140 g-height-80" src="<?php echo $videos[$i]->thumb_url; ?>"/>
+                                    if (isset($videos[$i])) {
+                                        ?>
+                                        <!-- Other Articles -->
+                                        <article class="media">
+                                            <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
+                                                <img class="g-width-140 g-height-80"
+                                                     src="<?php echo $videos[$i]->thumb_url; ?>"/>
 
-                                        <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                            <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
-                                                <i class="fa fa-play g-mr-5"></i> Play
-                                            </a>
-                                        </figcaption>
-                                    </figure>
+                                                <figcaption class="g-pos-abs g-top-5 g-left-5">
+                                                    <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0"
+                                                       href="javascript:void(0);"
+                                                       onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');"
+                                                       data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                        <i class="fa fa-play g-mr-5"></i> Play
+                                                    </a>
+                                                </figcaption>
+                                            </figure>
 
-                                    <div class="media-body">
-                                        <h1 class="g-font-size-16">
-                                            <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
-                                        </h1>
+                                            <div class="media-body">
+                                                <h1 class="g-font-size-16">
+                                                    <a class="g-color-gray-dark-v1" href="javascript:void(0);"
+                                                       onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');"
+                                                       data-modal-effect="fadein"
+                                                       data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
+                                                </h1>
 
-                                        <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                                            <li class="list-inline-item">
-                                                <?php echo format_post_time($videos[$i]->time); ?>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <!-- End Other Articles -->
-                                <?php if ($i!=4){ ?>
-                                <hr class="g-brd-gray-light-v4 block_data_2_hr">
-                                <?php } //end if
-                                } //end for ?>
+                                                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                                                    <li class="list-inline-item">
+                                                        <?php echo format_post_time($videos[$i]->time); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <!-- End Other Articles -->
+                                        <?php if ($i != 4) { ?>
+                                            <hr class="g-brd-gray-light-v4 block_data_2_hr">
+                                        <?php } //end if
+                                    }} //end for ?>
                             </div>
 
                             <div class="col-lg-6 g-mb-50 g-mb-0--lg">
                                 <!-- Article -->
+                                <?php if (isset($block_key_6[1])) { ?>
                                 <article class="g-mb-40">
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-20">
                                         <div class="home3-center-cropped" style="background-image: url('<?php echo $block_key_6[1]->thumb_url;?>');"></div>
@@ -554,17 +590,23 @@
 
                                     <p class="g-color-gray-dark-v2"><?php echo $block_key_6[1]->excerpt;?></p>
                                 </article>
+                                <?php } //end if ?>
                                 <!-- End Article -->
                                 <?php
                                 for ($i=14; $i<19; $i++){
+                                if (isset($data_block[$i])) {
                                     ?>
                                     <!-- Other Articles -->
                                     <article class="media">
                                         <figure class="d-flex u-shadow-v25 mr-3 g-pos-rel">
-                                            <img class="g-width-140 g-height-80" src="<?php echo $videos[$i]->thumb_url; ?>"/>
+                                            <img class="g-width-140 g-height-80"
+                                                 src="<?php echo $videos[$i]->thumb_url; ?>"/>
 
                                             <figcaption class="g-pos-abs g-top-5 g-left-5">
-                                                <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal">
+                                                <a class="btn btn-xs u-btn-darkgray text-uppercase rounded-0"
+                                                   href="javascript:void(0);"
+                                                   onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');"
+                                                   data-modal-effect="fadein" data-modal-target="#yt_modal">
                                                     <i class="fa fa-play g-mr-5"></i> Play
                                                 </a>
                                             </figcaption>
@@ -572,7 +614,10 @@
 
                                         <div class="media-body">
                                             <h1 class="g-font-size-16">
-                                                <a class="g-color-gray-dark-v1" href="javascript:void(0);" onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');" data-modal-effect="fadein" data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
+                                                <a class="g-color-gray-dark-v1" href="javascript:void(0);"
+                                                   onclick="show_video_dialog('<?php echo $videos[$i]->original_id; ?>');"
+                                                   data-modal-effect="fadein"
+                                                   data-modal-target="#yt_modal"><?php echo $videos[$i]->title; ?></a>
                                             </h1>
 
                                             <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
@@ -583,10 +628,10 @@
                                         </div>
                                     </article>
                                     <!-- End Other Articles -->
-                                    <?php if ($i!=8){ ?>
+                                    <?php if ($i != 8) { ?>
                                         <hr class="g-brd-gray-light-v4 block_data_2_hr">
                                     <?php } //end if
-                                } //end for ?>
+                                }} //end for ?>
                             </div>
                         </div>
                     </div>
@@ -599,7 +644,8 @@
                         </div>
                         <?php
                         $data_block = $block_key_9;
-                        for ($i=0;$i<5;$i++){ ?>
+                        for ($i=0;$i<5;$i++){
+                        if (isset($data_block[$i])) {?>
                         <!-- Articles -->
                         <div class="row">
                             <!-- Article Image -->
@@ -620,7 +666,7 @@
                             <!-- End Article Content -->
                         </div>
                         <!-- End Articles -->
-                        <?php } //end for ?>
+                        <?php }} //end for ?>
                     </div>
                     <!-- End Weekly News -->
                 </div>
@@ -680,7 +726,8 @@
                             </div>
                             <?php
                             $data_block = $block_key_7;
-                            for ($i=0; $i<10; $i++){ ?>
+                            for ($i=0; $i<10; $i++){
+                            if (isset($data_block[$i])) {?>
                             <article class="media g-mb-10">
                                 <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
                                 <div class="media-body">
@@ -690,7 +737,7 @@
                                     <a class="g-color-gray-dark-v1" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                 </div>
                             </article>
-                            <?php } //end for ?>
+                            <?php }} //end for ?>
                         </div>
                         <!-- End Top Authors -->
                     </div>
@@ -740,7 +787,8 @@
                  }]'>
                     <?php
                     $data_block = $block_key_10;
-                    for ($i=0;$i<10;$i++){ ?>
+                    for ($i=0;$i<10;$i++){
+                        if (isset($data_block[$i])){?>
                     <div class="js-slide g-px-10">
                         <!-- Article -->
                         <article class="media g-bg-white g-pa-10">
@@ -755,7 +803,7 @@
                         </article>
                         <!-- End Article -->
                     </div>
-                    <?php } //end for ?>
+                    <?php }} //end for ?>
                 </div>
                 <!-- End Footer - Popular Stories Carousel -->
             </div>
@@ -772,12 +820,13 @@
                         <ul class="list-unstyled mb-0">
                             <?php
                             $data_block = $block_key_12;
-                            for ($i=0;$i<10;$i++){ ?>
+                            for ($i=0;$i<10;$i++){
+                            if (isset($data_block[$i])) {?>
                             <li class="g-px-0 g-my-8">
                                 <i class="g-color-primary mr-2 fa fa-angle-right"></i>
                                 <a class="u-link-v5 g-color-secondary-dark-v1 g-color-primary--hover g-font-size-13 g-pl-0 g-pl-7--hover g-transition-0_3 g-py-7" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                             </li>
-                            <?php } //end for ?>
+                            <?php }} //end for ?>
                         </ul>
                         <!-- End News -->
                     </div>
