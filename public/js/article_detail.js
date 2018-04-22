@@ -7,16 +7,30 @@ function get_article_detail(){
     var $content_container = $('#article_detail_container');
 
     if (site_type == 'wp'){
-        var url = $('#site_api_uri').val() + 'posts/'+$('#original_post_id').val();
-        common.ajaxRawGet(url, function(resp){
-            if (resp.content && resp.content.rendered){
-                $content_container.html(resp.content.rendered);
+        //use ajax will be error CORS
+        var params = {
+            post_id: $('#post_id').val()
+        }
+        common.ajaxPost(API_URI.GET_ARTICLE_DETAIL, params, function(resp){
+            // console.log(resp);
+            if (common.isEmpty(resp)){
+                //try to get from original source
+                var url = $('#site_api_uri').val() + 'posts/'+$('#original_post_id').val();
+                common.ajaxRawGet(url, function(resp){
+                    if (resp.content && resp.content.rendered){
+                        $content_container.html(resp.content.rendered);
+                        $('a', $content_container).attr('target', '_blank');
+                        $('img', $content_container).css('max-width', '100%').css('height', 'auto');
+                        $('#loading_img').remove();
+                    }
+                }, function(err){});
+            } else {
+                $content_container.html(resp);
                 $('a', $content_container).attr('target', '_blank');
                 $('img', $content_container).css('max-width', '100%').css('height', 'auto');
-                // $('iframe', $content_container).css('max-width', '100%').css('height', 'auto');
-                $('#loading_img').remove();
             }
-        }, function(err){});
+            $('#loading_img').remove();
+        });
     } else if (site_type == 'rss'){
         $content_container.html($('#post_excerpt').html());
         $content_container.append('<br/><a href="'+$('#original_url').val()+'">Go detail >></a>');

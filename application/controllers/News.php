@@ -67,6 +67,13 @@ Class News extends REST_Controller
         );
         $this->response(RestSuccess($return_lists), SUCCESS_CODE);
     }
+    //get original detail content
+    public function get_original_detail_post(){
+        $post_id = $this->input->post('post_id');
+        $this->load->model('site_model');
+        $article_detail = $this->block_content_model->read_row(array('_id'=>$post_id));
+        $this->response(RestSuccess($article_detail->content), SUCCESS_CODE);
+    }
     //========== EXTRA FUNCTIONS
     //get related posts of this one based on same categories
     private function get_related_posts($post_id){
