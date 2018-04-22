@@ -36,7 +36,7 @@ Class News extends REST_Controller
         $this->data['related_posts'] = $related_posts;
         $this->data['extra_ids'] = implode('-',$extra_ids);
         //
-        $this->load->view('front/webview/news', $this->data);
+        $this->load->view(VIEW_FOLDER.'/news', $this->data);
     }
     //get newest videos, should hash the list?
     public function get_random_videos_post(){

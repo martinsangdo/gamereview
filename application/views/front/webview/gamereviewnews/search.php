@@ -4,7 +4,7 @@
     <!-- Title -->
     <title>Latest game review, news, trailer</title>
 
-    <?php require_once ('common_head.php'); ?>
+    <?php require_once('common_head.php'); ?>
 
 </head>
 
@@ -110,7 +110,7 @@
 </main>
 
 <div class="u-outer-spaces-helper"></div>
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 
 </body>

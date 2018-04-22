@@ -3,7 +3,7 @@
 <head>
     <!-- Title -->
     <title>Latest game review, news, trailer</title>
-    <?php require_once ('common_head.php'); ?>
+    <?php require_once('common_head.php'); ?>
 
 </head>
 
@@ -56,7 +56,7 @@
     </button>
     <div id="main_video_container"></div>
 </div>
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

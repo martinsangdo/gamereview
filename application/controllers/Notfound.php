@@ -10,6 +10,6 @@ Class Notfound extends REST_Controller
     }
     //show list of posts inside category
     public function index(){
-        $this->load->view('front/webview/notfound', $this->data);
+        $this->load->view(VIEW_FOLDER.'/notfound', $this->data);
     }
 }

@@ -4,7 +4,7 @@
     <!-- Title -->
     <title>Latest game review, news, trailer</title>
 
-    <?php require_once ('common_head.php'); ?>
+    <?php require_once('common_head.php'); ?>
 
     <meta property="og:title" content="Latest game review, news, trailer" />
     <meta property="og:description" content="Latest game review, news, trailer" />
@@ -91,7 +91,7 @@
     <div id="main_video_container"></div>
 </div>
 
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

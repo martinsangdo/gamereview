@@ -71,7 +71,7 @@
     <div id="main_video_container"></div>
 </div>
 
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

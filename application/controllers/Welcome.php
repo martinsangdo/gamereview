@@ -47,31 +47,15 @@ class Welcome extends MY_Controller
         $this->load->model('video_model');
         $this->data['videos'] = $this->video_model->get_latest_posts(array('status' => 1), 0, DEFAULT_PAGE_LEN);
 
-        $this->load->view('front/webview/home', $this->data);
-    }
-    //test data to get from link
-    public function test_link()
-    {
-        $this->load->view('front/block/header_webview', $this->data);
-        $this->load->view('front/webview/test_link', $this->data);
-        $this->load->view('front/block/footer_webview', $this->data);
-    }
-
-    //test data to get from link
-    public function test_cron()
-    {
-//        $this->load->model('tmp_model');
-//        $this->tmp_model->create(array(
-//            'value'=>'aa'.$this->uri->segment(3)
-//        ));
+        $this->load->view(VIEW_FOLDER.'/home', $this->data);
     }
 
     public function privacy(){
-        $this->load->view('front/webview/privacy', $this->data);
+        $this->load->view(VIEW_FOLDER.'/privacy', $this->data);
     }
 
     public function terms(){
-        $this->load->view('front/webview/terms', $this->data);
+        $this->load->view(VIEW_FOLDER.'/terms', $this->data);
     }
 
 }

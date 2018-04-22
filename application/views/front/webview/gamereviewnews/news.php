@@ -14,8 +14,6 @@
 
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acf23ea3368f4001495b81f&product=inline-share-buttons"></script>
 
-    <script src="/public/js/constant.js"></script>
-    <script src="/public/js/common.js"></script>
     <script src="/public/js/article_detail.js"></script>
 </head>
 
@@ -293,7 +291,7 @@
     </div>
 </div>
 
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

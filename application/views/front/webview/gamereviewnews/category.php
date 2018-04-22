@@ -12,8 +12,6 @@
 
     <?php require_once('common_head.php'); ?>
 
-    <script src="/public/js/constant.js"></script>
-    <script src="/public/js/common.js"></script>
     <script src="/public/js/category.js"></script>
 
 </head>
@@ -215,7 +213,7 @@
 
 <div class="u-outer-spaces-helper"></div>
 
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

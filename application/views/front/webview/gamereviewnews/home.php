@@ -10,9 +10,6 @@
     <meta property="og:image:url" content="<?php echo $block_key_1[0]->thumb_url;?>" />
 
     <?php require_once('common_head.php'); ?>
-
-    <script src="/public/js/constant.js"></script>
-    <script src="/public/js/common.js"></script>
     <script src="/public/js/home.js"></script>
 </head>
 
@@ -881,7 +878,7 @@
 </div>
 <!-- End Youtube video modal window -->
 
-<?php require_once ('common_js.php'); ?>
+<?php require_once('common_js.php'); ?>
 
 </body>
 </html>

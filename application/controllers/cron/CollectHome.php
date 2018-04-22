@@ -222,7 +222,7 @@ Class CollectHome extends REST_Controller
         //get total videos
         $this->data['total_videos'] = $this->video_model->get_total(array('status'=>1));
 
-        $this->load->view('front/webview/show_crawl_time', $this->data);
+        $this->load->view('front/webview/gamereviewnews/show_crawl_time', $this->data);
     }
     //try to parse some website content
     //https://davidwalsh.name/php-notifications

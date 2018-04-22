@@ -27,3 +27,6 @@
 
 <!-- JS Customization -->
 <script src="/public/unity_assets/js/custom.js"></script>
+
+<script src="/public/js/constant.js"></script>
+<script src="/public/js/common.js"></script>
