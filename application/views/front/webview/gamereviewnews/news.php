@@ -43,8 +43,9 @@
                         </header>
 
                         <div class="g-font-size-16 g-line-height-1_8 g-mb-30" id="article_detail_container">
-                            <img id="loading_img" src="/public/unity_assets/img/loading.gif"/>
+                            <img id="loading_img" src="/public/unity_assets/img/loading.gif" class="hidden"/>
                             <!-- content be here -->
+                            <div id="content_detail"><?php echo $article_detail->content; ?></div>
                         </div>
 
                         <!-- Sources & Tags -->
