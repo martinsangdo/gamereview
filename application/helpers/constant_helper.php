@@ -11,10 +11,10 @@ define('SESS_KEY_CAPTCHA', 'sess_captcha');     //save captcha string
 
 //========== captcha
 define('CAPTCHA_FOLDER', 'captcha/');
-define('CAPTCHA_W', 200);
-define('CAPTCHA_H', 80);
+define('CAPTCHA_W', 100);
+define('CAPTCHA_H', 40);
 define('CAPTCHA_EXP_DURATION', 300);    //5 minutes
-define('CAPTCHA_FONT_SIZE', 80);
+define('CAPTCHA_FONT_SIZE', 100);
 
 define('UNKNOWN_ERROR', 'unknown_error');
 //block key, display in Home

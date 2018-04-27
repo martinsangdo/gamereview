@@ -25,6 +25,9 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/public/unity_assets/css/custom.css">
+    <?php require_once ('common_js.php'); ?>
+    <script src="/public/js/admin/login_1.js"></script>
+
 </head>
 
 <body>
@@ -51,10 +54,14 @@
                                     <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Password:</label>
                                 </div>
                             </div>
-                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15 mb-3" type="password" placeholder="Password" />
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15 mb-3" type="password"/>
+                            <div class="mb-4">
+                                <label class="g-color-gray-dark-v2 g-font-weight-600 g-font-size-13">Captcha:</label> <span id="captcha_container"><?php echo $captcha; ?></span> &nbsp;&nbsp;<a href="javascript:void(0);" onclick="refresh_captcha();">Refresh</a><br/><br/>
+                                <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" />
+                            </div>
                             <div class="row justify-content-between">
                                 <div class="col-4 align-self-center text-right">
-                                    <button class="btn btn-md u-btn-primary rounded g-py-13 g-px-25" type="button">Login</button>
+                                    <button class="btn btn-md u-btn-primary rounded g-py-13 g-px-25" type="button" onclick="check_login();">Login</button>
                                 </div>
                             </div>
                         </div>
@@ -84,15 +91,6 @@
 
 <div class="u-outer-spaces-helper"></div>
 
-
-<!-- JS Global Compulsory -->
-<script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
-<script src="/public/unity_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="/public/unity_assets/vendor/popper.min.js"></script>
-<script src="/public/unity_assets/vendor/bootstrap/bootstrap.min.js"></script>
-
-<!-- JS Unify -->
-<script src="/public/unity_assets/js/hs.core.js"></script>
 
 </body>
 
