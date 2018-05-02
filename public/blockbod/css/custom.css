@@ -1,0 +1,22 @@
+/**
+   * author: Martin SangDo
+ */
+.main-news-section article .post-content h2 {text-overflow: initial; white-space: initial;}
+.ellipsis4lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 80px;       /* X*N fallback */
+}
+.ellipsis3lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 60px;       /* X*N fallback */
+}

@@ -3,6 +3,7 @@
         <td>No.</td>
         <td>Id</td>
         <td>Name</td>
+        <td>Post uri</td>
         <td>Item num</td>
         <td>Crawl time</td>
         <td>Type</td>
@@ -13,6 +14,7 @@
             <td><?php echo $i+1; ?></td>
             <td><?php echo $list[$i]->_id; ?></td>
             <td><?php echo $list[$i]->api_uri; ?></td>
+            <td><?php echo $list[$i]->post_uri; ?></td>
             <td><?php echo $list[$i]->item_num; ?></td>
             <td><?php echo $list[$i]->crawl_time; ?></td>
             <td><?php echo $list[$i]->type; ?></td>
@@ -30,7 +32,9 @@ Video:<br/>
     <td>Channel</td>
     <td>Playlists</td>
     </thead>
-    <?php for ($i=0;$i<count($videos);$i++){ ?>
+    <?php
+    if (isset($videos)){
+    for ($i=0;$i<count($videos);$i++){ ?>
         <tr>
             <td><?php echo $i+1; ?></td>
             <td><?php echo $videos[$i]->_id; ?></td>
@@ -50,7 +54,7 @@ Video:<br/>
                 </table>
             </td>
         </tr>
-    <?php } ?>
+    <?php } }//end for ?>
 </table>
 <br/>
-Total videos: <?php echo $total_videos; ?>
+Total videos: <?php if (isset($total_videos)) echo $total_videos; ?>
