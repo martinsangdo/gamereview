@@ -299,8 +299,9 @@
                                         </div><!-- .featured-small-items -->
                                     </div><!-- .inner-wrapper -->
                                 </div><!-- .mix-column-news -->
+                            </section>
 
-                            </section><section id="pt-magazine-mix-column-news-3" class="widget mix-news-section">
+                            <section id="pt-magazine-mix-column-news-3" class="widget mix-news-section">
                                 <div class="entertainment-news-section">
 
                                     <div class="section-title">
@@ -339,12 +340,12 @@
                                 </div><!-- .mix-column-news -->
                             </section>
 
-                            <?php $data_block = $block_key_4; ?>
                             <section id="media_image-4" class="widget widget_media_image">
                                 <a href="https://themeforest.net/item/blog-way-plus-minimal-wordpress-blog-theme/19848313?ref=promenadethemes">
                                     <img width="728" height="90" src="/public/blockbod/img/728x90-pt-mag-adv.jpg" class="image wp-image-2194  attachment-full size-full" style="max-width: 100%; height: auto;"/>
                                 </a>
                             </section>
+                            <?php $data_block = $block_key_4; ?>
                             <section id="pt-magazine-two-column-news-2" class="widget two-col-section news-col-2">
                                 <div class="two-column-news two-column-news-left">
 
@@ -424,110 +425,172 @@
                                 <div class="three-news-section">
 
                                     <div class="section-title">
-                                        <h2 class="widget-title">Health</h2>
+                                        <h2 class="widget-title">Cat 5</h2>
                                         <a href="https://promenadethemes.com/demo/pt-magazine/category/health/">View All</a>
+                                    </div>
+                                    <?php $data_block = $block_key_6; ?>
+                                    <div class="inner-wrapper">
+                                        <?php
+                                        for ($i=0; $i<9; $i++){
+                                        ?>
+                                        <div class="news-item three-column-item">
+                                            <div class="news-thumb">
+                                                <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="400" height="245" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image"/></a>
+                                            </div><!-- .news-thumb -->
+                                            <div class="news-text-wrap">
+                                                <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                                <span class="posted-date"><?php echo format_post_time($data_block[$i]->time); ?></span>
+                                            </div><!-- .news-text-wrap -->
+                                        </div><!-- .news-item -->
+                                        <?php }//end for ?>
+                                    </div><!-- .inner-wrapper -->
+
+                                </div><!-- .mix-column-news -->
+                            </section>
+
+                            <section id="pt-magazine-featured-column-news-2" class="widget featured-news-section">
+                                <div class="featured-news-wrap">
+                                    <div class="section-title">
+                                        <h2 class="widget-title">Cat 6</h2>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/category/lifestyle/">View All</a>
+                                    </div>
+                                    <?php $data_block = $block_key_7; ?>
+                                    <div class="inner-wrapper">
+                                        <div class="featured-large-item">
+                                            <div class="news-item">
+                                                <div class="news-thumb">
+                                                    <a href="<?php echo detail_uri($data_block[0]->slug); ?>"><img width="400" height="245" src="<?php echo $data_block[0]->thumb_url; ?>" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image"/></a>
+                                                </div><!-- .news-thumb -->
+                                                <div class="news-text-wrap">
+                                                    <h2><a href="<?php echo detail_uri($data_block[0]->slug); ?>"><?php echo $data_block[0]->title; ?></a></h2>
+                                                    <div class="ellipsis4lines"><?php echo $data_block[0]->excerpt; ?></div>
+                                                </div><!-- .news-text-wrap -->
+                                            </div><!-- .news-item -->
+                                        </div>
+
+                                        <div class="featured-small-items">
+                                            <?php
+                                            for ($i=1; $i<5; $i++){
+                                                ?>
+                                                <div class="news-item layout-two">
+                                                    <div class="news-thumb">
+                                                        <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="105" height="80" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image"/></a>
+                                                    </div><!-- .news-thumb -->
+                                                    <div class="news-text-wrap">
+                                                        <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                                    </div><!-- .news-text-wrap -->
+                                                </div><!-- .news-item -->
+                                            <?php }//end for ?>
+                                        </div><!-- .featured-small-items -->
+                                    </div><!-- .inner-wrapper -->
+                                </div><!-- .mix-column-news -->
+                            </section>
+
+                            <section id="pt-magazine-two-column-news-2" class="widget two-col-section news-col-2">
+                                <div class="two-column-news two-column-news-left">
+                                    <?php $data_block = $block_key_8; ?>
+                                    <div class="section-title">
+                                        <h2 class="widget-title">Cat 7</h2>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/category/business/">View All</a>
                                     </div>
 
                                     <div class="inner-wrapper">
 
-                                        <div class="news-item three-column-item">
+                                        <div class="news-item">
                                             <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/regular-yoga-for-health-fitness-and-wellbeing/"><img width="400" height="245" src="/public/blockbod/img/yoga-2471181_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
+                                                <a href="<?php echo detail_uri($data_block[0]->slug); ?>"><img width="400" height="245" src="<?php echo $data_block[0]->thumb_url; ?>" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image"/></a>
                                             </div><!-- .news-thumb -->
-
                                             <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/regular-yoga-for-health-fitness-and-wellbeing/">Regular yoga for health, fitness and wellbeing</a></h2>
-                                                <span class="posted-date">September 17, 2016</span>
+                                                <h2><a href="<?php echo detail_uri($data_block[0]->slug); ?>"><?php echo $data_block[0]->title; ?></a></h2>
+                                                <span class="posted-date"><?php echo format_post_time($data_block[0]->time); ?></span>
+                                                <div class="ellipsis3lines"><?php echo $data_block[0]->excerpt; ?></div>
                                             </div><!-- .news-text-wrap -->
                                         </div><!-- .news-item -->
 
-
-                                        <div class="news-item three-column-item">
-                                            <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/healthy-and-fresh-orange-juice-for-breakfast/"><img width="400" height="245" src="/public/blockbod/img/fresh-orange-juice-1614822_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
-                                            </div><!-- .news-thumb -->
-
-                                            <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/healthy-and-fresh-orange-juice-for-breakfast/">Healthy and fresh orange juice for breakfast</a></h2>
-                                                <span class="posted-date">April 10, 2016</span>
-                                            </div><!-- .news-text-wrap -->
-                                        </div><!-- .news-item -->
-
-
-                                        <div class="news-item three-column-item">
-                                            <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/fig-fruit-nutrition-for-health-and-regular-diet/"><img width="400" height="245" src="/public/blockbod/img/fig-2079166_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
-                                            </div><!-- .news-thumb -->
-
-                                            <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/fig-fruit-nutrition-for-health-and-regular-diet/">Fig fruit nutrition for health and regular diet</a></h2>
-                                                <span class="posted-date">March 27, 2016</span>
-                                            </div><!-- .news-text-wrap -->
-                                        </div><!-- .news-item -->
-
-
-                                        <div class="news-item three-column-item">
-                                            <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/calorie-counter-for-weight-loss/"><img width="400" height="245" src="/public/blockbod/img/diet-695723_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
-                                            </div><!-- .news-thumb -->
-
-                                            <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/calorie-counter-for-weight-loss/">Calorie counter for weight loss</a></h2>
-                                                <span class="posted-date">February 15, 2016</span>
-                                            </div><!-- .news-text-wrap -->
-                                        </div><!-- .news-item -->
-
-
-                                        <div class="news-item three-column-item">
-                                            <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/side-effects-of-headache-pain-pills/"><img width="400" height="245" src="/public/blockbod/img/thermometer-1539191_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
-                                            </div><!-- .news-thumb -->
-
-                                            <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/side-effects-of-headache-pain-pills/">Side effects of headache pain pills</a></h2>
-                                                <span class="posted-date">January 18, 2016</span>
-                                            </div><!-- .news-text-wrap -->
-                                        </div><!-- .news-item -->
-
-
-                                        <div class="news-item three-column-item">
-                                            <div class="news-thumb">
-                                                <a href="https://promenadethemes.com/demo/pt-magazine/wellness-massage-for-relaxing/"><img width="400" height="245" src="/public/blockbod/img/wellness-285587_1280-400x245.jpg" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image" alt=""></a>
-                                            </div><!-- .news-thumb -->
-
-                                            <div class="news-text-wrap">
-                                                <h2><a href="https://promenadethemes.com/demo/pt-magazine/wellness-massage-for-relaxing/">Wellness massage for relaxing</a></h2>
-                                                <span class="posted-date">May 19, 2015</span>
-                                            </div><!-- .news-text-wrap -->
-                                        </div><!-- .news-item -->
-
-
+                                        <?php
+                                        for ($i=1; $i<5; $i++){
+                                            ?>
+                                            <div class="news-item layout-two">
+                                                <div class="news-thumb">
+                                                    <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="105" height="80" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image"/></a>
+                                                </div><!-- .news-thumb -->
+                                                <div class="news-text-wrap">
+                                                    <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                                    <span class="posted-date"><?php echo format_post_time($data_block[$i]->time); ?></span>
+                                                </div><!-- .news-text-wrap -->
+                                            </div><!-- .news-item -->
+                                        <?php }//end for ?>
                                     </div><!-- .inner-wrapper -->
+                                </div><!-- .two-column-news-left -->
 
-                                </div><!-- .mix-column-news -->
+                                <div class="two-column-news two-column-news-right">
+                                    <?php $data_block = $block_key_9; ?>
+                                    <div class="section-title">
+                                        <h2 class="widget-title">Cat 8</h2>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/category/fashion/">View All</a>
+                                    </div>
 
+                                    <div class="inner-wrapper">
+
+                                        <div class="news-item">
+                                            <div class="news-thumb">
+                                                <a href="<?php echo detail_uri($data_block[0]->slug); ?>"><img width="400" height="245" src="<?php echo $data_block[0]->thumb_url; ?>" class="attachment-pt-magazine-tall size-pt-magazine-tall wp-post-image"/></a>
+                                            </div><!-- .news-thumb -->
+
+                                            <div class="news-text-wrap">
+                                                <h2><a href="<?php echo detail_uri($data_block[0]->slug); ?>"><?php echo $data_block[0]->title; ?></a></h2>
+                                                <span class="posted-date"><?php echo format_post_time($data_block[0]->time); ?></span>
+                                                <div class="ellipsis3lines"><?php echo $data_block[0]->excerpt; ?></div>
+                                            </div><!-- .news-text-wrap -->
+                                        </div><!-- .news-item -->
+
+                                        <?php
+                                        for ($i=1; $i<5; $i++){
+                                            ?>
+                                            <div class="news-item layout-two">
+                                                <div class="news-thumb">
+                                                    <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="105" height="80" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image"/></a>
+                                                </div><!-- .news-thumb -->
+                                                <div class="news-text-wrap">
+                                                    <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                                    <span class="posted-date"><?php echo format_post_time($data_block[$i]->time); ?></span>
+                                                </div><!-- .news-text-wrap -->
+                                            </div><!-- .news-item -->
+                                        <?php }//end for ?>
+                                    </div><!-- .inner-wrapper -->
+                                </div><!-- .two-column-news-right -->
                             </section>
-                        </main></div></div><!-- #primary -->
+
+                        </main>
+                    </div>
+                </div><!-- #primary -->
 
 
                 <div id="sidebar-primary" class="widget-area sidebar" role="complementary" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1850.2px;">
-                    <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: fixed; transform: translateY(-704px); top: 0px; width: 330px; left: 956px;"><aside id="categories-2" class="widget widget_categories"><div class="section-title"><h2 class="widget-title">Categories</h2></div>		<ul>
-                                <li class="cat-item cat-item-18"><a href="https://promenadethemes.com/demo/pt-magazine/category/business/">Business</a>
-                                </li>
-                                <li class="cat-item cat-item-14"><a href="https://promenadethemes.com/demo/pt-magazine/category/fashion/">Fashion</a>
-                                </li>
-                                <li class="cat-item cat-item-20"><a href="https://promenadethemes.com/demo/pt-magazine/category/flash/">Flash</a>
-                                </li>
-                                <li class="cat-item cat-item-22"><a href="https://promenadethemes.com/demo/pt-magazine/category/health/">Health</a>
-                                </li>
-                                <li class="cat-item cat-item-25"><a href="https://promenadethemes.com/demo/pt-magazine/category/lifestyle/">Lifestyle</a>
-                                </li>
-                                <li class="cat-item cat-item-21"><a href="https://promenadethemes.com/demo/pt-magazine/category/sports/">Sports</a>
-                                </li>
-                                <li class="cat-item cat-item-24"><a href="https://promenadethemes.com/demo/pt-magazine/category/technology/">Technology</a>
-                                </li>
-                            </ul>
-                        </aside><aside id="media_image-3" class="widget widget_media_image"><a href="https://promenadethemes.com/downloads/wordpress-business-themes/"><img width="336" height="280" src="/public/blockbod/img/336x280-pt-mag-adv.jpg" class="image wp-image-2195  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/11/336x280-pt-mag-adv.jpg 336w, https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/11/336x280-pt-mag-adv-300x250.jpg 300w" sizes="(max-width: 336px) 100vw, 336px"></a></aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><div class="section-title"><h2 class="widget-title">Tags</h2></div><div class="tagcloud"><a href="https://promenadethemes.com/demo/pt-magazine/tag/business/" class="tag-cloud-link tag-link-39 tag-link-position-1" style="font-size: 15.933333333333pt;" aria-label="business (10 items)">business</a>
+                    <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: fixed; transform: translateY(-704px); top: 0px; width: 330px; left: 956px;">
+                        <aside id="pt-magazine-extended-recent-posts-2" class="widget extended-recent-posts widget_extended_recent_posts">
+                            <div class="recent-news-section">
+
+                                <div class="section-title"><h2 class="widget-title">Cat 9</h2></div>
+                                <?php $data_block = $block_key_10; ?>
+                                <div class="recent-posts-side">
+                                    <?php
+                                    for ($i=0; $i<5; $i++){
+                                    ?>
+                                    <div class="news-item layout-two">
+                                        <div class="news-thumb">
+                                            <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="105" height="80" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image"/></a>
+                                        </div><!-- .news-thumb -->
+                                        <div class="news-text-wrap">
+                                            <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                            <span class="posted-date"><?php echo format_post_time($data_block[$i]->time); ?></span>
+                                        </div><!-- .news-text-wrap -->
+                                    </div><!-- .news-item -->
+                                    <?php }//end for ?>
+                                </div>
+
+                        </aside>
+                        <aside id="media_image-3" class="widget widget_media_image"><a href="https://promenadethemes.com/downloads/wordpress-business-themes/"><img width="336" height="280" src="/public/blockbod/img/336x280-pt-mag-adv.jpg" class="image wp-image-2195  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/11/336x280-pt-mag-adv.jpg 336w, https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/11/336x280-pt-mag-adv-300x250.jpg 300w" sizes="(max-width: 336px) 100vw, 336px"></a></aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><div class="section-title"><h2 class="widget-title">Tags</h2></div><div class="tagcloud"><a href="https://promenadethemes.com/demo/pt-magazine/tag/business/" class="tag-cloud-link tag-link-39 tag-link-position-1" style="font-size: 15.933333333333pt;" aria-label="business (10 items)">business</a>
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/care/" class="tag-cloud-link tag-link-45 tag-link-position-2" style="font-size: 9.8666666666667pt;" aria-label="care (5 items)">care</a>
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/comfort/" class="tag-cloud-link tag-link-37 tag-link-position-3" style="font-size: 9.8666666666667pt;" aria-label="comfort (5 items)">comfort</a>
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/fashion/" class="tag-cloud-link tag-link-28 tag-link-position-4" style="font-size: 19.2pt;" aria-label="fashion (14 items)">fashion</a>
@@ -541,135 +604,62 @@
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/mind/" class="tag-cloud-link tag-link-31 tag-link-position-12" style="font-size: 17.566666666667pt;" aria-label="mind (12 items)">mind</a>
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/sports/" class="tag-cloud-link tag-link-11 tag-link-position-13" style="font-size: 9.8666666666667pt;" aria-label="sports (5 items)">sports</a>
                                 <a href="https://promenadethemes.com/demo/pt-magazine/tag/technology/" class="tag-cloud-link tag-link-47 tag-link-position-14" style="font-size: 11.5pt;" aria-label="technology (6 items)">technology</a></div>
-                        </aside><aside id="media_gallery-2" class="widget widget_media_gallery"><div class="section-title"><h2 class="widget-title">View Gallery</h2></div><div id="gallery-1" class="gallery galleryid-1984 gallery-columns-3 gallery-size-thumbnail"><figure class="gallery-item">
+                        </aside>
+                        <aside id="media_gallery-2" class="widget widget_media_gallery">
+                            <div class="section-title">
+                                <h2 class="widget-title">Best sellers</h2></div><div id="gallery-1" class="gallery galleryid-1984 gallery-columns-3 gallery-size-thumbnail"><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/10/fig-2079166_1280.jpg"><img width="150" height="150" src="/public/blockbod/img/fig-2079166_1280-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href=""><img width="150" height="150" src="/public/blockbod/img/sample_book/b1.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
                                     </div></figure><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/01/pexels-photo-318236.jpeg"><img width="150" height="150" src="/public/blockbod/img/pexels-photo-318236-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/01/pexels-photo-318236.jpeg"><img src="/public/blockbod/img/sample_book/b2.jpg" class="attachment-thumbnail size-thumbnail"/></a>
                                     </div></figure><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/10/portrait-2731109_1280.jpg"><img width="150" height="150" src="/public/blockbod/img/portrait-2731109_1280-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/10/portrait-2731109_1280.jpg"><img src="/public/blockbod/img/sample_book/b3.jpg" class="attachment-thumbnail size-thumbnail"/></a>
                                     </div></figure><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/01/pexels-photo-264637.jpeg"><img width="150" height="150" src="/public/blockbod/img/pexels-photo-264637-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2017/01/pexels-photo-264637.jpeg"><img src="/public/blockbod/img/sample_book/b4.jpg" class="attachment-thumbnail size-thumbnail"/></a>
                                     </div></figure><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2016/10/sensolatino-2348551_1280.jpg"><img width="150" height="150" src="/public/blockbod/img/sensolatino-2348551_1280-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2016/10/sensolatino-2348551_1280.jpg"><img src="/public/blockbod/img/sample_book/b5.jpg" class="attachment-thumbnail size-thumbnail"/></a>
                                     </div></figure><figure class="gallery-item">
                                     <div class="gallery-icon landscape">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2016/04/quarterback-67701_1280.jpg"><img width="150" height="150" src="/public/blockbod/img/quarterback-67701_1280-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+                                        <a href="https://promenadethemes.com/demo/pt-magazine/wp-content/uploads/2016/04/quarterback-67701_1280.jpg"><img src="/public/blockbod/img/sample_book/b6.jpg" class="attachment-thumbnail size-thumbnail"/></a>
                                     </div></figure>
                             </div>
-                        </aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><div class="section-title"><h2 class="widget-title">Tags</h2></div><div class="tagcloud"><a href="https://promenadethemes.com/demo/pt-magazine/tag/business/" class="tag-cloud-link tag-link-39 tag-link-position-1" style="font-size: 15.933333333333pt;" aria-label="business (10 items)">business</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/care/" class="tag-cloud-link tag-link-45 tag-link-position-2" style="font-size: 9.8666666666667pt;" aria-label="care (5 items)">care</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/comfort/" class="tag-cloud-link tag-link-37 tag-link-position-3" style="font-size: 9.8666666666667pt;" aria-label="comfort (5 items)">comfort</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/fashion/" class="tag-cloud-link tag-link-28 tag-link-position-4" style="font-size: 19.2pt;" aria-label="fashion (14 items)">fashion</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/game/" class="tag-cloud-link tag-link-29 tag-link-position-5" style="font-size: 8pt;" aria-label="game (4 items)">game</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/girl/" class="tag-cloud-link tag-link-35 tag-link-position-6" style="font-size: 12.666666666667pt;" aria-label="girl (7 items)">girl</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/health/" class="tag-cloud-link tag-link-26 tag-link-position-7" style="font-size: 15pt;" aria-label="health (9 items)">health</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/invention/" class="tag-cloud-link tag-link-48 tag-link-position-8" style="font-size: 11.5pt;" aria-label="invention (6 items)">invention</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/life/" class="tag-cloud-link tag-link-46 tag-link-position-9" style="font-size: 11.5pt;" aria-label="life (6 items)">life</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/lifestyle/" class="tag-cloud-link tag-link-27 tag-link-position-10" style="font-size: 22pt;" aria-label="lifestyle (19 items)">lifestyle</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/men/" class="tag-cloud-link tag-link-38 tag-link-position-11" style="font-size: 13.833333333333pt;" aria-label="men (8 items)">men</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/mind/" class="tag-cloud-link tag-link-31 tag-link-position-12" style="font-size: 17.566666666667pt;" aria-label="mind (12 items)">mind</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/sports/" class="tag-cloud-link tag-link-11 tag-link-position-13" style="font-size: 9.8666666666667pt;" aria-label="sports (5 items)">sports</a>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/tag/technology/" class="tag-cloud-link tag-link-47 tag-link-position-14" style="font-size: 11.5pt;" aria-label="technology (6 items)">technology</a></div>
-                        </aside></div></div><!-- #secondary -->
+                        </aside>
+
+                        <aside id="pt-magazine-extended-recent-posts-2" class="widget extended-recent-posts widget_extended_recent_posts">
+                            <div class="recent-news-section">
+
+                                <div class="section-title"><h2 class="widget-title">Cat 10</h2></div>
+                                <div class="recent-posts-side">
+                                    <?php $data_block = $block_key_11; ?>
+                                    <?php
+                                    for ($i=0; $i<5; $i++){
+                                        ?>
+                                        <div class="news-item layout-two">
+                                            <div class="news-thumb">
+                                                <a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><img width="105" height="80" src="<?php echo $data_block[$i]->thumb_url; ?>" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image"/></a>
+                                            </div><!-- .news-thumb -->
+                                            <div class="news-text-wrap">
+                                                <h2><a href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a></h2>
+                                                <span class="posted-date"><?php echo format_post_time($data_block[$i]->time); ?></span>
+                                            </div><!-- .news-text-wrap -->
+                                        </div><!-- .news-item -->
+                                    <?php }//end for ?>
+                                </div>
+
+                        </aside>
+
+                    </div></div><!-- #secondary -->
             </div><!-- .inner-wrapper --></div><!-- .container --></div><!-- #content -->
-
-    <aside id="footer-widgets" class="widget-area" role="complementary">
-        <div class="container">
-            <div class="inner-wrapper">
-                <div class="widget-column footer-active-3">
-                    <aside id="pt-magazine-popular-posts-3" class="widget popular-posts widget_popular_posts">
-                        <div class="popular-news-section">
-
-                            <h2 class="widget-title">Popular Posts</h2>
-                            <div class="popular-posts-side">
-
-
-                                <div class="news-item layout-two">
-                                    <div class="news-thumb">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/architect-data-demonstration-for-new-project/"><img width="105" height="80" src="/public/blockbod/img/laptop-2411303_1280-105x80.jpg" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image" alt=""></a>
-                                    </div><!-- .news-thumb -->
-
-                                    <div class="news-text-wrap">
-                                        <h2><a href="https://promenadethemes.com/demo/pt-magazine/architect-data-demonstration-for-new-project/">Data demonstration for new project</a></h2>
-                                        <span class="posted-date">October 17, 2017</span>
-                                    </div><!-- .news-text-wrap -->
-                                </div><!-- .news-item -->
-
-
-                                <div class="news-item layout-two">
-                                    <div class="news-thumb">
-                                        <a href="https://promenadethemes.com/demo/pt-magazine/pink-dress-and-high-heels/"><img width="105" height="80" src="/public/blockbod/img/shoes-2605477_1280-105x80.png" class="attachment-pt-magazine-thumbnail size-pt-magazine-thumbnail wp-post-image" alt=""></a>
-                                    </div><!-- .news-thumb -->
-
-                                    <div class="news-text-wrap">
-                                        <h2><a href="https://promenadethemes.com/demo/pt-magazine/pink-dress-and-high-heels/">Pink dress and high heels</a></h2>
-                                        <span class="posted-date">December 12, 2015</span>
-                                    </div><!-- .news-text-wrap -->
-                                </div><!-- .news-item -->
-
-
-
-                            </div>
-
-                        </div></aside>						</div>
-                <div class="widget-column footer-active-3">
-                    <aside id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-                            <li>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/architect-data-demonstration-for-new-project/">Data demonstration for new project</a>
-                            </li>
-                            <li>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/luxury-designs-from-famous-companies/">Luxury designs from famous companies</a>
-                            </li>
-                            <li>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/young-girl-shopping-with-happy-mood/">Young girl shopping with happy mood</a>
-                            </li>
-                            <li>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/delicious-roll-and-baked-pizza/">Delicious roll and baked pizza</a>
-                            </li>
-                            <li>
-                                <a href="https://promenadethemes.com/demo/pt-magazine/satellite-spaceship-ready-for-board-cast/">Satellite spaceship ready for board-cast</a>
-                            </li>
-                        </ul>
-                    </aside>						</div>
-                <div class="widget-column footer-active-3">
-                    <aside id="categories-3" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
-                            <li class="cat-item cat-item-18"><a href="https://promenadethemes.com/demo/pt-magazine/category/business/">Business</a> (6)
-                            </li>
-                            <li class="cat-item cat-item-14"><a href="https://promenadethemes.com/demo/pt-magazine/category/fashion/">Fashion</a> (9)
-                            </li>
-                            <li class="cat-item cat-item-20"><a href="https://promenadethemes.com/demo/pt-magazine/category/flash/">Flash</a> (5)
-                            </li>
-                            <li class="cat-item cat-item-22"><a href="https://promenadethemes.com/demo/pt-magazine/category/health/">Health</a> (6)
-                            </li>
-                            <li class="cat-item cat-item-25"><a href="https://promenadethemes.com/demo/pt-magazine/category/lifestyle/">Lifestyle</a> (7)
-                            </li>
-                            <li class="cat-item cat-item-21"><a href="https://promenadethemes.com/demo/pt-magazine/category/sports/">Sports</a> (6)
-                            </li>
-                            <li class="cat-item cat-item-24"><a href="https://promenadethemes.com/demo/pt-magazine/category/technology/">Technology</a> (6)
-                            </li>
-                        </ul>
-                    </aside>						</div>
-            </div><!-- .inner-wrapper -->
-        </div><!-- .container -->
-    </aside><!-- #footer-widgets -->
 
 
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
             <div class="site-info-holder">
-                <div class="copyright">
-                    Copyright © All rights reserved.					</div><!-- .copyright -->
-
-
-
-                <div class="site-info">
-                    PT Magazine by <a href="https://promenadethemes.com/" rel="designer">Promenade Themes</a>        </div><!-- .site-info -->
-
+                <div class="copyright">Copyright © XuFa Ltd. All rights reserved.</div><!-- .copyright -->
             </div>
         </div><!-- .container -->
     </footer><!-- #colophon -->
