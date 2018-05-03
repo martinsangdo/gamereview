@@ -12,12 +12,14 @@
     height: 290px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 .home2-center-cropped {
     width: 368px;
     height: 184px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .home3-center-cropped {
@@ -25,6 +27,7 @@
     height: 180px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .home4-center-cropped {
@@ -32,6 +35,7 @@
     height: 300px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .home5-center-cropped {
@@ -39,6 +43,7 @@
     height: 300px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .slick-slide .media.g-bg-white {min-height:110px;}
