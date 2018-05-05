@@ -1,13 +1,13 @@
 /*
-Theme Name: PT Magazine
-Theme URI: https://promenadethemes.com/downloads/pt-magazine/
+Theme Name: PT Magazine Plus
+Theme URI: https://promenadethemes.com/downloads/pt-magazine-plus/
 Author: Promenade Themes
 Author URI: https://promenadethemes.com
-Description: PT Magazine is modern and perfectly crafted responsive theme suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online magazines, newsportals and any creative sites. This SEO friendly free magazine theme is fast, secure and perfectly suitable for topics like business, fashion, technology, politics, sports, health, travel or anything else. Find video instructions at https://www.youtube.com/watch?v=y3hQmkMHbvA&list=PL-Ic437QwxQ8pBxfHsldZMQiHLvoEYmSS
+Description: PT Magazine Plus is modern and perfectly crafted responsive theme suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online magazines, newsportals and any creative sites. This SEO friendly free magazine theme is fast, secure and perfectly suitable for topics like business, fashion, technology, politics, sports, health, travel or anything else.
 Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: pt-magazine
+Text Domain: pt-magazine-plus
 Tags: custom-background, custom-menu, custom-logo, featured-images, full-width-template, one-column, two-columns, theme-options, threaded-comments, translation-ready, grid-layout, footer-widgets, blog, left-sidebar, right-sidebar, news, entertainment
 
 This theme, like WordPress, is licensed under the GPL.
@@ -1496,7 +1496,7 @@ a.comment-reply-link{
 }
 
 #commentform textarea {
-	float: left;
+    float: left;
 }
 
 /*--------------------------------------------------------------
@@ -2186,7 +2186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .top-menu-holder .menu li,
 .top-menu-holder .menu li a {
-	float:left;
+	float: left;
 	color: #fff;
 	font-size: 15px;
 }
@@ -2241,7 +2241,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .home-icon a {
-    padding:  17px 15px 18px 15px;
+    padding: 17px 15px 18px 15px;
     color: #fff;
     float: left;
     line-height: 1;
@@ -2339,6 +2339,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .search-box form button[type="submit"]:hover{
     border:0;
+}
+
+/* Sticky menu css */
+
+div#sticky-wrapper {
+	float: left;
+	width: 100%;
+	position: relative;
+    z-index: 99999;
 }
 
 /*--------------------------------------------------------------
@@ -2744,6 +2753,106 @@ article.news-post{
 }
 
 /*--------------------------------------------------------------
+# Alternate News Section 
+--------------------------------------------------------------*/
+
+.alternate-news-section,
+.alternate-news-section .sinlge-news-wrap,
+.alternate-news-section .featured-large-item,
+.alternate-news-section .news-item,
+.alternate-news-section .news-item .news-thumb {
+	float: left;
+	width: 100%;
+}
+
+.alternate-news-section .news-item {
+	margin-left: 0px;
+	float: none;
+	display: table;
+}
+
+.alternate-news-section .news-item .news-thumb {
+	width: auto;
+	float: none;
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.alternate-news-section .news-item .news-text-wrap,
+.alternate-news-section .news-item .news-text-wrap h2, 
+.alternate-news-section .news-item .news-text-wrap h2 a,
+.alternate-news-section .news-item .news-text-wrap p {
+	float:none;
+}
+
+.alternate-news-section .news-item .news-text-wrap {
+	padding-top: 0px;
+	padding-left: 20px;
+	float: none;
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.alternate-news-section .layout-alternate .news-item{
+	margin-bottom: 0px;
+}
+
+.alternate-news-section .layout-alternate .featured-large-item.right-aligned .news-text-wrap {
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+/*--------------------------------------------------------------
+# News Carousel Section 
+--------------------------------------------------------------*/
+
+.news-carousel-section,
+.news-carousel-section .carousel-news-wrap,
+.news-carousel-section .carousel-news-wrap .carousel-news-items {
+	float: left;
+	width: 100%;
+}
+
+.news-carousel-section .carousel-news-wrap .carousel-news-items .item {
+	float: left;
+	margin-left: 0px;
+}
+
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-prev, 
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-next {
+	bottom:auto;
+	top:-54px;
+	height: 24px;
+	width: 24px;
+}
+
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-prev{
+	right: 49px;
+}
+
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-next {
+	right: 15px;
+}
+
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-prev:before, 
+.news-carousel-section .carousel-news-wrap .carousel-news-items .slick-next:before {
+	line-height: 24px;
+	font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Video News Section 
+--------------------------------------------------------------*/
+
+.widget_media_video {
+	float: left;
+	width: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Advertisement Section Styles
 --------------------------------------------------------------*/
 
@@ -3126,7 +3235,7 @@ article.news-post{
 #primary .page .featured-thumb,
 #primary .post .featured-thumb {
 	line-height: 0;
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
 }
 
 #primary .page .content-wrap,
@@ -4119,9 +4228,8 @@ article.news-post{
 }
 
 .global-layout-right-sidebar #sidebar-primary{
-	float: right;
+    float: right;
 }
-
 
 /*-------------------------------------- 
 14.0 Mean Menu  Css Styles
@@ -4373,8 +4481,37 @@ article.news-post{
     .error-404.not-found .page-header .page-title,
     .error-404.not-found  form.search-form,
     .blog-layout-grid #primary .post, 
-    .blog-layout-grid #primary .page{
+    .blog-layout-grid #primary .page,
+    .alternate-news-section .news-item .news-thumb,
+    .alternate-news-section .news-item .news-text-wrap{
         width: 100%;
+    }
+
+    .alternate-news-section .news-item .news-thumb {
+    	margin-right: 0px;
+    	float: left;
+    }
+
+    .alternate-news-section .news-item .news-text-wrap, 
+    .alternate-news-section .news-item .news-text-wrap h2, 
+    .alternate-news-section .news-item .news-text-wrap h2 a, 
+    .alternate-news-section .news-item .news-text-wrap p {
+    	float: left;
+    }
+
+    .alternate-news-section .layout-alternate .news-item {
+    	margin-bottom: 20px;
+    }
+
+    .alternate-news-section .news-item .news-text-wrap {
+    	padding-top: 20px;
+    	padding-left: 0px;
+    }
+
+    .alternate-news-section .layout-alternate .featured-large-item.right-aligned .news-text-wrap {
+    	padding-top: 0px;
+    	padding-bottom: 20px;
+    	padding-right: 0px;
     }
 
     .two-col-section .two-column-news.two-column-news-left {
@@ -4449,6 +4586,14 @@ article.news-post{
 
     .search-holder {
         width: 50%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .main-navigation-holder {
+        position: static !important;
     }
 }
 
