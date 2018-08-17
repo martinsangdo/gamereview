@@ -11,8 +11,7 @@
     <meta property="og:image:url" content="<?php echo $article_detail->thumb_url; ?>" />
 
     <?php require_once('common_head.php'); ?>
-
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acf23ea3368f4001495b81f&product=inline-share-buttons"></script>
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5b76f9acd4ede100110aea50&product=inline-share-buttons"></script>
 
     <script src="/public/js/article_detail.js"></script>
 </head>
@@ -70,6 +69,7 @@
                         <hr class="g-brd-gray-light-v4">
                         <!-- Social Shares -->
                         <div class="g-mb-30">
+                            <div>Share this article:</div>
                             <div class="sharethis-inline-share-buttons"></div>
                         </div>
                         <!-- End Social Shares -->
