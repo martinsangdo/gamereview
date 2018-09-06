@@ -163,6 +163,7 @@ function window_onload(){
     get_extra_posts();
     load_more_comment();
     //replace broken images
+    /*
     setTimeout(function() {
         $('img').each(function () {
             if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
@@ -171,6 +172,7 @@ function window_onload(){
             }
         });
     }, 3000);
+    */
 }
 
 window.onload = window_onload;

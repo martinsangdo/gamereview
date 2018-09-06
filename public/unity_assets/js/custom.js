@@ -38,6 +38,7 @@ $(document).on('ready', function () {
         }
     });
     //replace broken images
+    /*
     setTimeout(function() {
         $('img').each(function () {
             if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
@@ -46,4 +47,5 @@ $(document).on('ready', function () {
             }
         });
     }, 3000);
+    */
 });

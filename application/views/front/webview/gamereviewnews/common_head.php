@@ -40,6 +40,7 @@
 <link rel="stylesheet" href="/public/unity_assets/css/styles.bm-classic.css"/>
 
 <!-- CSS Customization -->
+<link rel="stylesheet" href="/public/css/common.css"/>
 <link rel="stylesheet" href="/public/unity_assets/css/custom.css"/>
 
 <script src="/public/unity_assets/vendor/jquery/jquery.min.js"></script>
@@ -53,4 +54,11 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-117103883-1');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5713335630954493",
+        enable_page_level_ads: true
+    });
 </script>

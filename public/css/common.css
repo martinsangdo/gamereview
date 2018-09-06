@@ -23,3 +23,52 @@ tr.shown td.details-control {
     padding: 0 10px !important;
     border: 1px solid #ccc !important;
 }
+
+
+.ellipsis3lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 60px;       /* X*N fallback */
+}
+.ellipsis4lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 80px;       /* X*N fallback */
+}
+.ellipsis6lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 120px;       /* X*N fallback */
+}
+.ellipsis8lines p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 160px;       /* X*N fallback */
+}
+
+
+.ellipsis3lines_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* N: number of lines to show */
+    line-height: 20px;        /* X: fallback */
+    max-height: 60px;       /* X*N fallback */
+}

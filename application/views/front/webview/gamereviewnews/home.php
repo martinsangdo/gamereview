@@ -193,6 +193,22 @@
                     </div>
                     <!-- End Breaking News -->
 
+                    <div class="g-mb-10">
+                        <script type="text/javascript">
+                            amzn_assoc_placement = "adunit0";
+                            amzn_assoc_tracking_id = "gamereviewnews-20";
+                            amzn_assoc_ad_mode = "search";
+                            amzn_assoc_ad_type = "smart";
+                            amzn_assoc_marketplace = "amazon";
+                            amzn_assoc_region = "US";
+                            amzn_assoc_default_search_phrase = "<?php echo $ad_keywords[0]; ?>";
+                            amzn_assoc_default_category = "VideoGames";
+                            amzn_assoc_linkid = "4e8af11fd9d5a146920de930e5bfa871";
+                            amzn_assoc_default_browse_node = "468642";
+                            amzn_assoc_design = "in_content";
+                        </script>
+                        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+                    </div>
                     <!-- Featured Articles -->
                     <div class="g-mb-20">
                         <div class="u-heading-v3-1 g-mb-30">
@@ -216,15 +232,11 @@
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $block_key_2[0]->author_name;?></a>
-                                        </li>
-                                        <li class="list-inline-item">/</li>
-                                        <li class="list-inline-item">
                                             <?php echo format_post_time($block_key_2[0]->time);?>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2"><?php echo $block_key_2[0]->excerpt;?></p>
+                                    <div class="ellipsis4lines"><p class="g-color-gray-dark-v2"><?php echo $block_key_2[0]->excerpt;?></p></div>
                                 </article>
                                 <?php }//end if ?>
                                 <!-- End Article -->
@@ -271,15 +283,11 @@
 
                                     <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
                                         <li class="list-inline-item">
-                                            <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!"><?php echo $data_block[10]->author_name;?></a>
-                                        </li>
-                                        <li class="list-inline-item">/</li>
-                                        <li class="list-inline-item">
                                             <?php echo format_post_time($data_block[10]->time);?>
                                         </li>
                                     </ul>
 
-                                    <p class="g-color-gray-dark-v2"><?php echo $data_block[10]->excerpt;?></p>
+                                    <div class="ellipsis4lines"><p class="g-color-gray-dark-v2"><?php echo $data_block[10]->excerpt;?></p></div>
                                 </article>
                                 <?php } //end if ?>
                                 <!-- End Article -->
@@ -636,7 +644,22 @@
                         </div>
                     </div>
                     <!-- End Popular News -->
-
+                    <div class="g-mb-10">
+                        <script type="text/javascript">
+                            amzn_assoc_placement = "adunit0";
+                            amzn_assoc_tracking_id = "gamereviewnews-20";
+                            amzn_assoc_ad_mode = "search";
+                            amzn_assoc_ad_type = "smart";
+                            amzn_assoc_marketplace = "amazon";
+                            amzn_assoc_region = "US";
+                            amzn_assoc_default_search_phrase = "<?php echo $ad_keywords[1]; ?>";
+                            amzn_assoc_default_category = "VideoGames";
+                            amzn_assoc_linkid = "4e8af11fd9d5a146920de930e5bfa871";
+                            amzn_assoc_default_browse_node = "468642";
+                            amzn_assoc_design = "in_content";
+                        </script>
+                        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+                    </div>
                     <!-- Weekly News -->
                     <div class="g-mb-10">
                         <div class="u-heading-v3-1 g-mb-30">
@@ -651,7 +674,7 @@
                             <!-- Article Image -->
                             <div class="col-md-5">
                                 <figure class="u-shadow-v25 g-pos-rel g-mb-10 g-mb-0--lg">
-                                    <img class="img-fluid w-100" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
+                                    <div class="home6-center-cropped" style="background-image: url('<?php echo $data_block[$i]->thumb_url;?>');"></div>
                                 </figure>
                             </div>
                             <!-- End Article Image -->
@@ -661,7 +684,7 @@
                                 <h1 class="h4">
                                     <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="<?php echo detail_uri($data_block[$i]->slug); ?>"><?php echo $data_block[$i]->title; ?></a>
                                 </h1>
-                                <p class="g-color-gray-dark-v2"><?php echo $data_block[$i]->excerpt; ?></p>
+                                <div class="ellipsis4lines"><p class="g-color-gray-dark-v2"><?php echo $data_block[$i]->excerpt; ?></p></div>
                             </div>
                             <!-- End Article Content -->
                         </div>
@@ -726,7 +749,7 @@
                             </div>
                             <?php
                             $data_block = $block_key_7;
-                            for ($i=0; $i<10; $i++){
+                            for ($i=0; $i<count($data_block); $i++){
                             if (isset($data_block[$i])) {?>
                             <article class="media g-mb-10">
                                 <img class="d-flex u-shadow-v25 g-width-40 g-height-40 rounded-circle mr-3" src="<?php echo $data_block[$i]->thumb_url; ?>"/>
@@ -811,7 +834,7 @@
 
         <div class="container">
             <!-- Footer - Content -->
-            <div class="g-brd-bottom--md g-brd-secondary-light-v2 g-pb-30--md g-mb-30">
+            <div class="g-brd-bottom--md g-brd-secondary-light-v2 g-pb-30--md g-mb-30 g-pt-20">
                 <div class="row">
                     <div class="col-6 col-md-6 g-brd-right--md g-brd-secondary-light-v2 g-mb-30 g-mb-0--md">
                         <h1 class="h6 g-font-primary g-font-weight-700 text-uppercase mb-3">News</h1>
@@ -819,8 +842,8 @@
                         <!-- News -->
                         <ul class="list-unstyled mb-0">
                             <?php
-                            $data_block = $block_key_12;
-                            for ($i=0;$i<10;$i++){
+                            $data_block = $block_key_8;
+                            for ($i=0;$i<count($data_block);$i++){
                             if (isset($data_block[$i])) {?>
                             <li class="g-px-0 g-my-8">
                                 <i class="g-color-primary mr-2 fa fa-angle-right"></i>
@@ -866,9 +889,9 @@
                          }
                        }]'>
                                 <?php
-                                $data_block = $block_key_8;
+                                $data_block = $block_key_12;
                                 if ($data_block){
-                                for ($i=0;$i<8;$i++){ ?>
+                                for ($i=0;$i<count($data_block);$i++){ ?>
                                 <div class="js-slide g-px-5">
                                     <!-- Magazines -->
                                     <figure class="u-block-hover g-pos-rel">
