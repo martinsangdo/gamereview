@@ -7,12 +7,12 @@
                 <!-- Logo -->
                 <div class="col-md-3 g-hidden-md-down">
                     <a href="<?php echo base_url(); ?>" class="navbar-brand">
-                        <img src="/public/unity_assets/img/logo.png" alt="Logo">
+                        <img src="/public/unity_assets/img/logo.png" alt="Logo"/>
                     </a>
                 </div>
                 <!-- End Logo -->
 
-                <!-- Subscribe Form -->
+                <!-- Search Form -->
                 <div class="col-6 col-md-5">
                     <div class="input-group rounded">
                         <input class="form-control w-100 g-brd-secondary-light-v2 g-brd-primary--focus g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-white g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="text" placeholder="Search the entire site" id="txt_search_keyword" value="<?php if (isset($keyword)) echo $keyword; ?>" />
@@ -24,38 +24,10 @@
                           </span>
                     </div>
                 </div>
-                <!-- End Subscribe Form -->
+                <!-- End Search Form -->
 
-                <div class="col-4 col-lg-2 g-pos-rel g-px-15 ml-auto">
-                    <!-- Button -->
-                    <button class="btn btn-block u-btn-black g-brd-primary--hover g-bg-primary--hover text-left g-px-12" type="button">
-                        <div class="media align-items-center">
-                            <div class="d-flex mr-3">
-                                <i class="g-font-size-25 fa fa-android" style="color:#0f0;"></i>
-                            </div>
-                            <div class="media-body" style="text-align: center!important;">
-                                <span class="d-block g-font-size-10">Get it for</span>
-                                <span class="d-block g-font-size-15">Android</span>
-                            </div>
-                        </div>
-                    </button>
-                    <!-- End Button -->
-                </div>
-
-                <div class="col-4 col-lg-2 g-pos-rel g-px-15 ml-auto">
-                    <!-- Button -->
-                    <button class="btn btn-block u-btn-black g-brd-primary--hover g-bg-primary--hover text-left g-px-12" type="button">
-                        <div class="media align-items-center">
-                            <div class="d-flex mr-3">
-                                <i class="g-font-size-25 fa fa-apple"></i>
-                            </div>
-                            <div class="media-body" style="text-align: center!important;">
-                                <span class="d-block g-font-size-10">Get it for</span>
-                                <span class="d-block g-font-size-15">iOS</span>
-                            </div>
-                        </div>
-                    </button>
-                    <!-- End Button -->
+                <div class="col-md-4">
+                    <img src="/public/img/top_banner_background.png"/>
                 </div>
 
             </div>
