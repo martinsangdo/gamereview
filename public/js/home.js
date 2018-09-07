@@ -32,6 +32,10 @@ function get_top_read_categories(){
         });
     });
 }
+//save email of subscription to DB
+function save_subscription_email(){
+    common.save_email_subscribe($.trim($('#txt_home_email_subscription').val()));
+}
 
 $(window).on('load', function () {
     // initialization of sticky blocks
