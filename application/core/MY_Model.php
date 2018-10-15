@@ -31,7 +31,7 @@ class MY_Model extends CI_Model {
         if (!$where || !$data || count($data) == 0) {
             return FALSE;
         }
-		
+
 	 	$this->db->where($where);
 	 	$this->db->update($this->table_name, $data);
 
@@ -45,20 +45,22 @@ class MY_Model extends CI_Model {
 		if (!$where || count($where) == 0) {
 			return FALSE;
 		}
-		
+
 	 	$this->db->where($where);
 		$this->db->delete($this->table_name);
-	 
+
 		return TRUE;
 	}
-	
+
 	/**
 	 * custom query
 	 */
 	function custom_query($sql) {
-        if (!$sql || count($sql) == 0) {
+        if (!$sql) {
             return FALSE;
-        }
+        } else if (is_array($sql) && count($sql) == 0){
+					return FALSE;
+				}
 		$rows = $this->db->query($sql);
 		return $rows->result();
 	}
@@ -72,7 +74,7 @@ class MY_Model extends CI_Model {
         }
         $this->db->where($where);
 		$query = $this->db->get($this->table_name);
-		
+
 		return $query->num_rows();
 	}
 	/**
@@ -84,7 +86,7 @@ class MY_Model extends CI_Model {
         }
         $this->db->where($where);
 		$query = $this->db->get($this->table_name);
-		
+
 		return $query->row();
 	}
 	/**
